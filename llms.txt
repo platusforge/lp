@@ -1,0 +1,36 @@
+# PlatusForge — DevKit
+
+> DevKit is a production-ready SaaS boilerplate (Express 4 + strict TypeScript + Prisma 6 + PostgreSQL 16 backend; React 18 + Vite 5 frontend) sold by PlatusForge with one-time payment and lifetime private GitHub repo access. Docs in PT-BR and English.
+
+- Site: https://platusforge.com/
+- Product: DevKit — SaaS Boilerplate
+- Vendor: PlatusForge
+- Pricing (one-time, lifetime repo access): Starter $99 (1 project) · Professional $199 (unlimited projects, 1 dev — most popular) · Team $399 (5 seats, client work)
+- Delivery: Stripe checkout → GitHub collaborator invite with read (`pull`) access to the private repo → clone/fork → `docker compose up --build`
+- Refunds: 14-day unconditional guarantee (access revoked on refund)
+
+## What's included
+
+- Auth: email/password + Google/GitHub OAuth, 15-min access + rotating 7-day refresh in HttpOnly Secure SameSite cookies, bcrypt cost 12, lockout, rate limits, SHA-256 single-use 1h password-reset tokens
+- B2B: organizations, members, invites, RBAC, per-organization Stripe subscriptions
+- Billing: Stripe Checkout + Customer Portal + verified idempotent webhooks with dunning + audit log
+- Platform: admin panel, audit logs, API keys, Resend transactional email
+- Frontend: landing, pricing table, FAQ, file-based blog, OG/SEO meta, PT-BR + EN i18n
+- Infra: Docker Compose (base/override/prod), multi-stage Dockerfiles, Nginx SPA + `/api` proxy, Traefik TLS, GitHub Actions push-to-deploy
+- Quality: Jest unit tests, security audit gate, bilingual docs, AGENTS.md (mandatory build manual for AI coding agents)
+- Architecture: strict 5-layer chain `Route → Controller → Service → Repository (interface) → Implementation`, manual DI, kebab-case filenames, Conventional Commits
+
+## Stack
+
+Express 4 · TypeScript strict · Prisma 6 · PostgreSQL 16 · Zod · Winston · Stripe · Resend · React 18 · Vite 5 · React Router 6 · Docker · Traefik · GitHub Actions · Jest
+
+## License
+
+Commercial use allowed as the foundation of end-user SaaS apps (single-project or team tier per receipt). Reselling or redistributing the boilerplate source itself is prohibited.
+
+## Links
+
+- Landing: https://platusforge.com/
+- Pricing: https://platusforge.com/#pricing
+- FAQ: https://platusforge.com/#faq
+- Comparison: https://platusforge.com/#compare
