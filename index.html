@@ -6,7 +6,7 @@
 
   <!-- ============ SEO CORE ============ -->
   <title id="meta-title">DevKit — Boilerplate SaaS pronto para produção | PlatusForge</title>
-  <meta id="meta-description" name="description" content="DevKit é o boilerplate SaaS Express + React + PostgreSQL: auth segura, organizações, Stripe, RBAC, audit logs, Docker e CI/CD. Pagamento único a partir de $99. Venda em dias, não meses." />
+  <meta id="meta-description" name="description" content="DevKit é o boilerplate SaaS Express + React + PostgreSQL: auth segura, organizações, Stripe, RBAC, audit logs, Docker e CI/CD. Pagamento único a partir de $199. Venda em dias, não meses." />
   <meta name="keywords" content="saas boilerplate, express react boilerplate, stripe saas starter, multi-tenant saas, postgresql prisma boilerplate, devkit, platusforge, boilerplate português, ship fast alternative" />
   <meta name="author" content="PlatusForge" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
@@ -22,7 +22,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="PlatusForge" />
   <meta property="og:title" content="DevKit — Boilerplate SaaS pronto para produção | PlatusForge" />
-  <meta property="og:description" content="Express + React + PostgreSQL com auth, organizações, Stripe, RBAC, audit logs, Docker e CI/CD. Pagamento único a partir de $99." />
+  <meta property="og:description" content="Express + React + PostgreSQL com auth, organizações, Stripe, RBAC, audit logs, Docker e CI/CD. Pagamento único a partir de $199." />
   <meta property="og:url" content="https://platusforge.com/" />
   <meta property="og:image" content="https://platusforge.com/platusforge-og.png" />
   <meta property="og:image:secure_url" content="https://platusforge.com/platusforge-og.png" />
@@ -74,9 +74,9 @@
         "description": "Boilerplate SaaS production-ready: Express 4 + TypeScript + Prisma 6 + PostgreSQL 16 no backend, React 18 + Vite no frontend, com autenticação segura, organizações multi-tenant, cobrança Stripe por organização, RBAC, painel admin, audit logs, API keys, e-mail transacional, Docker, Traefik TLS, CI/CD e documentação em PT-BR e inglês.",
         "url": "https://platusforge.com/",
         "offers": [
-          { "@type": "Offer", "name": "DevKit Starter", "price": "99", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" },
-          { "@type": "Offer", "name": "DevKit Professional", "price": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" },
-          { "@type": "Offer", "name": "DevKit Team", "price": "399", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" }
+          { "@type": "Offer", "name": "DevKit Starter", "price": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" },
+          { "@type": "Offer", "name": "DevKit Professional", "price": "349", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" },
+          { "@type": "Offer", "name": "DevKit Team", "price": "599", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" }
         ]
       },
       {
@@ -84,7 +84,7 @@
         "@id": "https://platusforge.com/#faq",
         "mainEntity": [
           { "@type": "Question", "name": "Como recebo acesso ao DevKit depois de comprar?", "acceptedAnswer": { "@type": "Answer", "text": "Após o pagamento via Stripe, você recebe um convite de colaborador com acesso de leitura (pull) para o repositório privado no GitHub. Aceite o convite, clone ou faça fork e comece a construir. O link do repo fica disponível na sua área de cliente." } },
-          { "@type": "Question", "name": "O DevKit é assinatura ou pagamento único?", "acceptedAnswer": { "@type": "Answer", "text": "Pagamento único. Planos Starter ($99), Professional ($199) e Team ($399) dão acesso vitalício ao repositório privado, sem mensalidade pelo boilerplate." } },
+          { "@type": "Question", "name": "O DevKit é assinatura ou pagamento único?", "acceptedAnswer": { "@type": "Answer", "text": "Pagamento único. Planos Starter ($199), Professional ($349) e Team ($599) dão acesso vitalício ao repositório privado, sem mensalidade pelo boilerplate." } },
           { "@type": "Question", "name": "Posso usar o DevKit em projetos de clientes?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A licença permite usar o DevKit como base de aplicações SaaS para usuários finais, inclusive comercialmente. O que não é permitido é revender ou redistribuir o código-fonte do boilerplate em si." } },
           { "@type": "Question", "name": "Qual é a stack do DevKit?", "acceptedAnswer": { "@type": "Answer", "text": "Backend: Express 4, TypeScript strict, Prisma 6, PostgreSQL 16, Zod, Stripe e Resend. Frontend: React 18, Vite 5, React Router 6, PT-BR + inglês. Infra: Docker Compose, Nginx, Traefik com TLS e GitHub Actions." } },
           { "@type": "Question", "name": "Como a autenticação do DevKit é protegida?", "acceptedAnswer": { "@type": "Answer", "text": "Sessão com access token de 15 minutos e refresh rotativo de 7 dias em cookies HttpOnly, Secure e SameSite (nunca localStorage), bcrypt custo 12, rate limit no login e no reset de senha, tokens de reset com hash SHA-256 de uso único e expiração de 1 hora." } },
@@ -520,7 +520,7 @@
           <table>
             <thead><tr><th data-pt="Critério" data-en="Criteria">Critério</th><th>DevKit</th><th>ShipFast</th><th>Divjoy</th><th>Makerkit</th></tr></thead>
             <tbody>
-              <tr><td data-pt="Pagamento único" data-en="One-time payment">Pagamento único</td><td class="y" data-pt="✓ desde $99" data-en="✓ from $99">✓ desde $99</td><td class="p">$169</td><td class="p">✓</td><td class="n" data-pt="assinatura" data-en="subscription">assinatura</td></tr>
+              <tr><td data-pt="Pagamento único" data-en="One-time payment">Pagamento único</td><td class="y" data-pt="✓ desde $199" data-en="✓ from $199">✓ desde $199</td><td class="p">$169</td><td class="p">✓</td><td class="n" data-pt="assinatura" data-en="subscription">assinatura</td></tr>
               <tr><td data-pt="Multi-tenancy B2B (orgs, convites, RBAC)" data-en="B2B multi-tenancy (orgs, invites, RBAC)">Multi-tenancy B2B (orgs, convites, RBAC)</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="só no plano alto" data-en="top tier only">só no plano alto</td></tr>
               <tr><td data-pt="Billing Stripe por organização + dunning" data-en="Per-org Stripe billing + dunning">Billing Stripe por organização + dunning</td><td class="y">✓</td><td class="p" data-pt="parcial" data-en="partial">parcial</td><td class="n">—</td><td class="y">✓</td></tr>
               <tr><td data-pt="Audit logs + API keys" data-en="Audit logs + API keys">Audit logs + API keys</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="parcial" data-en="partial">parcial</td></tr>
@@ -559,7 +559,7 @@
           <div class="plans">
             <div class="plan">
               <h3>Starter</h3>
-              <p class="price">$99 <small data-pt="único" data-en="one-time">único</small></p>
+              <p class="price">$199 <small data-pt="único" data-en="one-time">único</small></p>
               <ul>
                 <li data-pt="1 projeto SaaS" data-en="1 SaaS project">1 projeto SaaS</li>
                 <li data-pt="Repo privado no GitHub" data-en="Private GitHub repo">Repo privado no GitHub</li>
@@ -572,7 +572,7 @@
             <div class="plan featured">
               <span class="tag" data-pt="★ MAIS POPULAR" data-en="★ MOST POPULAR">★ MAIS POPULAR</span>
               <h3>Professional</h3>
-              <p class="price">$199 <small data-pt="único" data-en="one-time">único</small></p>
+              <p class="price">$349 <small data-pt="único" data-en="one-time">único</small></p>
               <ul>
                 <li data-pt="Projetos ilimitados (1 dev)" data-en="Unlimited projects (1 dev)">Projetos ilimitados (1 dev)</li>
                 <li data-pt="Tudo do Starter, mais:" data-en="Everything in Starter, plus:">Tudo do Starter, mais:</li>
@@ -584,7 +584,7 @@
             </div>
             <div class="plan">
               <h3>Team</h3>
-              <p class="price">$399 <small data-pt="único" data-en="one-time">único</small></p>
+              <p class="price">$599 <small data-pt="único" data-en="one-time">único</small></p>
               <ul>
                 <li data-pt="Tudo do Professional, mais:" data-en="Everything in Professional, plus:">Tudo do Professional, mais:</li>
                 <li data-pt="5 seats (devs/agência)" data-en="5 seats (devs/agency)">5 seats (devs/agência)</li>
@@ -611,7 +611,7 @@
         </details>
         <details>
           <summary data-pt="É assinatura ou pagamento único?" data-en="Subscription or one-time payment?">É assinatura ou pagamento único?</summary>
-          <div class="a" data-pt="Pagamento único: $99 (Starter), $199 (Professional) ou $399 (Team). Acesso vitalício ao repo, sem mensalidade pelo boilerplate. Você só paga terceiros que usar (Stripe, hospedagem)." data-en="One-time payment: $99 (Starter), $199 (Professional) or $399 (Team). Lifetime repo access, no monthly fee for the boilerplate. You only pay third parties you use (Stripe, hosting).">Pagamento único: $99 (Starter), $199 (Professional) ou $399 (Team). Acesso vitalício ao repo, sem mensalidade pelo boilerplate. Você só paga terceiros que usar (Stripe, hospedagem).</div>
+          <div class="a" data-pt="Pagamento único: $199 (Starter), $349 (Professional) ou $599 (Team). Acesso vitalício ao repo, sem mensalidade pelo boilerplate. Você só paga terceiros que usar (Stripe, hospedagem)." data-en="One-time payment: $199 (Starter), $349 (Professional) or $599 (Team). Lifetime repo access, no monthly fee for the boilerplate. You only pay third parties you use (Stripe, hosting).">Pagamento único: $199 (Starter), $349 (Professional) ou $599 (Team). Acesso vitalício ao repo, sem mensalidade pelo boilerplate. Você só paga terceiros que usar (Stripe, hospedagem).</div>
         </details>
         <details>
           <summary data-pt="Posso usar em projetos de clientes?" data-en="Can I use it in client projects?">Posso usar em projetos de clientes?</summary>
@@ -642,7 +642,7 @@
         <div class="final">
           <h2 data-pt="Seu SaaS a dias de distância, não meses." data-en="Your SaaS days away, not months.">Seu SaaS a dias de distância, não meses.</h2>
           <p data-pt="Junte-se aos devs que pararam de reescrever auth e billing e foram direto ao que gera receita." data-en="Join the devs who stopped rewriting auth and billing and went straight to what generates revenue.">Junte-se aos devs que pararam de reescrever auth e billing e foram direto ao que gera receita.</p>
-          <a class="btn btn--light" href="#pricing" data-pt="Quero o DevKit — a partir de $99" data-en="Get DevKit — from $99">Quero o DevKit — a partir de $99</a>
+          <a class="btn btn--light" href="#pricing" data-pt="Quero o DevKit — a partir de $199" data-en="Get DevKit — from $199">Quero o DevKit — a partir de $199</a>
         </div>
       </div>
     </section>
@@ -680,8 +680,8 @@
         en: "DevKit — Production-ready SaaS boilerplate | PlatusForge"
       };
       var DESCS = {
-        pt: "DevKit é o boilerplate SaaS Express + React + PostgreSQL: auth segura, organizações, Stripe, RBAC, audit logs, Docker e CI/CD. Pagamento único a partir de $99. Venda em dias, não meses.",
-        en: "DevKit is the Express + React + PostgreSQL SaaS boilerplate: secure auth, organizations, Stripe billing, RBAC, audit logs, Docker & CI/CD. One-time payment from $99. Ship in days, not months."
+        pt: "DevKit é o boilerplate SaaS Express + React + PostgreSQL: auth segura, organizações, Stripe, RBAC, audit logs, Docker e CI/CD. Pagamento único a partir de $199. Venda em dias, não meses.",
+        en: "DevKit is the Express + React + PostgreSQL SaaS boilerplate: secure auth, organizations, Stripe billing, RBAC, audit logs, Docker & CI/CD. One-time payment from $199. Ship in days, not months."
       };
 
       function apply(l) {
