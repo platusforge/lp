@@ -281,6 +281,28 @@
     .foot nav a{color:var(--muted);text-decoration:none}
     .foot nav a:hover{color:var(--accent)}
 
+    /* ===== Animações (reveal + terminal + contadores) ===== */
+    @media (prefers-reduced-motion: no-preference) {
+      .js-reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.16,1,.3,1)}
+      .js-reveal.visible{opacity:1;transform:none}
+      .hero .terminal{animation:hero-float .9s cubic-bezier(.16,1,.3,1) both .1s}
+      @keyframes hero-float{from{opacity:0;transform:translateY(16px) scale(.985)}to{opacity:1;transform:none}}
+      .badge .dot{animation:dot-pulse 2.2s ease-in-out infinite}
+      @keyframes dot-pulse{0%,100%{box-shadow:0 0 0 0 rgba(157,180,232,.5)}50%{box-shadow:0 0 0 6px rgba(157,180,232,0)}}
+      .term-cursor{display:inline-block;width:9px;height:1.05em;background:var(--accent);vertical-align:text-bottom;margin-left:2px;animation:blink 1s steps(1) infinite;border-radius:1px}
+      @keyframes blink{50%{opacity:0}}
+      .term-line{display:block;white-space:pre-wrap}
+      .btn{transition:transform .12s ease,background .15s ease,border-color .15s ease,box-shadow .15s ease}
+      .btn:hover{transform:translateY(-1px)}
+      .card,.step,.plan{transition:transform .2s ease,border-color .15s ease,box-shadow .2s ease}
+      .card:hover,.step:hover{transform:translateY(-3px)}
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .js-reveal{opacity:1!important;transform:none!important}
+      *,*::before,*::after{animation:none!important;transition:none!important}
+      html{scroll-behavior:auto}
+    }
+
     /* ===== Segurança / mobile base ===== */
     html{-webkit-text-size-adjust:100%}
     img{max-width:100%;height:auto}
@@ -682,8 +704,86 @@
       });
 
       var copyBtn = document.getElementById("copy-btn");
+      var termPre = document.getElementById("term-code");
+      var TERM_LINES = [
+        { t: "# depois da compra: clone do repo privado", c: "c-dim", speed: 14 },
+        { t: "$ cp .env.example .env", c: "c-white", speed: 32 },
+        { t: "$ docker compose up --build", c: "c-white", speed: 32 },
+        { t: "✓ web  → http://localhost:5173", c: "c-green", speed: 14 },
+        { t: "✓ api  → http://localhost:3000/health", c: "c-green", speed: 14 },
+        { t: "$ docker compose exec server npm run db:seed", c: "c-white", speed: 28 },
+        { t: "→ auth + orgs + stripe + admin no ar.", c: "c-orange", speed: 16 },
+        { t: "# tempo até o primeiro deploy: dias, não meses.", c: "c-dim", speed: 14 }
+      ];
+      var TERM_FULL = TERM_LINES.map(function (l) { return l.t; }).join("\n");
+      var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      function renderTermInstant() {
+        if (!termPre) return;
+        termPre.innerHTML = "";
+        TERM_LINES.forEach(function (l) {
+          var line = document.createElement("span");
+          line.className = "term-line";
+          var inner = document.createElement("span");
+          inner.className = l.c;
+          inner.textContent = l.t;
+          line.appendChild(inner);
+          termPre.appendChild(line);
+          termPre.appendChild(document.createTextNode("\n"));
+        });
+      }
+
+      var termStarted = false;
+      function typeTerm() {
+        if (!termPre || termStarted) return;
+        termStarted = true;
+        if (reduceMotion) { renderTermInstant(); return; }
+        termPre.innerHTML = "";
+        var cursor = document.createElement("span");
+        cursor.className = "term-cursor";
+        cursor.setAttribute("aria-hidden", "true");
+        var li = 0;
+        function nextLine() {
+          if (li >= TERM_LINES.length) { termPre.appendChild(cursor); return; }
+          var def = TERM_LINES[li];
+          var line = document.createElement("span");
+          line.className = "term-line";
+          var inner = document.createElement("span");
+          inner.className = def.c;
+          line.appendChild(inner);
+          line.appendChild(cursor);
+          termPre.appendChild(line);
+          termPre.appendChild(document.createTextNode("\n"));
+          var ci = 0;
+          (function tick() {
+            if (ci <= def.t.length) {
+              inner.textContent = def.t.slice(0, ci);
+              ci++;
+              setTimeout(tick, def.speed);
+            } else {
+              li++;
+              setTimeout(nextLine, li === 3 ? 450 : 220);
+            }
+          })();
+        }
+        nextLine();
+      }
+
+      if ("IntersectionObserver" in window && !reduceMotion) {
+        var termObs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { typeTerm(); termObs.disconnect(); }
+          });
+        }, { threshold: 0.3 });
+        var termBox = document.querySelector(".hero .terminal");
+        if (termBox) termObs.observe(termBox);
+        else typeTerm();
+      } else {
+        renderTermInstant();
+      }
+
       if (copyBtn) copyBtn.addEventListener("click", function () {
-        var txt = document.getElementById("term-code").innerText;
+        var txt = TERM_FULL || (termPre ? termPre.innerText : "");
         var done = function () {
           copyBtn.textContent = lang === "en" ? "copied!" : "copiado!";
           setTimeout(function () { copyBtn.textContent = lang === "en" ? "copy" : "copiar"; }, 1500);
@@ -699,6 +799,64 @@
       });
 
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      /* ===== Reveal on scroll (progressive enhancement) ===== */
+      try {
+        if (!reduceMotion && "IntersectionObserver" in window) {
+          var targets = document.querySelectorAll(".stat, .pain .card, #inside .card, #inside .tree, .table-wrap, .step, .plan, .final, #faq details, .badges, .hero-grid > div:first-child");
+          targets.forEach(function (el, i) {
+            el.classList.add("js-reveal");
+            var parent = el.parentElement;
+            if (parent) {
+              var siblings = Array.prototype.indexOf.call(parent.children, el);
+              if (siblings > 0) el.style.transitionDelay = Math.min(siblings * 80, 240) + "ms";
+            }
+          });
+          var revObs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.classList.add("visible");
+                revObs.unobserve(e.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+          targets.forEach(function (el) { revObs.observe(el); });
+        }
+      } catch (e) {}
+
+      /* ===== Contadores das stats ===== */
+      try {
+        var statNums = document.querySelectorAll(".stat b");
+        function animateCount(el) {
+          var raw = el.textContent.trim();
+          var m = raw.match(/^([^\d]*)(\d+)(.*)$/);
+          if (!m) return;
+          var prefix = m[1], target = parseInt(m[2], 10), suffix = m[3];
+          if (reduceMotion || target === 0) { el.textContent = prefix + target + suffix; return; }
+          var dur = 1200, t0 = null;
+          function frame(ts) {
+            if (!t0) t0 = ts;
+            var p = Math.min((ts - t0) / dur, 1);
+            var eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = prefix + Math.round(target * eased) + suffix;
+            if (p < 1) requestAnimationFrame(frame);
+          }
+          requestAnimationFrame(frame);
+        }
+        if ("IntersectionObserver" in window && !reduceMotion) {
+          var statObs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.querySelectorAll("b").forEach(animateCount);
+                statObs.unobserve(e.target);
+              }
+            });
+          }, { threshold: 0.35 });
+          var strip = document.querySelector(".strip");
+          if (strip) statObs.observe(strip);
+        }
+      } catch (e) {}
+
       apply(lang);
     })();
   </script>
