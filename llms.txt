@@ -5,7 +5,7 @@
 - Site: https://platusforge.com/
 - Product: DevKit — SaaS Boilerplate
 - Vendor: PlatusForge
-- Pricing (one-time, lifetime repo access): Starter $199 (1 project) · Professional $349 (unlimited projects, 1 dev — most popular) · Team $599 (5 seats, client work)
+- Pricing (one-time, lifetime repo access): Starter $199 (1 project) · Professional $249 (unlimited projects, 1 dev — most popular, client work allowed)
 - Delivery: Stripe checkout → GitHub collaborator invite with read (`pull`) access to the private repo → clone/fork → `docker compose up --build`
 - Refunds: 14-day unconditional guarantee (access revoked on refund)
 
@@ -26,7 +26,7 @@ Express 4 · TypeScript strict · Prisma 6 · PostgreSQL 16 · Zod · Winston ·
 
 ## License
 
-Commercial use allowed as the foundation of end-user SaaS apps (single-project or team tier per receipt). Reselling or redistributing the boilerplate source itself is prohibited.
+Commercial use allowed as the foundation of end-user SaaS apps, including client projects (per Starter / Professional license terms on receipt). Reselling or redistributing the boilerplate source itself is prohibited.
 
 ## Links
 

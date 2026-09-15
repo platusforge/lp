@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ============ SEO CORE ============ -->
-  <title id="meta-title">DevKit — Boilerplate SaaS pronto para produção | PlatusForge</title>
-  <meta id="meta-description" name="description" content="DevKit é o boilerplate SaaS Express + React + PostgreSQL: auth segura, organizações, Stripe, RBAC, audit logs, Docker e CI/CD. Pagamento único a partir de $199. Venda em dias, não meses." />
+  <title id="meta-title">DevKit — Production-ready SaaS boilerplate | PlatusForge</title>
+  <meta id="meta-description" name="description" content="DevKit is the Express + React + PostgreSQL SaaS boilerplate: secure auth, organizations, Stripe billing, RBAC, audit logs, Docker & CI/CD. One-time payment from $199. Ship in days, not months." />
   <meta name="keywords" content="saas boilerplate, express react boilerplate, stripe saas starter, multi-tenant saas, postgresql prisma boilerplate, devkit, platusforge, boilerplate português, ship fast alternative" />
   <meta name="author" content="PlatusForge" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
@@ -21,8 +21,8 @@
   <!-- ============ LINK PREVIEW: LOGO COMO CAPA (Open Graph + Twitter) ============ -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="PlatusForge" />
-  <meta property="og:title" content="DevKit — Boilerplate SaaS pronto para produção | PlatusForge" />
-  <meta property="og:description" content="Express + React + PostgreSQL com auth, organizações, Stripe, RBAC, audit logs, Docker e CI/CD. Pagamento único a partir de $199." />
+  <meta property="og:title" content="DevKit — Production-ready SaaS boilerplate | PlatusForge" />
+  <meta property="og:description" content="Express + React + PostgreSQL with secure auth, organizations, Stripe billing, RBAC, audit logs, Docker & CI/CD. One-time payment from $199." />
   <meta property="og:url" content="https://platusforge.com/" />
   <meta property="og:image" content="https://platusforge.com/platusforge-og.png" />
   <meta property="og:image:secure_url" content="https://platusforge.com/platusforge-og.png" />
@@ -30,11 +30,11 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="PlatusForge — logotipo: bigorna com chaves de código" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="pt_BR" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DevKit — Boilerplate SaaS pronto para produção | PlatusForge" />
-  <meta name="twitter:description" content="O boilerplate que devs usam para vender SaaS em dias: Express + React + Postgres + Stripe. Pagamento único, acesso vitalício ao repo." />
+  <meta name="twitter:title" content="DevKit — Production-ready SaaS boilerplate | PlatusForge" />
+  <meta name="twitter:description" content="The boilerplate devs use to sell SaaS in days: Express + React + Postgres + Stripe. One-time payment, lifetime repo access." />
   <meta name="twitter:image" content="https://platusforge.com/platusforge-og.png" />
   <meta name="twitter:image:alt" content="PlatusForge — logotipo: bigorna com chaves de código" />
   <link rel="image_src" href="https://platusforge.com/platusforge-og.png" />
@@ -75,8 +75,7 @@
         "url": "https://platusforge.com/",
         "offers": [
           { "@type": "Offer", "name": "DevKit Starter", "price": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" },
-          { "@type": "Offer", "name": "DevKit Professional", "price": "349", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" },
-          { "@type": "Offer", "name": "DevKit Team", "price": "599", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" }
+          { "@type": "Offer", "name": "DevKit Professional", "price": "249", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" }
         ]
       },
       {
@@ -84,7 +83,7 @@
         "@id": "https://platusforge.com/#faq",
         "mainEntity": [
           { "@type": "Question", "name": "Como recebo acesso ao DevKit depois de comprar?", "acceptedAnswer": { "@type": "Answer", "text": "Após o pagamento via Stripe, você recebe um convite de colaborador com acesso de leitura (pull) para o repositório privado no GitHub. Aceite o convite, clone ou faça fork e comece a construir. O link do repo fica disponível na sua área de cliente." } },
-          { "@type": "Question", "name": "O DevKit é assinatura ou pagamento único?", "acceptedAnswer": { "@type": "Answer", "text": "Pagamento único. Planos Starter ($199), Professional ($349) e Team ($599) dão acesso vitalício ao repositório privado, sem mensalidade pelo boilerplate." } },
+          { "@type": "Question", "name": "O DevKit é assinatura ou pagamento único?", "acceptedAnswer": { "@type": "Answer", "text": "Pagamento único. Planos Starter ($199) e Professional ($249) dão acesso vitalício ao repositório privado, sem mensalidade pelo boilerplate." } },
           { "@type": "Question", "name": "Posso usar o DevKit em projetos de clientes?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A licença permite usar o DevKit como base de aplicações SaaS para usuários finais, inclusive comercialmente. O que não é permitido é revender ou redistribuir o código-fonte do boilerplate em si." } },
           { "@type": "Question", "name": "Qual é a stack do DevKit?", "acceptedAnswer": { "@type": "Answer", "text": "Backend: Express 4, TypeScript strict, Prisma 6, PostgreSQL 16, Zod, Stripe e Resend. Frontend: React 18, Vite 5, React Router 6, PT-BR + inglês. Infra: Docker Compose, Nginx, Traefik com TLS e GitHub Actions." } },
           { "@type": "Question", "name": "Como a autenticação do DevKit é protegida?", "acceptedAnswer": { "@type": "Answer", "text": "Sessão com access token de 15 minutos e refresh rotativo de 7 dias em cookies HttpOnly, Secure e SameSite (nunca localStorage), bcrypt custo 12, rate limit no login e no reset de senha, tokens de reset com hash SHA-256 de uso único e expiração de 1 hora." } },
@@ -119,6 +118,7 @@
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
+    html,body{overflow-x:clip}
     body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
     ::selection{background:var(--accent);color:var(--accent-ink)}
     a{color:var(--accent-hi)}
@@ -245,8 +245,8 @@
     .pricing{background:linear-gradient(180deg,var(--surface),var(--bg-soft));border:1px solid var(--border);border-radius:22px;padding:48px 32px}
     .pricing h2{color:var(--text)}
     .pricing .lead{color:var(--text-soft)}
-    .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px;align-items:center}
-    @media(max-width:900px){.plans{grid-template-columns:1fr}}
+    .plans{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:8px;align-items:stretch;max-width:860px;margin-left:auto;margin-right:auto}
+    @media(max-width:900px){.plans{grid-template-columns:1fr;max-width:520px}}
     .plan{background:var(--surface-2);color:var(--text);border-radius:var(--radius);padding:28px;border:1px solid var(--border);position:relative;display:flex;flex-direction:column}
     .plan.featured{border-color:var(--accent);box-shadow:0 24px 70px -34px rgba(157,180,232,.4);transform:scale(1.04)}
     @media(max-width:900px){.plan.featured{transform:none}}
@@ -281,26 +281,77 @@
     .foot nav a{color:var(--muted);text-decoration:none}
     .foot nav a:hover{color:var(--accent)}
 
-    /* ===== Animações (reveal + terminal + contadores) ===== */
+    /* ===== Animações (reveal + hero + micro-interações) ===== */
+    #progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:100;background:linear-gradient(90deg,var(--accent),var(--accent-hi));box-shadow:0 0 12px rgba(157,180,232,.7)}
+    header.site{transition:box-shadow .25s ease,background .25s ease}
+    header.site.scrolled{background:rgba(10,14,23,.94);box-shadow:0 12px 32px -18px rgba(0,0,0,.8)}
+    .nav-links a.active{color:var(--text);background:var(--surface)}
+    .hero{position:relative}
+    .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;opacity:.5;z-index:0}
+    .hero::before{width:480px;height:480px;left:-160px;top:-160px;background:radial-gradient(circle,rgba(157,180,232,.22),transparent 65%)}
+    .hero::after{width:560px;height:560px;right:-200px;top:-80px;background:radial-gradient(circle,rgba(157,180,232,.14),transparent 65%)}
+    .hero-grid{position:relative;z-index:1}
+    .kicker{display:flex;align-items:center;gap:10px}
+    .kicker::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--accent);flex:none}
     @media (prefers-reduced-motion: no-preference) {
-      .js-reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.16,1,.3,1)}
-      .js-reveal.visible{opacity:1;transform:none}
-      .hero .terminal{animation:hero-float .9s cubic-bezier(.16,1,.3,1) both .1s}
+      .js .hero [data-hero]{opacity:0}
+      body.loaded .hero [data-hero]{animation:rise-in .7s cubic-bezier(.16,1,.3,1) forwards;animation-delay:var(--hd,0ms)}
+      @keyframes rise-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+      .hero::before{animation:drift-a 14s ease-in-out infinite alternate}
+      .hero::after{animation:drift-b 18s ease-in-out infinite alternate}
+      @keyframes drift-a{to{transform:translate(40px,30px) scale(1.08)}}
+      @keyframes drift-b{to{transform:translate(-40px,26px) scale(1.05)}}
+      .hero .terminal{animation:hero-float .9s cubic-bezier(.16,1,.3,1) both .35s;transition:transform .25s ease,box-shadow .25s ease;will-change:transform}
       @keyframes hero-float{from{opacity:0;transform:translateY(16px) scale(.985)}to{opacity:1;transform:none}}
+      .terminal:hover{box-shadow:0 34px 80px -25px rgba(0,0,0,.9),0 0 0 1px rgba(157,180,232,.25)}
       .badge .dot{animation:dot-pulse 2.2s ease-in-out infinite}
       @keyframes dot-pulse{0%,100%{box-shadow:0 0 0 0 rgba(157,180,232,.5)}50%{box-shadow:0 0 0 6px rgba(157,180,232,0)}}
       .term-cursor{display:inline-block;width:9px;height:1.05em;background:var(--accent);vertical-align:text-bottom;margin-left:2px;animation:blink 1s steps(1) infinite;border-radius:1px}
       @keyframes blink{50%{opacity:0}}
       .term-line{display:block;white-space:pre-wrap}
-      .btn{transition:transform .12s ease,background .15s ease,border-color .15s ease,box-shadow .15s ease}
-      .btn:hover{transform:translateY(-1px)}
-      .card,.step,.plan{transition:transform .2s ease,border-color .15s ease,box-shadow .2s ease}
-      .card:hover,.step:hover{transform:translateY(-3px)}
+      .js-reveal{opacity:0;transform:translateY(26px) scale(.985);filter:blur(6px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1),filter .7s ease}
+      .js-reveal.visible{opacity:1;transform:none;filter:blur(0)}
+      .btn{position:relative;overflow:hidden;transition:transform .15s ease,background .15s ease,border-color .15s ease,box-shadow .2s ease}
+      .btn:hover{transform:translateY(-2px)}
+      .btn:active{transform:translateY(0) scale(.98)}
+      .btn--forge,.btn--light{box-shadow:0 10px 26px -14px rgba(157,180,232,.75)}
+      .btn--forge:hover,.btn--light:hover{box-shadow:0 16px 34px -14px rgba(157,180,232,.85)}
+      .btn--forge::after,.btn--light::after{content:"";position:absolute;top:0;left:-80%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);transition:left .6s ease;pointer-events:none}
+      .btn--forge:hover::after,.btn--light:hover::after{left:135%}
+      .card,.step,.plan,.final,.pricing{position:relative}
+      .card::before,.step::before,.plan::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(157,180,232,.15),transparent 60%);opacity:0;transition:opacity .25s ease;pointer-events:none}
+      .card:hover::before,.step:hover::before,.plan:hover::before{opacity:1}
+      .card,.step,.plan{transition:transform .22s ease,border-color .15s ease,box-shadow .22s ease}
+      .card:hover,.step:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(0,0,0,.8)}
+      .plan:hover{transform:translateY(-4px)}
+      .plan.featured{animation:featured-glow 3.4s ease-in-out infinite}
+      @keyframes featured-glow{0%,100%{box-shadow:0 24px 70px -34px rgba(157,180,232,.4)}50%{box-shadow:0 24px 90px -28px rgba(157,180,232,.65),0 0 0 1px rgba(157,180,232,.3)}}
+      .badges span{transition:transform .18s ease,border-color .18s ease,color .18s ease}
+      .badges span:hover{transform:translateY(-2px);border-color:var(--accent);color:var(--text)}
+      .table-wrap tbody tr{transition:background .15s ease}
+      .table-wrap tbody tr:hover{background:rgba(157,180,232,.07)}
+      #faq details{transition:border-color .2s ease}
+      #faq details[open]{border-color:var(--border-2)}
+      #faq details .a{overflow:hidden}
+      #faq details[open] .a{animation:faq-in .32s ease}
+      @keyframes faq-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+      summary::after{transition:transform .25s ease}
+      #faq details[open] summary::after{transform:rotate(180deg)}
+      .lang-toggle{transition:transform .15s ease,border-color .15s ease,color .15s ease}
+      .lang-toggle:active{transform:scale(.94)}
+      #copy-btn{transition:border-color .15s ease,color .15s ease,transform .12s ease}
+      #copy-btn:active{transform:scale(.94)}
+      #to-top{position:fixed;right:18px;bottom:18px;z-index:60;width:44px;height:44px;border-radius:12px;border:1px solid var(--border-2);background:rgba(18,26,43,.9);backdrop-filter:blur(8px);color:var(--accent-hi);font-size:1.15rem;font-weight:800;cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s ease,transform .25s ease,border-color .15s ease}
+      #to-top.show{opacity:1;transform:none;pointer-events:auto}
+      #to-top:hover{border-color:var(--accent);transform:translateY(-2px)}
     }
     @media (prefers-reduced-motion: reduce) {
-      .js-reveal{opacity:1!important;transform:none!important}
+      #progress{display:none}
+      .js-reveal{opacity:1!important;transform:none!important;filter:none!important}
+      .hero [data-hero]{opacity:1!important}
       *,*::before,*::after{animation:none!important;transition:none!important}
       html{scroll-behavior:auto}
+      #to-top{display:none}
     }
 
     /* ===== Segurança / mobile base ===== */
@@ -347,7 +398,8 @@
   </style>
 </head>
 <body>
-  <a class="skip" href="#conteudo" data-pt="Pular para o conteúdo" data-en="Skip to content">Pular para o conteúdo</a>
+  <div id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#conteudo" data-pt="Pular para o conteúdo" data-en="Skip to content">Skip to content</a>
 
   <header class="site">
     <nav class="nav" aria-label="Principal / Main">
@@ -356,12 +408,12 @@
         <span>PlatusForge</span>
       </a>
       <div class="nav-links">
-        <a href="#inside" data-pt="O que vem dentro" data-en="What's inside">O que vem dentro</a>
-        <a href="#compare" data-pt="Comparar" data-en="Compare">Comparar</a>
-        <a href="#how" data-pt="Como funciona" data-en="How it works">Como funciona</a>
+        <a href="#inside" data-pt="O que vem dentro" data-en="What's inside">What's inside</a>
+        <a href="#compare" data-pt="Comparar" data-en="Compare">Compare</a>
+        <a href="#how" data-pt="Como funciona" data-en="How it works">How it works</a>
         <a href="#faq" class="keep">FAQ</a>
-        <a href="#pricing" class="btn btn--primary btn--sm keep" data-pt="Quero o DevKit" data-en="Get DevKit">Quero o DevKit</a>
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language / Trocar idioma">EN</button>
+        <a href="#pricing" class="btn btn--primary btn--sm keep" data-pt="Quero o DevKit" data-en="Get DevKit">Get DevKit</a>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language / Trocar idioma">PT</button>
       </div>
     </nav>
   </header>
@@ -371,32 +423,32 @@
     <div class="wrap hero" id="top">
       <div class="hero-grid">
         <div>
-          <span class="badge"><span class="dot"></span><span data-pt="v1.0 · Express + React + PostgreSQL" data-en="v1.0 · Express + React + PostgreSQL">v1.0 · Express + React + PostgreSQL</span></span>
-          <h1>
-            <span data-pt="Pare de reconstruir o mesmo SaaS." data-en="Stop rebuilding the same SaaS.">Pare de reconstruir o mesmo SaaS.</span>
-            <span class="hl" data-pt="Comece do DevKit." data-en="Start from DevKit.">Comece do DevKit.</span>
+          <span class="badge" data-hero style="--hd:0ms"><span class="dot"></span><span data-pt="v1.0 · Express + React + PostgreSQL" data-en="v1.0 · Express + React + PostgreSQL">v1.0 · Express + React + PostgreSQL</span></span>
+          <h1 data-hero style="--hd:90ms">
+            <span data-pt="Pare de reconstruir o mesmo SaaS." data-en="Stop rebuilding the same SaaS.">Stop rebuilding the same SaaS.</span>
+            <span class="hl" data-pt="Comece do DevKit." data-en="Start from DevKit.">Start from DevKit.</span>
           </h1>
-          <p class="sub" data-pt="Boilerplate completo e production-ready: autenticação segura, organizações multi-tenant, cobrança Stripe, painel admin, audit logs, Docker e CI/CD. Pronto para vender — não para configurar." data-en="Complete, production-ready boilerplate: secure auth, multi-tenant organizations, Stripe billing, admin panel, audit logs, Docker & CI/CD. Ready to sell — not to set up.">Boilerplate completo e production-ready: autenticação segura, organizações multi-tenant, cobrança Stripe, painel admin, audit logs, Docker e CI/CD. Pronto para vender — não para configurar.</p>
-          <div class="cta-row">
-            <a class="btn btn--forge" href="#pricing" data-pt="Quero acesso imediato — $199" data-en="Get instant access — $199">Quero acesso imediato — $199</a>
-            <a class="btn btn--ghost" href="#inside" data-pt="Ver o que vem dentro" data-en="See what's inside">Ver o que vem dentro</a>
+          <p class="sub" data-hero style="--hd:180ms" data-pt="Boilerplate completo e production-ready: autenticação segura, organizações multi-tenant, cobrança Stripe, painel admin, audit logs, Docker e CI/CD. Pronto para vender — não para configurar." data-en="Complete, production-ready boilerplate: secure auth, multi-tenant organizations, Stripe billing, admin panel, audit logs, Docker & CI/CD. Ready to sell — not to set up.">Complete, production-ready boilerplate: secure auth, multi-tenant organizations, Stripe billing, admin panel, audit logs, Docker & CI/CD. Ready to sell — not to set up.</p>
+          <div class="cta-row" data-hero style="--hd:270ms">
+            <a class="btn btn--forge" href="#pricing" data-pt="Quero acesso imediato — $199" data-en="Get instant access — $199">Get instant access — $199</a>
+            <a class="btn btn--ghost" href="#inside" data-pt="Ver o que vem dentro" data-en="See what's inside">See what's inside</a>
           </div>
-          <ul class="microtrust">
-            <li data-pt="Pagamento único, sem mensalidade" data-en="One-time payment, no subscription">Pagamento único, sem mensalidade</li>
-            <li data-pt="Repo privado no GitHub" data-en="Private GitHub repo">Repo privado no GitHub</li>
-            <li data-pt="Garantia de 14 dias" data-en="14-day guarantee">Garantia de 14 dias</li>
+          <ul class="microtrust" data-hero style="--hd:360ms">
+            <li data-pt="Pagamento único, sem mensalidade" data-en="One-time payment, no subscription">One-time payment, no subscription</li>
+            <li data-pt="Repo privado no GitHub" data-en="Private GitHub repo">Private GitHub repo</li>
+            <li data-pt="Garantia de 14 dias" data-en="14-day guarantee">14-day guarantee</li>
           </ul>
         </div>
-        <div class="terminal" role="img" aria-label="Terminal: subindo o DevKit com Docker em 3 comandos">
-          <div class="term-bar"><i></i><i></i><i></i><span>devkit — zsh</span><button id="copy-btn" data-pt="copiar" data-en="copy">copiar</button></div>
-<pre id="term-code"><span class="c-dim"># depois da compra: clone do repo privado</span>
+        <div class="terminal" role="img" aria-label="Terminal: launching DevKit with Docker in 3 commands">
+          <div class="term-bar"><i></i><i></i><i></i><span>devkit — zsh</span><button id="copy-btn" data-pt="copiar" data-en="copy">copy</button></div>
+<pre id="term-code"><span class="c-dim"># after purchase: clone the private repo</span>
 <span class="c-white">$ cp .env.example .env</span>
 <span class="c-white">$ docker compose up --build</span>
 <span class="c-green">✓ web  → http://localhost:5173</span>
 <span class="c-green">✓ api  → http://localhost:3000/health</span>
 <span class="c-white">$ docker compose exec server npm run db:seed</span>
-<span class="c-orange">→ auth + orgs + stripe + admin no ar.</span>
-<span class="c-dim"># tempo até o primeiro deploy: dias, não meses.</span></pre>
+<span class="c-orange">→ auth + orgs + stripe + admin live.</span>
+<span class="c-dim"># time to first deploy: days, not months.</span></pre>
         </div>
       </div>
     </div>
@@ -406,23 +458,23 @@
       <div class="strip-grid">
         <div class="stat">
           <b>12+</b>
-          <span class="stat-label" data-pt="módulos prontos" data-en="ready modules">módulos prontos</span>
+          <span class="stat-label" data-pt="módulos prontos" data-en="ready modules">ready modules</span>
           <small data-pt="auth, billing, admin, API keys…" data-en="auth, billing, admin, API keys…">auth, billing, admin, API keys…</small>
         </div>
         <div class="stat">
           <b>2</b>
-          <span class="stat-label" data-pt="idiomas de docs" data-en="doc languages">idiomas de docs</span>
+          <span class="stat-label" data-pt="idiomas de docs" data-en="doc languages">doc languages</span>
           <small data-pt="PT-BR + English" data-en="PT-BR + English">PT-BR + English</small>
         </div>
         <div class="stat">
           <b>1</b>
-          <span class="stat-label" data-pt="comando para subir" data-en="command to start">comando para subir</span>
+          <span class="stat-label" data-pt="comando para subir" data-en="command to start">command to start</span>
           <small data-pt="docker compose up" data-en="docker compose up">docker compose up</small>
         </div>
         <div class="stat">
           <b>$0</b>
-          <span class="stat-label" data-pt="mensalidade" data-en="monthly fees">mensalidade</span>
-          <small data-pt="pagamento único, acesso vitalício" data-en="one-time payment, lifetime access">pagamento único, acesso vitalício</small>
+          <span class="stat-label" data-pt="mensalidade" data-en="monthly fees">monthly fees</span>
+          <small data-pt="pagamento único, acesso vitalício" data-en="one-time payment, lifetime access">one-time payment, lifetime access</small>
         </div>
       </div>
     </div>
@@ -430,26 +482,26 @@
     <!-- ================= DOR / SOLUÇÃO ================= -->
     <section class="block pain">
       <div class="wrap">
-        <p class="kicker" data-pt="O problema" data-en="The problem">O problema</p>
-        <h2 data-pt="Todo SaaS novo começa com as mesmas 6 semanas chatas" data-en="Every new SaaS starts with the same boring 6 weeks">Todo SaaS novo começa com as mesmas 6 semanas chatas</h2>
-        <p class="lead" data-pt="Login, reset de senha, convites de time, assinatura Stripe, webhooks, e-mails, Docker, CI… nada disso é o seu produto — mas sem isso você não vende." data-en="Login, password reset, team invites, Stripe subscriptions, webhooks, emails, Docker, CI… none of that is your product — but without it you can't sell.">Login, reset de senha, convites de time, assinatura Stripe, webhooks, e-mails, Docker, CI… nada disso é o seu produto — mas sem isso você não vende.</p>
+        <p class="kicker" data-pt="O problema" data-en="The problem">The problem</p>
+        <h2 data-pt="Todo SaaS novo começa com as mesmas 6 semanas chatas" data-en="Every new SaaS starts with the same boring 6 weeks">Every new SaaS starts with the same boring 6 weeks</h2>
+        <p class="lead" data-pt="Login, reset de senha, convites de time, assinatura Stripe, webhooks, e-mails, Docker, CI… nada disso é o seu produto — mas sem isso você não vende." data-en="Login, password reset, team invites, Stripe subscriptions, webhooks, emails, Docker, CI… none of that is your product — but without it you can't sell.">Login, password reset, team invites, Stripe subscriptions, webhooks, emails, Docker, CI… none of that is your product — but without it you can't sell.</p>
         <div class="pain-cols">
           <div class="card no">
-            <h3 data-pt="❌ Sem o DevKit" data-en="❌ Without DevKit">❌ Sem o DevKit</h3>
+            <h3 data-pt="❌ Sem o DevKit" data-en="❌ Without DevKit">❌ Without DevKit</h3>
             <ul>
-              <li data-pt="Semanas soldando auth + Stripe + webhooks" data-en="Weeks wiring auth + Stripe + webhooks">Semanas soldando auth + Stripe + webhooks</li>
-              <li data-pt="Multi-tenancy improvisado que quebra no 2º cliente" data-en="Improvised multi-tenancy that breaks at customer #2">Multi-tenancy improvisado que quebra no 2º cliente</li>
-              <li data-pt="Deploy manual, segredo vazado, rollback no escuro" data-en="Manual deploys, leaked secrets, blind rollbacks">Deploy manual, segredo vazado, rollback no escuro</li>
-              <li data-pt="Agente de IA gerando código fora do padrão" data-en="AI agents generating off-pattern code">Agente de IA gerando código fora do padrão</li>
+              <li data-pt="Semanas soldando auth + Stripe + webhooks" data-en="Weeks wiring auth + Stripe + webhooks">Weeks wiring auth + Stripe + webhooks</li>
+              <li data-pt="Multi-tenancy improvisado que quebra no 2º cliente" data-en="Improvised multi-tenancy that breaks at customer #2">Improvised multi-tenancy that breaks at customer #2</li>
+              <li data-pt="Deploy manual, segredo vazado, rollback no escuro" data-en="Manual deploys, leaked secrets, blind rollbacks">Manual deploys, leaked secrets, blind rollbacks</li>
+              <li data-pt="Agente de IA gerando código fora do padrão" data-en="AI agents generating off-pattern code">AI agents generating off-pattern code</li>
             </ul>
           </div>
           <div class="card yes">
-            <h3 data-pt="✅ Com o DevKit" data-en="✅ With DevKit">✅ Com o DevKit</h3>
+            <h3 data-pt="✅ Com o DevKit" data-en="✅ With DevKit">✅ With DevKit</h3>
             <ul>
-              <li data-pt="Clone, suba o Docker e codifique sua feature no dia 1" data-en="Clone, run Docker, code your feature on day 1">Clone, suba o Docker e codifique sua feature no dia 1</li>
-              <li data-pt="Organizações, convites e RBAC prontos para B2B" data-en="Organizations, invites & RBAC ready for B2B">Organizações, convites e RBAC prontos para B2B</li>
-              <li data-pt="Checkout, portal e dunning Stripe já soldados" data-en="Stripe checkout, portal & dunning already wired">Checkout, portal e dunning Stripe já soldados</li>
-              <li data-pt="AGENTS.md: sua IA codifica dentro da arquitetura" data-en="AGENTS.md: your AI codes inside the architecture">AGENTS.md: sua IA codifica dentro da arquitetura</li>
+              <li data-pt="Clone, suba o Docker e codifique sua feature no dia 1" data-en="Clone, run Docker, code your feature on day 1">Clone, run Docker, code your feature on day 1</li>
+              <li data-pt="Organizações, convites e RBAC prontos para B2B" data-en="Organizations, invites & RBAC ready for B2B">Organizations, invites & RBAC ready for B2B</li>
+              <li data-pt="Checkout, portal e dunning Stripe já soldados" data-en="Stripe checkout, portal & dunning already wired">Stripe checkout, portal & dunning already wired</li>
+              <li data-pt="AGENTS.md: sua IA codifica dentro da arquitetura" data-en="AGENTS.md: your AI codes inside the architecture">AGENTS.md: your AI codes inside the architecture</li>
             </ul>
           </div>
         </div>
@@ -460,8 +512,8 @@
     <section class="block" id="o-que-e">
       <div class="wrap">
         <p class="kicker">DevKit</p>
-        <h2 data-pt="O que é o DevKit?" data-en="What is DevKit?">O que é o DevKit?</h2>
-        <p class="lead" data-pt="DevKit é um boilerplate SaaS production-ready em Express 4, TypeScript strict, Prisma 6 e PostgreSQL 16 no backend e React 18 + Vite no frontend. Inclui autenticação por cookies HttpOnly, organizações multi-tenant com convites e RBAC, cobrança Stripe por organização, painel admin, audit logs, API keys, e-mail transacional com Resend, Docker Compose, TLS com Traefik, CI/CD com GitHub Actions, testes Jest e documentação em português e inglês." data-en="DevKit is a production-ready SaaS boilerplate with Express 4, strict TypeScript, Prisma 6 and PostgreSQL 16 on the backend and React 18 + Vite on the frontend. It includes HttpOnly-cookie auth, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and docs in Portuguese and English.">DevKit é um boilerplate SaaS production-ready em Express 4, TypeScript strict, Prisma 6 e PostgreSQL 16 no backend e React 18 + Vite no frontend. Inclui autenticação por cookies HttpOnly, organizações multi-tenant com convites e RBAC, cobrança Stripe por organização, painel admin, audit logs, API keys, e-mail transacional com Resend, Docker Compose, TLS com Traefik, CI/CD com GitHub Actions, testes Jest e documentação em português e inglês.</p>
+        <h2 data-pt="O que é o DevKit?" data-en="What is DevKit?">What is DevKit?</h2>
+        <p class="lead" data-pt="DevKit é um boilerplate SaaS production-ready em Express 4, TypeScript strict, Prisma 6 e PostgreSQL 16 no backend e React 18 + Vite no frontend. Inclui autenticação por cookies HttpOnly, organizações multi-tenant com convites e RBAC, cobrança Stripe por organização, painel admin, audit logs, API keys, e-mail transacional com Resend, Docker Compose, TLS com Traefik, CI/CD com GitHub Actions, testes Jest e documentação em português e inglês." data-en="DevKit is a production-ready SaaS boilerplate with Express 4, strict TypeScript, Prisma 6 and PostgreSQL 16 on the backend and React 18 + Vite on the frontend. It includes HttpOnly-cookie auth, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and docs in Portuguese and English.">DevKit is a production-ready SaaS boilerplate with Express 4, strict TypeScript, Prisma 6 and PostgreSQL 16 on the backend and React 18 + Vite on the frontend. It includes HttpOnly-cookie auth, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and docs in Portuguese and English.</p>
         <div class="badges" aria-label="Stack">
           <span>Express 4</span><span>TypeScript strict</span><span>Prisma 6</span><span>PostgreSQL 16</span><span>Zod</span><span>Stripe</span><span>Resend</span><span>React 18</span><span>Vite 5</span><span>Docker</span><span>Traefik TLS</span><span>GitHub Actions</span><span>Jest</span><span>i18n PT-BR/EN</span>
         </div>
@@ -471,16 +523,16 @@
     <!-- ================= O QUE VEM DENTRO ================= -->
     <section class="block" id="inside" style="padding-top:0">
       <div class="wrap">
-        <p class="kicker" data-pt="Dentro do repo" data-en="Inside the repo">Dentro do repo</p>
-        <h2 data-pt="Tudo que boilerplate gringo de $300 entrega — e o que eles omitem" data-en="Everything $300 boilerplates ship — plus what they omit">Tudo que boilerplate gringo de $300 entrega — e o que eles omitem</h2>
-        <p class="lead" data-pt="Cada item abaixo é código real no repositório, não promessa de roadmap." data-en="Every item below is real code in the repo, not a roadmap promise.">Cada item abaixo é código real no repositório, não promessa de roadmap.</p>
+        <p class="kicker" data-pt="Dentro do repo" data-en="Inside the repo">Inside the repo</p>
+        <h2 data-pt="Tudo que boilerplate gringo de $300 entrega — e o que eles omitem" data-en="Everything $300 boilerplates ship — plus what they omit">Everything $300 boilerplates ship — plus what they omit</h2>
+        <p class="lead" data-pt="Cada item abaixo é código real no repositório, não promessa de roadmap." data-en="Every item below is real code in the repo, not a roadmap promise.">Every item below is real code in the repo, not a roadmap promise.</p>
         <div class="grid-3">
-          <div class="card"><div class="ico">🔐</div><h3 data-pt="Auth blindada" data-en="Hardened auth">Auth blindada</h3><p data-pt="E-mail/senha + OAuth Google/GitHub, access 15min + refresh rotativo 7d em cookies HttpOnly, bcrypt-12, lockout e rate limit." data-en="Email/password + Google/GitHub OAuth, 15-min access + rotating 7-day refresh in HttpOnly cookies, bcrypt-12, lockout & rate limits.">E-mail/senha + OAuth Google/GitHub, access 15min + refresh rotativo 7d em cookies HttpOnly, bcrypt-12, lockout e rate limit.</p></div>
-          <div class="card"><div class="ico">🏢</div><h3 data-pt="B2B de verdade" data-en="Real B2B">B2B de verdade</h3><p data-pt="Organizações, membros, convites e RBAC como cidadãos de primeira classe — não um campo tenant improvisado." data-en="Organizations, members, invites & RBAC as first-class citizens — not an improvised tenant column.">Organizações, membros, convites e RBAC como cidadãos de primeira classe — não um campo tenant improvisado.</p></div>
-          <div class="card"><div class="ico">💳</div><h3 data-pt="Stripe sem gambiarra" data-en="Stripe without hacks">Stripe sem gambiarra</h3><p data-pt="Checkout + Customer Portal + webhooks verificados, idempotentes e com dunning, por organização." data-en="Checkout + Customer Portal + verified, idempotent webhooks with dunning, per organization.">Checkout + Customer Portal + webhooks verificados, idempotentes e com dunning, por organização.</p></div>
-          <div class="card"><div class="ico">🛡️</div><h3 data-pt="Admin, audit & API keys" data-en="Admin, audit & API keys">Admin, audit & API keys</h3><p data-pt="Painel admin, trilha de auditoria e chaves de API prontas para o seu plano enterprise." data-en="Admin panel, audit trail & API keys ready for your enterprise plan.">Painel admin, trilha de auditoria e chaves de API prontas para o seu plano enterprise.</p></div>
-          <div class="card"><div class="ico">🐳</div><h3 data-pt="Docker + deploy real" data-en="Docker + real deploy">Docker + deploy real</h3><p data-pt="3 arquivos Compose, Dockerfiles multi-stage, Nginx + Traefik com TLS e push-to-deploy via Actions." data-en="3 Compose files, multi-stage Dockerfiles, Nginx + Traefik TLS and push-to-deploy via Actions.">3 arquivos Compose, Dockerfiles multi-stage, Nginx + Traefik com TLS e push-to-deploy via Actions.</p></div>
-          <div class="card"><div class="ico">🤖</div><h3 data-pt="Feito para agentes de IA" data-en="Built for AI agents">Feito para agentes de IA</h3><p data-pt="AGENTS.md + arquitetura aberta em 5 camadas: sua IA gera feature dentro do padrão, sem quebrar o resto." data-en="AGENTS.md + 5-layer open architecture: your AI ships features inside the pattern without breaking the rest.">AGENTS.md + arquitetura aberta em 5 camadas: sua IA gera feature dentro do padrão, sem quebrar o resto.</p></div>
+          <div class="card"><div class="ico">🔐</div><h3 data-pt="Auth blindada" data-en="Hardened auth">Hardened auth</h3><p data-pt="E-mail/senha + OAuth Google/GitHub, access 15min + refresh rotativo 7d em cookies HttpOnly, bcrypt-12, lockout e rate limit." data-en="Email/password + Google/GitHub OAuth, 15-min access + rotating 7-day refresh in HttpOnly cookies, bcrypt-12, lockout & rate limits.">Email/password + Google/GitHub OAuth, 15-min access + rotating 7-day refresh in HttpOnly cookies, bcrypt-12, lockout & rate limits.</p></div>
+          <div class="card"><div class="ico">🏢</div><h3 data-pt="B2B de verdade" data-en="Real B2B">Real B2B</h3><p data-pt="Organizações, membros, convites e RBAC como cidadãos de primeira classe — não um campo tenant improvisado." data-en="Organizations, members, invites & RBAC as first-class citizens — not an improvised tenant column.">Organizations, members, invites & RBAC as first-class citizens — not an improvised tenant column.</p></div>
+          <div class="card"><div class="ico">💳</div><h3 data-pt="Stripe sem gambiarra" data-en="Stripe without hacks">Stripe without hacks</h3><p data-pt="Checkout + Customer Portal + webhooks verificados, idempotentes e com dunning, por organização." data-en="Checkout + Customer Portal + verified, idempotent webhooks with dunning, per organization.">Checkout + Customer Portal + verified, idempotent webhooks with dunning, per organization.</p></div>
+          <div class="card"><div class="ico">🛡️</div><h3 data-pt="Admin, audit & API keys" data-en="Admin, audit & API keys">Admin, audit & API keys</h3><p data-pt="Painel admin, trilha de auditoria e chaves de API prontas para o seu plano enterprise." data-en="Admin panel, audit trail & API keys ready for your enterprise plan.">Admin panel, audit trail & API keys ready for your enterprise plan.</p></div>
+          <div class="card"><div class="ico">🐳</div><h3 data-pt="Docker + deploy real" data-en="Docker + real deploy">Docker + real deploy</h3><p data-pt="3 arquivos Compose, Dockerfiles multi-stage, Nginx + Traefik com TLS e push-to-deploy via Actions." data-en="3 Compose files, multi-stage Dockerfiles, Nginx + Traefik TLS and push-to-deploy via Actions.">3 Compose files, multi-stage Dockerfiles, Nginx + Traefik TLS and push-to-deploy via Actions.</p></div>
+          <div class="card"><div class="ico">🤖</div><h3 data-pt="Feito para agentes de IA" data-en="Built for AI agents">Built for AI agents</h3><p data-pt="AGENTS.md + arquitetura aberta em 5 camadas: sua IA gera feature dentro do padrão, sem quebrar o resto." data-en="AGENTS.md + 5-layer open architecture: your AI ships features inside the pattern without breaking the rest.">AGENTS.md + 5-layer open architecture: your AI ships features inside the pattern without breaking the rest.</p></div>
         </div>
         <div class="grid-2" style="margin-top:18px">
           <div class="tree">dev-kit/
@@ -497,12 +549,12 @@
 └── docker-compose ×3 + CI</div>
           <div>
             <div class="card" style="height:100%">
-              <h3 data-pt="Arquitetura que escala com o time" data-en="Architecture that scales with the team">Arquitetura que escala com o time</h3>
-              <p data-pt="Cadeia rígida de 5 camadas, DI manual, filenames kebab-case e Conventional Commits. Qualquer dev — humano ou IA — entra no repo e sabe onde cada coisa mora." data-en="Strict 5-layer chain, manual DI, kebab-case filenames and Conventional Commits. Any dev — human or AI — opens the repo and knows where everything lives.">Cadeia rígida de 5 camadas, DI manual, filenames kebab-case e Conventional Commits. Qualquer dev — humano ou IA — entra no repo e sabe onde cada coisa mora.</p>
+              <h3 data-pt="Arquitetura que escala com o time" data-en="Architecture that scales with the team">Architecture that scales with the team</h3>
+              <p data-pt="Cadeia rígida de 5 camadas, DI manual, filenames kebab-case e Conventional Commits. Qualquer dev — humano ou IA — entra no repo e sabe onde cada coisa mora." data-en="Strict 5-layer chain, manual DI, kebab-case filenames and Conventional Commits. Any dev — human or AI — opens the repo and knows where everything lives.">Strict 5-layer chain, manual DI, kebab-case filenames and Conventional Commits. Any dev — human or AI — opens the repo and knows where everything lives.</p>
               <ul class="feat">
                 <li><code>Route → Controller → Service → Repository</code></li>
-                <li data-pt="Testes Jest + gate de auditoria de segurança" data-en="Jest tests + security audit gate">Testes Jest + gate de auditoria de segurança</li>
-                <li data-pt="Landing + pricing + FAQ + blog inclusos" data-en="Landing + pricing + FAQ + blog included">Landing + pricing + FAQ + blog inclusos</li>
+                <li data-pt="Testes Jest + gate de auditoria de segurança" data-en="Jest tests + security audit gate">Jest tests + security audit gate</li>
+                <li data-pt="Landing + pricing + FAQ + blog inclusos" data-en="Landing + pricing + FAQ + blog included">Landing + pricing + FAQ + blog included</li>
               </ul>
             </div>
           </div>
@@ -513,37 +565,37 @@
     <!-- ================= COMPARATIVO ================= -->
     <section class="block" id="compare" style="padding-top:0">
       <div class="wrap">
-        <p class="kicker" data-pt="Comparativo honesto" data-en="Honest comparison">Comparativo honesto</p>
-        <h2 data-pt="DevKit vs. os boilerplates gringos" data-en="DevKit vs. the US boilerplates">DevKit vs. os boilerplates gringos</h2>
-        <p class="lead" data-pt="ShipFast, Divjoy e Makerkit são bons. O DevKit só inclui de fábrica o que eles vendem separado — ou nem têm." data-en="ShipFast, Divjoy and Makerkit are good. DevKit just includes out of the box what they sell separately — or don't have.">ShipFast, Divjoy e Makerkit são bons. O DevKit só inclui de fábrica o que eles vendem separado — ou nem têm.</p>
+        <p class="kicker" data-pt="Comparativo honesto" data-en="Honest comparison">Honest comparison</p>
+        <h2 data-pt="DevKit vs. os boilerplates gringos" data-en="DevKit vs. the US boilerplates">DevKit vs. the US boilerplates</h2>
+        <p class="lead" data-pt="ShipFast, Divjoy e Makerkit são bons. O DevKit só inclui de fábrica o que eles vendem separado — ou nem têm." data-en="ShipFast, Divjoy and Makerkit are good. DevKit just includes out of the box what they sell separately — or don't have.">ShipFast, Divjoy and Makerkit are good. DevKit just includes out of the box what they sell separately — or don't have.</p>
         <div class="table-wrap">
           <table>
-            <thead><tr><th data-pt="Critério" data-en="Criteria">Critério</th><th>DevKit</th><th>ShipFast</th><th>Divjoy</th><th>Makerkit</th></tr></thead>
+            <thead><tr><th data-pt="Critério" data-en="Criteria">Criteria</th><th>DevKit</th><th>ShipFast</th><th>Divjoy</th><th>Makerkit</th></tr></thead>
             <tbody>
-              <tr><td data-pt="Pagamento único" data-en="One-time payment">Pagamento único</td><td class="y" data-pt="✓ desde $199" data-en="✓ from $199">✓ desde $199</td><td class="p">$169</td><td class="p">✓</td><td class="n" data-pt="assinatura" data-en="subscription">assinatura</td></tr>
-              <tr><td data-pt="Multi-tenancy B2B (orgs, convites, RBAC)" data-en="B2B multi-tenancy (orgs, invites, RBAC)">Multi-tenancy B2B (orgs, convites, RBAC)</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="só no plano alto" data-en="top tier only">só no plano alto</td></tr>
-              <tr><td data-pt="Billing Stripe por organização + dunning" data-en="Per-org Stripe billing + dunning">Billing Stripe por organização + dunning</td><td class="y">✓</td><td class="p" data-pt="parcial" data-en="partial">parcial</td><td class="n">—</td><td class="y">✓</td></tr>
-              <tr><td data-pt="Audit logs + API keys" data-en="Audit logs + API keys">Audit logs + API keys</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="parcial" data-en="partial">parcial</td></tr>
-              <tr><td data-pt="Docker + TLS + CI prontos" data-en="Ready Docker + TLS + CI">Docker + TLS + CI prontos</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="parcial" data-en="partial">parcial</td></tr>
-              <tr><td data-pt="Manual para agentes de IA (AGENTS.md)" data-en="AI-agent manual (AGENTS.md)">Manual para agentes de IA (AGENTS.md)</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
-              <tr><td data-pt="Docs em PT-BR" data-en="PT-BR docs">Docs em PT-BR</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><td data-pt="Pagamento único" data-en="One-time payment">One-time payment</td><td class="y" data-pt="✓ desde $199" data-en="✓ from $199">✓ from $199</td><td class="p">$169</td><td class="p">✓</td><td class="n" data-pt="assinatura" data-en="subscription">subscription</td></tr>
+              <tr><td data-pt="Multi-tenancy B2B (orgs, convites, RBAC)" data-en="B2B multi-tenancy (orgs, invites, RBAC)">B2B multi-tenancy (orgs, invites, RBAC)</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="só no plano alto" data-en="top tier only">top tier only</td></tr>
+              <tr><td data-pt="Billing Stripe por organização + dunning" data-en="Per-org Stripe billing + dunning">Per-org Stripe billing + dunning</td><td class="y">✓</td><td class="p" data-pt="parcial" data-en="partial">partial</td><td class="n">—</td><td class="y">✓</td></tr>
+              <tr><td data-pt="Audit logs + API keys" data-en="Audit logs + API keys">Audit logs + API keys</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="parcial" data-en="partial">partial</td></tr>
+              <tr><td data-pt="Docker + TLS + CI prontos" data-en="Ready Docker + TLS + CI">Ready Docker + TLS + CI</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="parcial" data-en="partial">partial</td></tr>
+              <tr><td data-pt="Manual para agentes de IA (AGENTS.md)" data-en="AI-agent manual (AGENTS.md)">AI-agent manual (AGENTS.md)</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><td data-pt="Docs em PT-BR" data-en="PT-BR docs">PT-BR docs</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="caption" data-pt="Comparativo simplificado com base nas documentações públicas (jan/2026). Marcas citadas pertencem aos seus donos." data-en="Simplified comparison based on public docs (Jan 2026). Named brands belong to their owners.">Comparativo simplificado com base nas documentações públicas (jan/2026). Marcas citadas pertencem aos seus donos.</p>
+        <p class="caption" data-pt="Comparativo simplificado com base nas documentações públicas (jan/2026). Marcas citadas pertencem aos seus donos." data-en="Simplified comparison based on public docs (Jan 2026). Named brands belong to their owners.">Simplified comparison based on public docs (Jan 2026). Named brands belong to their owners.</p>
       </div>
     </section>
 
     <!-- ================= COMO FUNCIONA ================= -->
     <section class="block" id="how" style="padding-top:0">
       <div class="wrap">
-        <p class="kicker" data-pt="Do pagamento ao git clone" data-en="From payment to git clone">Do pagamento ao git clone</p>
-        <h2 data-pt="Acesso ao código em 3 passos" data-en="Code access in 3 steps">Acesso ao código em 3 passos</h2>
-        <p class="lead" data-pt="Sem licença por chave, sem portal obscuro: entrega via GitHub, do jeito que dev gosta." data-en="No license keys, no obscure portals: delivered via GitHub, the way devs like it.">Sem licença por chave, sem portal obscuro: entrega via GitHub, do jeito que dev gosta.</p>
+        <p class="kicker" data-pt="Do pagamento ao git clone" data-en="From payment to git clone">From payment to git clone</p>
+        <h2 data-pt="Acesso ao código em 3 passos" data-en="Code access in 3 steps">Code access in 3 steps</h2>
+        <p class="lead" data-pt="Sem licença por chave, sem portal obscuro: entrega via GitHub, do jeito que dev gosta." data-en="No license keys, no obscure portals: delivered via GitHub, the way devs like it.">No license keys, no obscure portals: delivered via GitHub, the way devs like it.</p>
         <div class="steps">
-          <div class="step"><b>1</b><h3 data-pt="Compre com 1 clique" data-en="Buy in 1 click">Compre com 1 clique</h3><p data-pt="Checkout seguro via Stripe. Informe seu usuário do GitHub no cadastro — é para ele que vai o convite." data-en="Secure Stripe checkout. Provide your GitHub username at signup — that's where the invite goes.">Checkout seguro via Stripe. Informe seu usuário do GitHub no cadastro — é para ele que vai o convite.</p></div>
-          <div class="step"><b>2</b><h3 data-pt="Receba o convite" data-en="Get the invite">Receba o convite</h3><p data-pt="Pagamento confirmado → convite de colaborador com acesso de leitura (pull) no repo privado. Aceite e pronto." data-en="Payment confirmed → collaborator invite with read (pull) access to the private repo. Accept and done.">Pagamento confirmado → convite de colaborador com acesso de leitura (<code>pull</code>) no repo privado. Aceite e pronto.</p></div>
-          <div class="step"><b>3</b><h3 data-pt="Clone e venda" data-en="Clone and sell">Clone e venda</h3><p data-pt="Faça fork, suba com docker compose up e construa seu SaaS em cima. Atualizações do repo incluídas." data-en="Fork it, run docker compose up and build your SaaS on top. Repo updates included.">Faça fork, suba com <code>docker compose up</code> e construa seu SaaS em cima. Atualizações do repo incluídas.</p></div>
+          <div class="step"><b>1</b><h3 data-pt="Compre com 1 clique" data-en="Buy in 1 click">Buy in 1 click</h3><p data-pt="Checkout seguro via Stripe. Informe seu usuário do GitHub no cadastro — é para ele que vai o convite." data-en="Secure Stripe checkout. Provide your GitHub username at signup — that's where the invite goes.">Secure Stripe checkout. Provide your GitHub username at signup — that's where the invite goes.</p></div>
+          <div class="step"><b>2</b><h3 data-pt="Receba o convite" data-en="Get the invite">Get the invite</h3><p data-html data-pt="Pagamento confirmado → convite de colaborador com acesso de leitura (<code>pull</code>) no repo privado. Aceite e pronto." data-en="Payment confirmed → collaborator invite with read (<code>pull</code>) access to the private repo. Accept and done.">Payment confirmed → collaborator invite with read (<code>pull</code>) access to the private repo. Accept and done.</p></div>
+          <div class="step"><b>3</b><h3 data-pt="Clone e venda" data-en="Clone and sell">Clone and sell</h3><p data-html data-pt="Faça fork, suba com <code>docker compose up</code> e construa seu SaaS em cima. Atualizações do repo incluídas." data-en="Fork it, run <code>docker compose up</code> and build your SaaS on top. Repo updates included.">Fork it, run <code>docker compose up</code> and build your SaaS on top. Repo updates included.</p></div>
         </div>
       </div>
     </section>
@@ -553,48 +605,38 @@
     <section class="block" id="pricing" style="padding-top:0">
       <div class="wrap">
         <div class="pricing">
-          <p class="kicker" data-pt="Pagamento único · acesso vitalício" data-en="One-time payment · lifetime access">Pagamento único · acesso vitalício</p>
-          <h2 data-pt="Um preço honesto. Zero mensalidade." data-en="One honest price. Zero subscription.">Um preço honesto. Zero mensalidade.</h2>
-          <p class="lead" data-pt="Construir essa base do zero custa 120+ horas de dev — ou mais de $6.000 em freela. Aqui é pagamento único: escolha a licença e comece hoje. Reembolso de 14 dias, sem perguntas." data-en="Building this foundation from scratch costs 120+ dev hours — or $6,000+ of freelance work. Here it's a one-time payment: pick a license and start today. 14-day refund, no questions asked.">Construir essa base do zero custa 120+ horas de dev — ou mais de $6.000 em freela. Aqui é pagamento único: escolha a licença e comece hoje. Reembolso de 14 dias, sem perguntas.</p>
+          <p class="kicker" data-pt="Pagamento único · acesso vitalício" data-en="One-time payment · lifetime access">One-time payment · lifetime access</p>
+          <h2 data-pt="Um preço honesto. Zero mensalidade." data-en="One honest price. Zero subscription.">One honest price. Zero subscription.</h2>
+          <p class="lead" data-pt="Construir essa base do zero custa 120+ horas de dev — ou mais de $6.000 em freela. Aqui é pagamento único: escolha a licença e comece hoje. Reembolso de 14 dias, sem perguntas." data-en="Building this foundation from scratch costs 120+ dev hours — or $6,000+ of freelance work. Here it's a one-time payment: pick a license and start today. 14-day refund, no questions asked.">Building this foundation from scratch costs 120+ dev hours — or $6,000+ of freelance work. Here it's a one-time payment: pick a license and start today. 14-day refund, no questions asked.</p>
           <div class="plans">
             <div class="plan">
               <h3>Starter</h3>
-              <p class="price">$199 <small data-pt="único" data-en="one-time">único</small></p>
+              <p class="price">$199 <small data-pt="único" data-en="one-time">one-time</small></p>
               <ul>
-                <li data-pt="1 projeto SaaS" data-en="1 SaaS project">1 projeto SaaS</li>
-                <li data-pt="Repo privado no GitHub" data-en="Private GitHub repo">Repo privado no GitHub</li>
+                <li data-pt="1 projeto SaaS" data-en="1 SaaS project">1 SaaS project</li>
+                <li data-pt="Repo privado no GitHub" data-en="Private GitHub repo">Private GitHub repo</li>
                 <li data-pt="Auth + Stripe + Docker + CI" data-en="Auth + Stripe + Docker + CI">Auth + Stripe + Docker + CI</li>
-                <li data-pt="Docs PT-BR + EN" data-en="PT-BR + EN docs">Docs PT-BR + EN</li>
-                <li data-pt="Suporte da comunidade" data-en="Community support">Suporte da comunidade</li>
+                <li data-pt="Docs PT-BR + EN" data-en="PT-BR + EN docs">PT-BR + EN docs</li>
+                <li data-pt="Suporte da comunidade" data-en="Community support">Community support</li>
               </ul>
-              <a class="btn btn--ghost" href="https://platusforge.com/checkout?plan=starter" data-pt="Começar com Starter" data-en="Start with Starter">Começar com Starter</a>
+              <a class="btn btn--ghost" href="https://platusforge.com/checkout?plan=starter" data-pt="Começar com Starter" data-en="Start with Starter">Start with Starter</a>
             </div>
             <div class="plan featured">
-              <span class="tag" data-pt="★ MAIS POPULAR" data-en="★ MOST POPULAR">★ MAIS POPULAR</span>
+              <span class="tag" data-pt="★ MAIS POPULAR" data-en="★ MOST POPULAR">★ MOST POPULAR</span>
               <h3>Professional</h3>
-              <p class="price">$349 <small data-pt="único" data-en="one-time">único</small></p>
+              <p class="price">$249 <small data-pt="único" data-en="one-time">one-time</small></p>
               <ul>
-                <li data-pt="Projetos ilimitados (1 dev)" data-en="Unlimited projects (1 dev)">Projetos ilimitados (1 dev)</li>
-                <li data-pt="Tudo do Starter, mais:" data-en="Everything in Starter, plus:">Tudo do Starter, mais:</li>
+                <li data-pt="Projetos ilimitados (1 dev)" data-en="Unlimited projects (1 dev)">Unlimited projects (1 dev)</li>
+                <li data-pt="Tudo do Starter, mais:" data-en="Everything in Starter, plus:">Everything in Starter, plus:</li>
                 <li data-pt="Orgs, RBAC, audit logs + API keys" data-en="Orgs, RBAC, audit logs + API keys">Orgs, RBAC, audit logs + API keys</li>
-                <li data-pt="E-mail transacional + blog + FAQ" data-en="Transactional email + blog + FAQ">E-mail transacional + blog + FAQ</li>
-                <li data-pt="Suporte prioritário" data-en="Priority support">Suporte prioritário</li>
+                <li data-pt="E-mail transacional + blog + FAQ" data-en="Transactional email + blog + FAQ">Transactional email + blog + FAQ</li>
+                <li data-pt="Uso em projetos de clientes" data-en="Use in client projects">Use in client projects</li>
+                <li data-pt="Suporte prioritário" data-en="Priority support">Priority support</li>
               </ul>
-              <a class="btn btn--forge" href="https://platusforge.com/checkout?plan=professional" data-pt="Quero o Professional" data-en="Get Professional">Quero o Professional</a>
-            </div>
-            <div class="plan">
-              <h3>Team</h3>
-              <p class="price">$599 <small data-pt="único" data-en="one-time">único</small></p>
-              <ul>
-                <li data-pt="Tudo do Professional, mais:" data-en="Everything in Professional, plus:">Tudo do Professional, mais:</li>
-                <li data-pt="5 seats (devs/agência)" data-en="5 seats (devs/agency)">5 seats (devs/agência)</li>
-                <li data-pt="Uso em projetos de clientes" data-en="Use in client projects">Uso em projetos de clientes</li>
-                <li data-pt="Canal privado + onboarding" data-en="Private channel + onboarding">Canal privado + onboarding</li>
-              </ul>
-              <a class="btn btn--ghost" href="https://platusforge.com/checkout?plan=team" data-pt="Escalar com Team" data-en="Scale with Team">Escalar com Team</a>
+              <a class="btn btn--forge" href="https://platusforge.com/checkout?plan=professional" data-pt="Quero o Professional" data-en="Get Professional">Get Professional</a>
             </div>
           </div>
-          <p class="guarantee" data-pt="🔒 Checkout via Stripe · 🔄 Reembolso em 14 dias revoga o acesso ao repo · 🧾 Nota e licença na compra" data-en="🔒 Stripe checkout · 🔄 14-day refunds revoke repo access · 🧾 Receipt and license included">🔒 Checkout via Stripe · 🔄 Reembolso em 14 dias revoga o acesso ao repo · 🧾 Nota e licença na compra</p>
+          <p class="guarantee" data-pt="🔒 Checkout via Stripe · 🔄 Reembolso em 14 dias revoga o acesso ao repo · 🧾 Nota e licença na compra" data-en="🔒 Stripe checkout · 🔄 14-day refunds revoke repo access · 🧾 Receipt and license included">🔒 Stripe checkout · 🔄 14-day refunds revoke repo access · 🧾 Receipt and license included</p>
         </div>
       </div>
     </section>
@@ -603,35 +645,35 @@
     <section class="block" id="faq" style="padding-top:0">
       <div class="wrap">
         <p class="kicker">FAQ</p>
-        <h2 data-pt="Perguntas que todo dev faz antes de comprar" data-en="Questions every dev asks before buying">Perguntas que todo dev faz antes de comprar</h2>
-        <p class="lead" data-pt="Respostas diretas, sem juridiquês." data-en="Straight answers, no legalese.">Respostas diretas, sem juridiquês.</p>
+        <h2 data-pt="Perguntas que todo dev faz antes de comprar" data-en="Questions every dev asks before buying">Questions every dev asks before buying</h2>
+        <p class="lead" data-pt="Respostas diretas, sem juridiquês." data-en="Straight answers, no legalese.">Straight answers, no legalese.</p>
         <details open>
-          <summary data-pt="Como recebo acesso depois de comprar?" data-en="How do I get access after buying?">Como recebo acesso depois de comprar?</summary>
-          <div class="a" data-pt="Você informa seu usuário do GitHub no cadastro. Confirmado o pagamento via Stripe, enviamos um convite de colaborador com acesso de leitura (pull) para o repositório privado. O link do repo fica na sua área de cliente e o convite pode ser reenviado quando precisar." data-en="You provide your GitHub username at signup. Once Stripe confirms payment, we send a collaborator invite with read (pull) access to the private repo. The repo link lives in your customer area and the invite can be re-sent anytime.">Você informa seu usuário do GitHub no cadastro. Confirmado o pagamento via Stripe, enviamos um convite de colaborador com acesso de leitura (pull) para o repositório privado. O link do repo fica na sua área de cliente e o convite pode ser reenviado quando precisar.</div>
+          <summary data-pt="Como recebo acesso depois de comprar?" data-en="How do I get access after buying?">How do I get access after buying?</summary>
+          <div class="a" data-pt="Você informa seu usuário do GitHub no cadastro. Confirmado o pagamento via Stripe, enviamos um convite de colaborador com acesso de leitura (pull) para o repositório privado. O link do repo fica na sua área de cliente e o convite pode ser reenviado quando precisar." data-en="You provide your GitHub username at signup. Once Stripe confirms payment, we send a collaborator invite with read (pull) access to the private repo. The repo link lives in your customer area and the invite can be re-sent anytime.">You provide your GitHub username at signup. Once Stripe confirms payment, we send a collaborator invite with read (pull) access to the private repo. The repo link lives in your customer area and the invite can be re-sent anytime.</div>
         </details>
         <details>
-          <summary data-pt="É assinatura ou pagamento único?" data-en="Subscription or one-time payment?">É assinatura ou pagamento único?</summary>
-          <div class="a" data-pt="Pagamento único: $199 (Starter), $349 (Professional) ou $599 (Team). Acesso vitalício ao repo, sem mensalidade pelo boilerplate. Você só paga terceiros que usar (Stripe, hospedagem)." data-en="One-time payment: $199 (Starter), $349 (Professional) or $599 (Team). Lifetime repo access, no monthly fee for the boilerplate. You only pay third parties you use (Stripe, hosting).">Pagamento único: $199 (Starter), $349 (Professional) ou $599 (Team). Acesso vitalício ao repo, sem mensalidade pelo boilerplate. Você só paga terceiros que usar (Stripe, hospedagem).</div>
+          <summary data-pt="É assinatura ou pagamento único?" data-en="Subscription or one-time payment?">Subscription or one-time payment?</summary>
+          <div class="a" data-pt="Pagamento único: $199 (Starter) ou $249 (Professional). Acesso vitalício ao repo, sem mensalidade pelo boilerplate. Você só paga terceiros que usar (Stripe, hospedagem)." data-en="One-time payment: $199 (Starter) or $249 (Professional). Lifetime repo access, no monthly fee for the boilerplate. You only pay third parties you use (Stripe, hosting).">One-time payment: $199 (Starter) or $249 (Professional). Lifetime repo access, no monthly fee for the boilerplate. You only pay third parties you use (Stripe, hosting).</div>
         </details>
         <details>
-          <summary data-pt="Posso usar em projetos de clientes?" data-en="Can I use it in client projects?">Posso usar em projetos de clientes?</summary>
-          <div class="a" data-pt="Sim. A licença permite usar o DevKit como base de SaaS para usuários finais, inclusive comercialmente (plano Team cobre agências). O proibido é revender ou redistribuir o código do boilerplate em si — templates, starters, cursos ou datasets." data-en="Yes. The license allows using DevKit as the foundation of SaaS apps for end users, including commercially (Team covers agencies). What's forbidden is reselling or redistributing the boilerplate source itself — templates, starters, courses or datasets.">Sim. A licença permite usar o DevKit como base de SaaS para usuários finais, inclusive comercialmente (plano Team cobre agências). O proibido é revender ou redistribuir o código do boilerplate em si — templates, starters, cursos ou datasets.</div>
+          <summary data-pt="Posso usar em projetos de clientes?" data-en="Can I use it in client projects?">Can I use it in client projects?</summary>
+          <div class="a" data-pt="Sim. A licença permite usar o DevKit como base de SaaS para usuários finais, inclusive comercialmente e em projetos de clientes. O proibido é revender ou redistribuir o código do boilerplate em si — templates, starters, cursos ou datasets." data-en="Yes. The license allows using DevKit as the foundation of SaaS apps for end users, including commercially and in client projects. What's forbidden is reselling or redistributing the boilerplate source itself — templates, starters, courses or datasets.">Yes. The license allows using DevKit as the foundation of SaaS apps for end users, including commercially and in client projects. What's forbidden is reselling or redistributing the boilerplate source itself — templates, starters, courses or datasets.</div>
         </details>
         <details>
-          <summary data-pt="Qual é a stack exata?" data-en="What's the exact stack?">Qual é a stack exata?</summary>
-          <div class="a" data-pt="Backend: Express 4, TypeScript strict, Prisma 6, PostgreSQL 16, Zod, Winston, Stripe e Resend. Frontend: React 18, Vite 5, React Router 6, CSS Modules e i18n PT-BR/EN. Infra: Docker Compose, Nginx, Traefik com TLS e GitHub Actions." data-en="Backend: Express 4, strict TypeScript, Prisma 6, PostgreSQL 16, Zod, Winston, Stripe and Resend. Frontend: React 18, Vite 5, React Router 6, CSS Modules and PT-BR/EN i18n. Infra: Docker Compose, Nginx, Traefik TLS and GitHub Actions.">Backend: Express 4, TypeScript strict, Prisma 6, PostgreSQL 16, Zod, Winston, Stripe e Resend. Frontend: React 18, Vite 5, React Router 6, CSS Modules e i18n PT-BR/EN. Infra: Docker Compose, Nginx, Traefik com TLS e GitHub Actions.</div>
+          <summary data-pt="Qual é a stack exata?" data-en="What's the exact stack?">What's the exact stack?</summary>
+          <div class="a" data-pt="Backend: Express 4, TypeScript strict, Prisma 6, PostgreSQL 16, Zod, Winston, Stripe e Resend. Frontend: React 18, Vite 5, React Router 6, CSS Modules e i18n PT-BR/EN. Infra: Docker Compose, Nginx, Traefik com TLS e GitHub Actions." data-en="Backend: Express 4, strict TypeScript, Prisma 6, PostgreSQL 16, Zod, Winston, Stripe and Resend. Frontend: React 18, Vite 5, React Router 6, CSS Modules and PT-BR/EN i18n. Infra: Docker Compose, Nginx, Traefik TLS and GitHub Actions.">Backend: Express 4, strict TypeScript, Prisma 6, PostgreSQL 16, Zod, Winston, Stripe and Resend. Frontend: React 18, Vite 5, React Router 6, CSS Modules and PT-BR/EN i18n. Infra: Docker Compose, Nginx, Traefik TLS and GitHub Actions.</div>
         </details>
         <details>
-          <summary data-pt="Como a autenticação é protegida?" data-en="How is auth secured?">Como a autenticação é protegida?</summary>
-          <div class="a" data-pt="Access token de 15 minutos + refresh rotativo de 7 dias em cookies HttpOnly, Secure e SameSite (nada em localStorage), bcrypt custo 12, mensagens genéricas anti-enumeração, lockout, rate limit em login e reset, e tokens de reset com hash SHA-256, uso único e 1h de expiração." data-en="15-minute access + rotating 7-day refresh in HttpOnly, Secure, SameSite cookies (nothing in localStorage), bcrypt cost 12, generic anti-enumeration messages, lockout, rate limits on login/reset, and reset tokens with SHA-256 hash, single use, 1h expiry.">Access token de 15 minutos + refresh rotativo de 7 dias em cookies HttpOnly, Secure e SameSite (nada em localStorage), bcrypt custo 12, mensagens genéricas anti-enumeração, lockout, rate limit em login e reset, e tokens de reset com hash SHA-256, uso único e 1h de expiração.</div>
+          <summary data-pt="Como a autenticação é protegida?" data-en="How is auth secured?">How is auth secured?</summary>
+          <div class="a" data-pt="Access token de 15 minutos + refresh rotativo de 7 dias em cookies HttpOnly, Secure e SameSite (nada em localStorage), bcrypt custo 12, mensagens genéricas anti-enumeração, lockout, rate limit em login e reset, e tokens de reset com hash SHA-256, uso único e 1h de expiração." data-en="15-minute access + rotating 7-day refresh in HttpOnly, Secure, SameSite cookies (nothing in localStorage), bcrypt cost 12, generic anti-enumeration messages, lockout, rate limits on login/reset, and reset tokens with SHA-256 hash, single use, 1h expiry.">15-minute access + rotating 7-day refresh in HttpOnly, Secure, SameSite cookies (nothing in localStorage), bcrypt cost 12, generic anti-enumeration messages, lockout, rate limits on login/reset, and reset tokens with SHA-256 hash, single use, 1h expiry.</div>
         </details>
         <details>
-          <summary data-pt="Funciona bem com agentes de IA (Cursor, Copilot, Codex)?" data-en="Does it work well with AI agents (Cursor, Copilot, Codex)?">Funciona bem com agentes de IA (Cursor, Copilot, Codex)?</summary>
-          <div class="a" data-pt="Foi feito para isso. O AGENTS.md é o manual de build obrigatório, a arquitetura em 5 camadas (Route → Controller → Service → Repository → Implementation) impede a IA de espalhar lógica, e as convenções (kebab-case, Conventional Commits, DI manual) mantêm o código gerado consistente." data-en="It was made for that. AGENTS.md is the mandatory build manual, the 5-layer architecture (Route → Controller → Service → Repository → Implementation) stops the AI from scattering logic, and conventions (kebab-case, Conventional Commits, manual DI) keep generated code consistent.">Foi feito para isso. O AGENTS.md é o manual de build obrigatório, a arquitetura em 5 camadas (Route → Controller → Service → Repository → Implementation) impede a IA de espalhar lógica, e as convenções (kebab-case, Conventional Commits, DI manual) mantêm o código gerado consistente.</div>
+          <summary data-pt="Funciona bem com agentes de IA (Cursor, Copilot, Codex)?" data-en="Does it work well with AI agents (Cursor, Copilot, Codex)?">Does it work well with AI agents (Cursor, Copilot, Codex)?</summary>
+          <div class="a" data-pt="Foi feito para isso. O AGENTS.md é o manual de build obrigatório, a arquitetura em 5 camadas (Route → Controller → Service → Repository → Implementation) impede a IA de espalhar lógica, e as convenções (kebab-case, Conventional Commits, DI manual) mantêm o código gerado consistente." data-en="It was made for that. AGENTS.md is the mandatory build manual, the 5-layer architecture (Route → Controller → Service → Repository → Implementation) stops the AI from scattering logic, and conventions (kebab-case, Conventional Commits, manual DI) keep generated code consistent.">It was made for that. AGENTS.md is the mandatory build manual, the 5-layer architecture (Route → Controller → Service → Repository → Implementation) stops the AI from scattering logic, and conventions (kebab-case, Conventional Commits, manual DI) keep generated code consistent.</div>
         </details>
         <details>
-          <summary data-pt="E se eu não gostar? Tem reembolso?" data-en="What if I don't like it? Any refund?">E se eu não gostar? Tem reembolso?</summary>
-          <div class="a" data-pt="14 dias de garantia incondicional. Pediu reembolso, devolvemos o valor e revogamos o acesso ao repositório. Simples assim." data-en="14-day unconditional guarantee. Request a refund, we return the money and revoke repo access. That simple.">14 dias de garantia incondicional. Pediu reembolso, devolvemos o valor e revogamos o acesso ao repositório. Simples assim.</div>
+          <summary data-pt="E se eu não gostar? Tem reembolso?" data-en="What if I don't like it? Any refund?">What if I don't like it? Any refund?</summary>
+          <div class="a" data-pt="14 dias de garantia incondicional. Pediu reembolso, devolvemos o valor e revogamos o acesso ao repositório. Simples assim." data-en="14-day unconditional guarantee. Request a refund, we return the money and revoke repo access. That simple.">14-day unconditional guarantee. Request a refund, we return the money and revoke repo access. That simple.</div>
         </details>
       </div>
     </section>
@@ -640,9 +682,9 @@
     <section class="block" style="padding-top:0">
       <div class="wrap">
         <div class="final">
-          <h2 data-pt="Seu SaaS a dias de distância, não meses." data-en="Your SaaS days away, not months.">Seu SaaS a dias de distância, não meses.</h2>
-          <p data-pt="Junte-se aos devs que pararam de reescrever auth e billing e foram direto ao que gera receita." data-en="Join the devs who stopped rewriting auth and billing and went straight to what generates revenue.">Junte-se aos devs que pararam de reescrever auth e billing e foram direto ao que gera receita.</p>
-          <a class="btn btn--light" href="#pricing" data-pt="Quero o DevKit — a partir de $199" data-en="Get DevKit — from $199">Quero o DevKit — a partir de $199</a>
+          <h2 data-pt="Seu SaaS a dias de distância, não meses." data-en="Your SaaS days away, not months.">Your SaaS days away, not months.</h2>
+          <p data-pt="Junte-se aos devs que pararam de reescrever auth e billing e foram direto ao que gera receita." data-en="Join the devs who stopped rewriting auth and billing and went straight to what generates revenue.">Join the devs who stopped rewriting auth and billing and went straight to what generates revenue.</p>
+          <a class="btn btn--light" href="#pricing" data-pt="Quero o DevKit — a partir de $199" data-en="Get DevKit — from $199">Get DevKit — from $199</a>
         </div>
       </div>
     </section>
@@ -655,25 +697,28 @@
           <img src="platusforge-logo-mark.png" alt="PlatusForge" width="105" height="28" loading="lazy" />
           <span>PlatusForge</span>
         </a>
-        <p style="max-width:26rem" data-pt="DevKit: o boilerplate SaaS que forja produtos — Express + React + PostgreSQL, pronto para vender." data-en="DevKit: the SaaS boilerplate that forges products — Express + React + PostgreSQL, ready to sell.">DevKit: o boilerplate SaaS que forja produtos — Express + React + PostgreSQL, pronto para vender.</p>
+        <p style="max-width:26rem" data-pt="DevKit: o boilerplate SaaS que forja produtos — Express + React + PostgreSQL, pronto para vender." data-en="DevKit: the SaaS boilerplate that forges products — Express + React + PostgreSQL, ready to sell.">DevKit: the SaaS boilerplate that forges products — Express + React + PostgreSQL, ready to sell.</p>
       </div>
       <nav aria-label="Rodapé / Footer">
-        <a href="#inside" data-pt="O que vem dentro" data-en="What's inside">O que vem dentro</a>
-        <a href="#compare" data-pt="Comparar" data-en="Compare">Comparar</a>
-        <a href="#pricing" data-pt="Preços" data-en="Pricing">Preços</a>
+        <a href="#inside" data-pt="O que vem dentro" data-en="What's inside">What's inside</a>
+        <a href="#compare" data-pt="Comparar" data-en="Compare">Compare</a>
+        <a href="#pricing" data-pt="Preços" data-en="Pricing">Pricing</a>
         <a href="#faq">FAQ</a>
         <a href="llms.txt">llms.txt</a>
       </nav>
-      <p>© <span id="year">2026</span> PlatusForge. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+      <p>© <span id="year">2026</span> PlatusForge. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">All rights reserved.</span></p>
     </div>
   </footer>
 
+  <button id="to-top" aria-label="Back to top / Voltar ao topo" title="Back to top">↑</button>
+
   <script>
     (function () {
+      document.documentElement.classList.add("js");
       var KEY = "pf-lang";
-      var lang = "pt";
-      try { lang = localStorage.getItem(KEY) || "pt"; } catch (e) {}
-      if (lang !== "en" && lang !== "pt") lang = "pt";
+      var lang = "en";
+      try { lang = localStorage.getItem(KEY) || "en"; } catch (e) {}
+      if (lang !== "en" && lang !== "pt") lang = "en";
 
       var TITLES = {
         pt: "DevKit — Boilerplate SaaS pronto para produção | PlatusForge",
@@ -692,8 +737,11 @@
         if (md) md.setAttribute("content", DESCS[l]);
         document.querySelectorAll("[data-pt]").forEach(function (el) {
           var v = el.getAttribute(l === "en" ? "data-en" : "data-pt");
-          if (v !== null) el.textContent = v;
+          if (v === null) return;
+          if (el.hasAttribute("data-html")) el.innerHTML = v;
+          else el.textContent = v;
         });
+        if (termPre && !termTyping) renderTermInstant();
         var t = document.getElementById("lang-toggle");
         if (t) t.textContent = l === "en" ? "PT" : "EN";
         try { localStorage.setItem(KEY, l); } catch (e) {}
@@ -705,7 +753,7 @@
 
       var copyBtn = document.getElementById("copy-btn");
       var termPre = document.getElementById("term-code");
-      var TERM_LINES = [
+      var TERM_PT = [
         { t: "# depois da compra: clone do repo privado", c: "c-dim", speed: 14 },
         { t: "$ cp .env.example .env", c: "c-white", speed: 32 },
         { t: "$ docker compose up --build", c: "c-white", speed: 32 },
@@ -715,13 +763,24 @@
         { t: "→ auth + orgs + stripe + admin no ar.", c: "c-orange", speed: 16 },
         { t: "# tempo até o primeiro deploy: dias, não meses.", c: "c-dim", speed: 14 }
       ];
-      var TERM_FULL = TERM_LINES.map(function (l) { return l.t; }).join("\n");
+      var TERM_EN = [
+        { t: "# after purchase: clone the private repo", c: "c-dim", speed: 14 },
+        { t: "$ cp .env.example .env", c: "c-white", speed: 32 },
+        { t: "$ docker compose up --build", c: "c-white", speed: 32 },
+        { t: "✓ web  → http://localhost:5173", c: "c-green", speed: 14 },
+        { t: "✓ api  → http://localhost:3000/health", c: "c-green", speed: 14 },
+        { t: "$ docker compose exec server npm run db:seed", c: "c-white", speed: 28 },
+        { t: "→ auth + orgs + stripe + admin live.", c: "c-orange", speed: 16 },
+        { t: "# time to first deploy: days, not months.", c: "c-dim", speed: 14 }
+      ];
+      function termLines() { return lang === "en" ? TERM_EN : TERM_PT; }
+      function termFull() { return termLines().map(function (l) { return l.t; }).join("\n"); }
       var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
       function renderTermInstant() {
         if (!termPre) return;
         termPre.innerHTML = "";
-        TERM_LINES.forEach(function (l) {
+        termLines().forEach(function (l) {
           var line = document.createElement("span");
           line.className = "term-line";
           var inner = document.createElement("span");
@@ -734,18 +793,22 @@
       }
 
       var termStarted = false;
+      var termTyping = false;
+      var termDone = false;
       function typeTerm() {
         if (!termPre || termStarted) return;
         termStarted = true;
-        if (reduceMotion) { renderTermInstant(); return; }
+        termTyping = true;
+        if (reduceMotion) { renderTermInstant(); termTyping = false; termDone = true; return; }
+        var LINES = termLines();
         termPre.innerHTML = "";
         var cursor = document.createElement("span");
         cursor.className = "term-cursor";
         cursor.setAttribute("aria-hidden", "true");
         var li = 0;
         function nextLine() {
-          if (li >= TERM_LINES.length) { termPre.appendChild(cursor); return; }
-          var def = TERM_LINES[li];
+          if (li >= LINES.length) { termPre.appendChild(cursor); termTyping = false; termDone = true; return; }
+          var def = LINES[li];
           var line = document.createElement("span");
           line.className = "term-line";
           var inner = document.createElement("span");
@@ -783,7 +846,7 @@
       }
 
       if (copyBtn) copyBtn.addEventListener("click", function () {
-        var txt = TERM_FULL || (termPre ? termPre.innerText : "");
+        var txt = termFull() || (termPre ? termPre.innerText : "");
         var done = function () {
           copyBtn.textContent = lang === "en" ? "copied!" : "copiado!";
           setTimeout(function () { copyBtn.textContent = lang === "en" ? "copy" : "copiar"; }, 1500);
@@ -803,13 +866,13 @@
       /* ===== Reveal on scroll (progressive enhancement) ===== */
       try {
         if (!reduceMotion && "IntersectionObserver" in window) {
-          var targets = document.querySelectorAll(".stat, .pain .card, #inside .card, #inside .tree, .table-wrap, .step, .plan, .final, #faq details, .badges, .hero-grid > div:first-child");
+          var targets = document.querySelectorAll(".stat, .pain .card, #inside .card, #inside .tree, .table-wrap, .step, .plan, .final, #faq details, .badges");
           targets.forEach(function (el, i) {
             el.classList.add("js-reveal");
             var parent = el.parentElement;
             if (parent) {
               var siblings = Array.prototype.indexOf.call(parent.children, el);
-              if (siblings > 0) el.style.transitionDelay = Math.min(siblings * 80, 240) + "ms";
+              if (siblings > 0) el.style.transitionDelay = Math.min(siblings * 90, 270) + "ms";
             }
           });
           var revObs = new IntersectionObserver(function (entries) {
@@ -824,7 +887,7 @@
         }
       } catch (e) {}
 
-      /* ===== Contadores das stats ===== */
+      /* ===== Contadores das stats (ease-out-expo) ===== */
       try {
         var statNums = document.querySelectorAll(".stat b");
         function animateCount(el) {
@@ -833,11 +896,11 @@
           if (!m) return;
           var prefix = m[1], target = parseInt(m[2], 10), suffix = m[3];
           if (reduceMotion || target === 0) { el.textContent = prefix + target + suffix; return; }
-          var dur = 1200, t0 = null;
+          var dur = 1400, t0 = null;
           function frame(ts) {
             if (!t0) t0 = ts;
             var p = Math.min((ts - t0) / dur, 1);
-            var eased = 1 - Math.pow(1 - p, 3);
+            var eased = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
             el.textContent = prefix + Math.round(target * eased) + suffix;
             if (p < 1) requestAnimationFrame(frame);
           }
@@ -857,7 +920,120 @@
         }
       } catch (e) {}
 
+      /* ===== Barra de progresso + header + voltar ao topo ===== */
+      try {
+        var progress = document.getElementById("progress");
+        var header = document.querySelector("header.site");
+        var toTop = document.getElementById("to-top");
+        var ticking = false;
+        function onScroll() {
+          ticking = false;
+          var y = window.scrollY || window.pageYOffset || 0;
+          var h = document.documentElement.scrollHeight - window.innerHeight;
+          if (progress) progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
+          if (header) header.classList.toggle("scrolled", y > 12);
+          if (toTop) toTop.classList.toggle("show", y > 700);
+        }
+        window.addEventListener("scroll", function () {
+          if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
+        }, { passive: true });
+        onScroll();
+        if (toTop) toTop.addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+        });
+      } catch (e) {}
+
+      /* ===== Nav ativa por seção ===== */
+      try {
+        if ("IntersectionObserver" in window) {
+          var links = document.querySelectorAll('.nav-links a[href^="#"]');
+          var map = {};
+          links.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
+          var secObs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) {
+              if (en.isIntersecting) {
+                links.forEach(function (a) { a.classList.remove("active"); });
+                var a = map[en.target.id];
+                if (a) a.classList.add("active");
+              }
+            });
+          }, { rootMargin: "-40% 0px -55% 0px" });
+          ["inside", "compare", "how", "faq", "pricing"].forEach(function (id) {
+            var s = document.getElementById(id);
+            if (s) secObs.observe(s);
+          });
+        }
+      } catch (e) {}
+
+      /* ===== Spotlight segue o mouse + tilt sutil no terminal ===== */
+      try {
+        if (!reduceMotion && window.matchMedia && window.matchMedia("(hover:hover)").matches) {
+          var spots = document.querySelectorAll(".card, .step, .plan");
+          spots.forEach(function (el) {
+            el.addEventListener("pointermove", function (ev) {
+              var r = el.getBoundingClientRect();
+              el.style.setProperty("--mx", (ev.clientX - r.left) + "px");
+              el.style.setProperty("--my", (ev.clientY - r.top) + "px");
+            });
+          });
+          var termBox = document.querySelector(".hero .terminal");
+          if (termBox) {
+            var raf = null;
+            termBox.addEventListener("pointermove", function (ev) {
+              if (raf) return;
+              raf = requestAnimationFrame(function () {
+                raf = null;
+                var r = termBox.getBoundingClientRect();
+                var px = (ev.clientX - r.left) / r.width - 0.5;
+                var py = (ev.clientY - r.top) / r.height - 0.5;
+                termBox.style.transform = "perspective(900px) rotateX(" + (-py * 5).toFixed(2) + "deg) rotateY(" + (px * 7).toFixed(2) + "deg) translateY(-2px)";
+              });
+            });
+            termBox.addEventListener("pointerleave", function () {
+              if (raf) { cancelAnimationFrame(raf); raf = null; }
+              termBox.style.transform = "";
+            });
+          }
+        }
+      } catch (e) {}
+
+      /* ===== FAQ com abrir/fechar animado ===== */
+      try {
+        if (!reduceMotion && document.querySelector("#faq details .a")) {
+          document.querySelectorAll("#faq details").forEach(function (d) {
+            var s = d.querySelector("summary");
+            var a = d.querySelector(".a");
+            if (!s || !a) return;
+            s.addEventListener("click", function (ev) {
+              ev.preventDefault();
+              if (d.classList.contains("animating")) return;
+              d.classList.add("animating");
+              if (d.open) {
+                var h = a.offsetHeight;
+                var anim = a.animate(
+                  [{ height: h + "px", opacity: 1 }, { height: "0px", opacity: 0 }],
+                  { duration: 260, easing: "cubic-bezier(.16,1,.3,1)" }
+                );
+                anim.onfinish = function () {
+                  d.removeAttribute("open");
+                  d.classList.remove("animating");
+                };
+              } else {
+                d.setAttribute("open", "");
+                var h2 = a.offsetHeight;
+                var anim2 = a.animate(
+                  [{ height: "0px", opacity: 0 }, { height: h2 + "px", opacity: 1 }],
+                  { duration: 320, easing: "cubic-bezier(.16,1,.3,1)" }
+                );
+                anim2.onfinish = function () { d.classList.remove("animating"); };
+              }
+            });
+          });
+        }
+      } catch (e) {}
+
       apply(lang);
+      requestAnimationFrame(function () { document.body.classList.add("loaded"); });
     })();
   </script>
 </body>
