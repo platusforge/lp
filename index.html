@@ -74,15 +74,15 @@
         "description": "Boilerplate SaaS production-ready: Express 4 + TypeScript + Prisma 6 + PostgreSQL 16 no backend, React 18 + Vite no frontend, com autenticação segura, organizações multi-tenant, cobrança Stripe por organização, RBAC, painel admin, audit logs, API keys, e-mail transacional, Docker, Traefik TLS, CI/CD e documentação em PT-BR e inglês.",
         "url": "https://platusforge.com/",
         "offers": [
-          { "@type": "Offer", "name": "DevKit Starter", "price": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" },
-          { "@type": "Offer", "name": "DevKit Professional", "price": "249", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://platusforge.com/#pricing" }
+          { "@type": "Offer", "name": "DevKit Starter", "price": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://dashboard.platusforge.com/kits/devkit-starter" },
+          { "@type": "Offer", "name": "DevKit Professional", "price": "249", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://dashboard.platusforge.com/kits/devkit-professional" }
         ]
       },
       {
         "@type": "FAQPage",
         "@id": "https://platusforge.com/#faq",
         "mainEntity": [
-          { "@type": "Question", "name": "Como recebo acesso ao DevKit depois de comprar?", "acceptedAnswer": { "@type": "Answer", "text": "Após o pagamento via Stripe, você recebe um convite de colaborador com acesso de leitura (pull) para o repositório privado no GitHub. Aceite o convite, clone ou faça fork e comece a construir. O link do repo fica disponível na sua área de cliente." } },
+          { "@type": "Question", "name": "Como recebo acesso ao DevKit depois de comprar?", "acceptedAnswer": { "@type": "Answer", "text": "Após o pagamento via Stripe no dashboard, você recebe automaticamente um convite de colaborador com acesso de leitura (pull) para o repositório privado no GitHub, no seu usuário cadastrado no perfil. Aceite o convite, faça fork e comece a construir. O link do repo fica em My Kits no dashboard." } },
           { "@type": "Question", "name": "O DevKit é assinatura ou pagamento único?", "acceptedAnswer": { "@type": "Answer", "text": "Pagamento único. Planos Starter ($199) e Professional ($249) dão acesso vitalício ao repositório privado, sem mensalidade pelo boilerplate." } },
           { "@type": "Question", "name": "Posso usar o DevKit em projetos de clientes?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A licença permite usar o DevKit como base de aplicações SaaS para usuários finais, inclusive comercialmente. O que não é permitido é revender ou redistribuir o código-fonte do boilerplate em si." } },
           { "@type": "Question", "name": "Qual é a stack do DevKit?", "acceptedAnswer": { "@type": "Answer", "text": "Backend: Express 4, TypeScript strict, Prisma 6, PostgreSQL 16, Zod, Stripe e Resend. Frontend: React 18, Vite 5, React Router 6, PT-BR + inglês. Infra: Docker Compose, Nginx, Traefik com TLS e GitHub Actions." } },
@@ -601,7 +601,7 @@
     </section>
 
     <!-- ================= PRICING ================= -->
-    <!-- TODO: trocar os hrefs abaixo pelos Stripe Payment Links (ou URLs de checkout do PlatusForge) de cada plano -->
+    <!-- Checkout via dashboard (PlatusKit): kits/devkit-starter e kits/devkit-professional -->
     <section class="block" id="pricing" style="padding-top:0">
       <div class="wrap">
         <div class="pricing">
@@ -613,27 +613,27 @@
               <h3>Starter</h3>
               <p class="price">$199 <small data-pt="único" data-en="one-time">one-time</small></p>
               <ul>
-                <li data-pt="1 projeto SaaS" data-en="1 SaaS project">1 SaaS project</li>
-                <li data-pt="Repo privado no GitHub" data-en="Private GitHub repo">Private GitHub repo</li>
-                <li data-pt="Auth + Stripe + Docker + CI" data-en="Auth + Stripe + Docker + CI">Auth + Stripe + Docker + CI</li>
+                <li data-pt="1 produto SaaS (1 marca/domínio + staging)" data-en="1 SaaS product (1 brand/domain + staging)">1 SaaS product</li>
+                <li data-pt="Repo privado completo no GitHub" data-en="Full private GitHub repo">Private GitHub repo</li>
+                <li data-pt="Auth + Orgs + Stripe + Docker + CI" data-en="Auth + Orgs + Stripe + Docker + CI">Auth + Stripe + Docker + CI</li>
                 <li data-pt="Docs PT-BR + EN" data-en="PT-BR + EN docs">PT-BR + EN docs</li>
                 <li data-pt="Suporte da comunidade" data-en="Community support">Community support</li>
               </ul>
-              <a class="btn btn--ghost" href="https://platusforge.com/checkout?plan=starter" data-pt="Começar com Starter" data-en="Start with Starter">Start with Starter</a>
+              <a class="btn btn--ghost" href="https://dashboard.platusforge.com/kits/devkit-starter" data-pt="Começar com Starter" data-en="Start with Starter">Start with Starter</a>
             </div>
             <div class="plan featured">
               <span class="tag" data-pt="★ MAIS POPULAR" data-en="★ MOST POPULAR">★ MOST POPULAR</span>
               <h3>Professional</h3>
               <p class="price">$249 <small data-pt="único" data-en="one-time">one-time</small></p>
               <ul>
-                <li data-pt="Projetos ilimitados (1 dev)" data-en="Unlimited projects (1 dev)">Unlimited projects (1 dev)</li>
-                <li data-pt="Tudo do Starter, mais:" data-en="Everything in Starter, plus:">Everything in Starter, plus:</li>
-                <li data-pt="Orgs, RBAC, audit logs + API keys" data-en="Orgs, RBAC, audit logs + API keys">Orgs, RBAC, audit logs + API keys</li>
-                <li data-pt="E-mail transacional + blog + FAQ" data-en="Transactional email + blog + FAQ">Transactional email + blog + FAQ</li>
-                <li data-pt="Uso em projetos de clientes" data-en="Use in client projects">Use in client projects</li>
+                <li data-pt="Produtos ilimitados, seus + clientes (1 dev)" data-en="Unlimited products, yours + clients (1 dev)">Unlimited projects (1 dev)</li>
+                <li data-pt="Mesmo repo completo do Starter" data-en="Same full repo as Starter">Everything in Starter, plus:</li>
+                <li data-pt="Orgs, RBAC, audit logs + API keys inclusos" data-en="Orgs, RBAC, audit logs + API keys included">Orgs, RBAC, audit logs + API keys</li>
+                <li data-pt="E-mail transacional + blog + FAQ inclusos" data-en="Transactional email + blog + FAQ included">Transactional email + blog + FAQ</li>
+                <li data-pt="Uso em projetos de clientes permitido" data-en="Client projects allowed">Use in client projects</li>
                 <li data-pt="Suporte prioritário" data-en="Priority support">Priority support</li>
               </ul>
-              <a class="btn btn--forge" href="https://platusforge.com/checkout?plan=professional" data-pt="Quero o Professional" data-en="Get Professional">Get Professional</a>
+              <a class="btn btn--forge" href="https://dashboard.platusforge.com/kits/devkit-professional" data-pt="Quero o Professional" data-en="Get Professional">Get Professional</a>
             </div>
           </div>
           <p class="guarantee" data-pt="🔒 Checkout via Stripe · 🔄 Reembolso em 14 dias revoga o acesso ao repo · 🧾 Nota e licença na compra" data-en="🔒 Stripe checkout · 🔄 14-day refunds revoke repo access · 🧾 Receipt and license included">🔒 Stripe checkout · 🔄 14-day refunds revoke repo access · 🧾 Receipt and license included</p>
@@ -649,7 +649,7 @@
         <p class="lead" data-pt="Respostas diretas, sem juridiquês." data-en="Straight answers, no legalese.">Straight answers, no legalese.</p>
         <details open>
           <summary data-pt="Como recebo acesso depois de comprar?" data-en="How do I get access after buying?">How do I get access after buying?</summary>
-          <div class="a" data-pt="Você informa seu usuário do GitHub no cadastro. Confirmado o pagamento via Stripe, enviamos um convite de colaborador com acesso de leitura (pull) para o repositório privado. O link do repo fica na sua área de cliente e o convite pode ser reenviado quando precisar." data-en="You provide your GitHub username at signup. Once Stripe confirms payment, we send a collaborator invite with read (pull) access to the private repo. The repo link lives in your customer area and the invite can be re-sent anytime.">You provide your GitHub username at signup. Once Stripe confirms payment, we send a collaborator invite with read (pull) access to the private repo. The repo link lives in your customer area and the invite can be re-sent anytime.</div>
+          <div class="a" data-pt="Você cria a conta no dashboard e informa seu usuário do GitHub no perfil. Confirmado o pagamento via Stripe, enviamos automaticamente um convite de colaborador com acesso de leitura (pull) para o repositório privado. O link do repo fica em My Kits no dashboard e o convite pode ser reenviado quando precisar." data-en="You create an account on the dashboard and set your GitHub username in your profile. Once Stripe confirms payment, we automatically send a collaborator invite with read (pull) access to the private repo. The repo link lives in My Kits on the dashboard and the invite can be re-sent anytime.">You provide your GitHub username at signup. Once Stripe confirms payment, we send a collaborator invite with read (pull) access to the private repo. The repo link lives in your customer area and the invite can be re-sent anytime.</div>
         </details>
         <details>
           <summary data-pt="É assinatura ou pagamento único?" data-en="Subscription or one-time payment?">Subscription or one-time payment?</summary>
@@ -704,6 +704,9 @@
         <a href="#compare" data-pt="Comparar" data-en="Compare">Compare</a>
         <a href="#pricing" data-pt="Preços" data-en="Pricing">Pricing</a>
         <a href="#faq">FAQ</a>
+        <a href="terms-sale.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="refunds.html">Refunds</a>
         <a href="llms.txt">llms.txt</a>
       </nav>
       <p>© <span id="year">2026</span> PlatusForge. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">All rights reserved.</span></p>

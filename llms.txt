@@ -5,8 +5,8 @@
 - Site: https://platusforge.com/
 - Product: DevKit — SaaS Boilerplate
 - Vendor: PlatusForge
-- Pricing (one-time, lifetime repo access): Starter $199 (1 project) · Professional $249 (unlimited projects, 1 dev — most popular, client work allowed)
-- Delivery: Stripe checkout → GitHub collaborator invite with read (`pull`) access to the private repo → clone/fork → `docker compose up --build`
+- Pricing (one-time, lifetime repo access): Starter $199 (1 SaaS product) · Professional $249 (unlimited products, yours + clients, 1 dev — most popular)
+- Delivery: register on https://dashboard.platusforge.com, set GitHub username in profile, Stripe checkout → automatic GitHub collaborator invite with read (`pull`) access → My Kits → fork → `docker compose up --build`
 - Refunds: 14-day unconditional guarantee (access revoked on refund)
 
 ## What's included
@@ -34,3 +34,8 @@ Commercial use allowed as the foundation of end-user SaaS apps, including client
 - Pricing: https://platusforge.com/#pricing
 - FAQ: https://platusforge.com/#faq
 - Comparison: https://platusforge.com/#compare
+- Dashboard: https://dashboard.platusforge.com/kits/devkit-starter
+- Dashboard Pro: https://dashboard.platusforge.com/kits/devkit-professional
+- Terms: https://platusforge.com/terms-sale.html
+- Privacy: https://platusforge.com/privacy.html
+- Refunds: https://platusforge.com/refunds.html
