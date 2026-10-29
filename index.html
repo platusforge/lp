@@ -249,6 +249,8 @@
     tr:last-child td{border-bottom:none}
     .y{color:var(--accent);font-weight:800}.n{color:var(--muted)}.p{color:var(--text-soft)}
     .caption{font-size:.82rem;color:var(--muted);margin-top:10px}
+    .table-hint{display:none;margin:0 0 10px;font-size:.82rem;color:var(--muted)}
+    @media(max-width:860px){.table-hint{display:block}}
 
     /* ===== Steps ===== */
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}
@@ -603,6 +605,7 @@
         <p class="kicker" data-pt="Comparativo honesto" data-en="Honest comparison">Honest comparison</p>
         <h2 data-pt="Baseware vs. boilerplates pagos" data-en="Baseware vs. paid boilerplates">Baseware vs. paid boilerplates</h2>
         <p class="lead" data-pt="Kits pagos custam $199–$349 e mantêm o código fechado. Baseware entrega a mesma base B2B sob MIT — sem preço, sem assento, sem permissão para forkar." data-en="Paid kits cost $199–$349 and keep the source closed. Baseware ships the same B2B foundation under MIT — no price, no seats, no permission needed to fork.">Paid kits cost $199–$349 and keep the source closed. Baseware ships the same B2B foundation under MIT — no price, no seats, no permission needed to fork.</p>
+        <p class="table-hint" data-pt="Deslize para comparar →" data-en="Swipe to compare →">Swipe to compare →</p>
         <div class="table-wrap" role="region" aria-label="Comparison table" tabindex="0">
           <table>
             <thead><tr><th data-pt="Critério" data-en="Criteria">Criteria</th><th>Baseware</th><th data-pt="Boilerplates pagos" data-en="Paid boilerplates">Paid boilerplates</th><th data-pt="Do zero" data-en="From scratch">From scratch</th></tr></thead>
@@ -909,7 +912,7 @@
       /* ===== Reveal on scroll (progressive enhancement) ===== */
       try {
         if (!reduceMotion && "IntersectionObserver" in window) {
-          var targets = document.querySelectorAll(".stat, .pain .card, #inside .card, #inside .tree, .table-wrap, .step, .plan, .final, #faq details, .badges");
+          var targets = document.querySelectorAll(".stat, .pain .card, #platform .card, #inside .card, #inside .tree, .table-wrap, .step, .plan, .final, #faq details, .badges");
           targets.forEach(function (el, i) {
             el.classList.add("js-reveal");
             var parent = el.parentElement;
