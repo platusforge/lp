@@ -10,7 +10,8 @@
 - Quickstart: `git clone https://github.com/platusforge/baseware.git` → `cd baseware && cp .env.example .env` → `docker compose up --build`
 - Docs (EN): https://github.com/platusforge/baseware/tree/main/docs/en
 - Docs (PT-BR): https://github.com/platusforge/baseware/tree/main/docs/pt-BR
-- Contributing: https://github.com/platusforge/baseware/blob/main/AGENTS.md
+- Contributing: https://github.com/platusforge/baseware/blob/main/README.md#contributing
+- AI agent manual: https://github.com/platusforge/baseware/blob/main/AGENTS.md
 - Issues: https://github.com/platusforge/baseware/issues
 - Sponsor: https://github.com/sponsors/ClaudioBzrr
 
