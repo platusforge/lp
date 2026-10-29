@@ -1437,23 +1437,35 @@
           targets.forEach(function (el) {
             el.classList.add("js-reveal");
             var parent = el.parentElement;
+            var delay = 0;
             if (parent) {
               var siblings = Array.prototype.indexOf.call(parent.children, el);
-              if (siblings > 0) el.style.transitionDelay = Math.min(siblings * 80, 320) + "ms";
+              if (siblings > 0) delay = Math.min(siblings * 80, 320);
             }
+            el._revealDelay = delay;
+            if (delay > 0) el.style.transitionDelay = delay + "ms";
           });
           var revObs = new IntersectionObserver(function (entries) {
             entries.forEach(function (e) {
+              var el = e.target;
               if (e.isIntersecting) {
-                var el = e.target;
+                if (el.classList.contains("visible")) return;
+                el._revealSeq = (el._revealSeq || 0) + 1;
+                var seq = el._revealSeq;
+                if (el._revealDelay) el.style.transitionDelay = el._revealDelay + "ms";
                 el.classList.add("visible");
-                revObs.unobserve(el);
-                // O delay do stagger serviria também para hover/abrir; limpa depois do reveal.
-                var delay = parseFloat(el.style.transitionDelay) || 0;
-                setTimeout(function () { el.style.transitionDelay = ""; }, delay + 800);
+                // Limpa o delay para não atrasar hover/FAQ; o token evita timers antigos.
+                setTimeout(function () {
+                  if (seq === el._revealSeq) el.style.transitionDelay = "";
+                }, (el._revealDelay || 0) + 800);
+              } else {
+                // Só reseta quando o elemento está totalmente fora da viewport.
+                el._revealSeq = (el._revealSeq || 0) + 1;
+                el.classList.remove("visible");
+                el.style.transitionDelay = "";
               }
             });
-          }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+          }, { threshold: 0.12 });
           targets.forEach(function (el) { revObs.observe(el); });
         }
       } catch (e) {}
