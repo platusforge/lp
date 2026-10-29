@@ -1,41 +1,45 @@
-# PlatusForge — DevKit
+# PlatusForge — Baseware
 
-> DevKit is a production-ready SaaS boilerplate (Express 4 + strict TypeScript + Prisma 6 + PostgreSQL 16 backend; React 18 + Vite 5 frontend) sold by PlatusForge with one-time payment and lifetime private GitHub repo access. Docs in PT-BR and English.
+> Baseware is an open-source, production-ready SaaS starter (Express 5 + strict TypeScript + Prisma 7 + PostgreSQL 16 backend; React 19 + Vite 8 frontend) maintained by PlatusForge, an open-source platform for developers. MIT licensed: free for commercial use, modification, distribution and resale. Docs in PT-BR and English.
 
-- Site: https://platusforge.com/
-- Product: DevKit — SaaS Boilerplate
-- Vendor: PlatusForge
-- Pricing (one-time, lifetime repo access): Starter $199 (1 SaaS product) · Professional $249 (unlimited products, yours + clients, 1 dev — most popular)
-- Delivery: register on https://dashboard.platusforge.com, set GitHub username in profile, Stripe checkout → automatic GitHub collaborator invite with read (`pull`) access → My Kits → fork → `docker compose up --build`
-- Refunds: 14-day unconditional guarantee (access revoked on refund)
+- Site: https://platusforge.github.io/lp/
+- Product: Baseware — open-source SaaS starter
+- Organization: PlatusForge — open-source solutions for developers
+- License: MIT — https://github.com/platusforge/baseware/blob/main/LICENSE.md
+- Repository: https://github.com/platusforge/baseware
+- Quickstart: `git clone https://github.com/platusforge/baseware.git` → `cd baseware && cp .env.example .env` → `docker compose up --build`
+- Docs (EN): https://github.com/platusforge/baseware/tree/main/docs/en
+- Docs (PT-BR): https://github.com/platusforge/baseware/tree/main/docs/pt-BR
+- Contributing: https://github.com/platusforge/baseware/blob/main/AGENTS.md
+- Issues: https://github.com/platusforge/baseware/issues
+- Sponsor: https://github.com/sponsors/ClaudioBzrr
 
 ## What's included
 
-- Auth: email/password + Google/GitHub OAuth, 15-min access + rotating 7-day refresh in HttpOnly Secure SameSite cookies, bcrypt cost 12, lockout, rate limits, SHA-256 single-use 1h password-reset tokens
+- Auth: email/password + Google/GitHub OAuth, TOTP MFA with hashed backup codes, 15-min access + rotating 7-day refresh in HttpOnly Secure SameSite cookies, bcrypt cost 12, lockout, rate limits, SHA-256 single-use 1h password-reset tokens, email verification, session listing/revocation
 - B2B: organizations, members, invites, RBAC, per-organization Stripe subscriptions
 - Billing: Stripe Checkout + Customer Portal + verified idempotent webhooks with dunning + audit log
-- Platform: admin panel, audit logs, API keys, Resend transactional email
+- Platform: admin panel, audit logs, API keys, usage events, Resend transactional email
 - Frontend: landing, pricing table, FAQ, file-based blog, OG/SEO meta, PT-BR + EN i18n
 - Infra: Docker Compose (base/override/prod), multi-stage Dockerfiles, Nginx SPA + `/api` proxy, Traefik TLS, GitHub Actions push-to-deploy
 - Quality: Jest unit tests, security audit gate, bilingual docs, AGENTS.md (mandatory build manual for AI coding agents)
 - Architecture: strict 5-layer chain `Route → Controller → Service → Repository (interface) → Implementation`, manual DI, kebab-case filenames, Conventional Commits
+- No license keys, seat limits or per-project tiers
 
 ## Stack
 
-Express 4 · TypeScript strict · Prisma 6 · PostgreSQL 16 · Zod · Winston · Stripe · Resend · React 18 · Vite 5 · React Router 6 · Docker · Traefik · GitHub Actions · Jest
+Express 5 · TypeScript strict · Prisma 7 · PostgreSQL 16 · Zod 4 · Winston · Stripe · Resend · React 19 · Vite 8 · React Router 7 · Docker · Traefik · GitHub Actions · Jest · Node 24
 
 ## License
 
-Commercial use allowed as the foundation of end-user SaaS apps, including client projects (per Starter / Professional license terms on receipt). Reselling or redistributing the boilerplate source itself is prohibited.
+MIT. Commercial use, modification, distribution and resale are allowed. Keep the copyright notice and license text in copies of the source. Derivative products do not need to be open source.
 
 ## Links
 
-- Landing: https://platusforge.com/
-- Pricing: https://platusforge.com/#pricing
-- FAQ: https://platusforge.com/#faq
-- Comparison: https://platusforge.com/#compare
-- Dashboard: https://dashboard.platusforge.com/kits/devkit-starter
-- Dashboard Pro: https://dashboard.platusforge.com/kits/devkit-professional
-- Terms: https://platusforge.com/terms-sale.html
-- Privacy: https://platusforge.com/privacy.html
-- Refunds: https://platusforge.com/refunds.html
+- Landing: https://platusforge.github.io/lp/
+- Features: https://platusforge.github.io/lp/#inside
+- Comparison: https://platusforge.github.io/lp/#compare
+- Quickstart: https://platusforge.github.io/lp/#how
+- FAQ: https://platusforge.github.io/lp/#faq
+- License page: https://platusforge.github.io/lp/license.html
+- Privacy: https://platusforge.github.io/lp/privacy.html

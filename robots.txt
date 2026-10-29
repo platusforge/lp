@@ -23,4 +23,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://platusforge.com/sitemap.xml
+Sitemap: https://platusforge.github.io/lp/sitemap.xml

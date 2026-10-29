@@ -5,27 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ============ SEO CORE ============ -->
-  <title id="meta-title">DevKit — Production-ready SaaS boilerplate | PlatusForge</title>
-  <meta id="meta-description" name="description" content="DevKit is the Express + React + PostgreSQL SaaS boilerplate: secure auth, organizations, Stripe billing, RBAC, audit logs, Docker & CI/CD. One-time payment from $199. Ship in days, not months." />
-  <meta name="keywords" content="saas boilerplate, express react boilerplate, stripe saas starter, multi-tenant saas, postgresql prisma boilerplate, devkit, platusforge, boilerplate português, ship fast alternative" />
+  <title id="meta-title">Baseware — Open-source SaaS starter | PlatusForge</title>
+  <meta id="meta-description" name="description" content="Baseware is the open-source, MIT-licensed SaaS starter: Express 5 + React 19 + PostgreSQL, secure auth, multi-tenant organizations, Stripe billing, admin, Docker & CI/CD. Free forever." />
+  <meta name="keywords" content="baseware, open source saas starter, express react postgresql starter, mit saas boilerplate, multi-tenant saas, postgresql prisma starter, stripe saas starter, platusforge" />
   <meta name="author" content="PlatusForge" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#0a0e17" />
   <meta name="color-scheme" content="dark" />
-  <link rel="canonical" href="https://platusforge.com/" />
+  <link rel="canonical" href="https://platusforge.github.io/lp/" />
   <!-- Bilíngue em página única: hreflang aponta para a mesma URL canônica -->
-  <link rel="alternate" hreflang="pt-BR" href="https://platusforge.com/" />
-  <link rel="alternate" hreflang="en" href="https://platusforge.com/" />
-  <link rel="alternate" hreflang="x-default" href="https://platusforge.com/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://platusforge.github.io/lp/" />
+  <link rel="alternate" hreflang="en" href="https://platusforge.github.io/lp/" />
+  <link rel="alternate" hreflang="x-default" href="https://platusforge.github.io/lp/" />
 
   <!-- ============ LINK PREVIEW: LOGO COMO CAPA (Open Graph + Twitter) ============ -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="PlatusForge" />
-  <meta property="og:title" content="DevKit — Production-ready SaaS boilerplate | PlatusForge" />
-  <meta property="og:description" content="Express + React + PostgreSQL with secure auth, organizations, Stripe billing, RBAC, audit logs, Docker & CI/CD. One-time payment from $199." />
-  <meta property="og:url" content="https://platusforge.com/" />
-  <meta property="og:image" content="https://platusforge.com/platusforge-og.png" />
-  <meta property="og:image:secure_url" content="https://platusforge.com/platusforge-og.png" />
+  <meta property="og:title" content="Baseware — Open-source SaaS starter | PlatusForge" />
+  <meta property="og:description" content="Open-source, MIT-licensed SaaS starter with secure auth, multi-tenant organizations, Stripe billing, admin, audit logs, Docker & CI/CD. Free to fork, ship and sell." />
+  <meta property="og:url" content="https://platusforge.github.io/lp/" />
+  <meta property="og:image" content="https://platusforge.github.io/lp/platusforge-og.png" />
+  <meta property="og:image:secure_url" content="https://platusforge.github.io/lp/platusforge-og.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -33,11 +33,11 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="pt_BR" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DevKit — Production-ready SaaS boilerplate | PlatusForge" />
-  <meta name="twitter:description" content="The boilerplate devs use to sell SaaS in days: Express + React + Postgres + Stripe. One-time payment, lifetime repo access." />
-  <meta name="twitter:image" content="https://platusforge.com/platusforge-og.png" />
+  <meta name="twitter:title" content="Baseware — Open-source SaaS starter | PlatusForge" />
+  <meta name="twitter:description" content="The open-source SaaS starter: Express 5 + React 19 + Postgres + Stripe. MIT licensed, free forever, built to be forked." />
+  <meta name="twitter:image" content="https://platusforge.github.io/lp/platusforge-og.png" />
   <meta name="twitter:image:alt" content="PlatusForge — logotipo: bigorna com chaves de código" />
-  <link rel="image_src" href="https://platusforge.com/platusforge-og.png" />
+  <link rel="image_src" href="https://platusforge.github.io/lp/platusforge-og.png" />
 
   <!-- ============ ÍCONES (logo) ============ -->
   <link rel="icon" type="image/png" href="platusforge-icon.png" />
@@ -50,45 +50,62 @@
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://platusforge.com/#org",
+        "@id": "https://platusforge.github.io/lp/#org",
         "name": "PlatusForge",
-        "url": "https://platusforge.com/",
-        "logo": "https://platusforge.com/platusforge-icon.png",
-        "description": "PlatusForge vende o DevKit: boilerplate SaaS production-ready em Express + React + PostgreSQL."
+        "url": "https://platusforge.github.io/lp/",
+        "logo": "https://platusforge.github.io/lp/platusforge-icon.png",
+        "sameAs": ["https://github.com/platusforge"],
+        "description": "PlatusForge is an open-source platform for developers, building production-grade foundations that are public, MIT-licensed and designed to be forked."
       },
       {
         "@type": "WebSite",
-        "@id": "https://platusforge.com/#site",
-        "url": "https://platusforge.com/",
+        "@id": "https://platusforge.github.io/lp/#site",
+        "url": "https://platusforge.github.io/lp/",
         "name": "PlatusForge",
-        "publisher": { "@id": "https://platusforge.com/#org" },
+        "publisher": { "@id": "https://platusforge.github.io/lp/#org" },
         "inLanguage": ["pt-BR", "en"]
       },
       {
-        "@type": "Product",
-        "@id": "https://platusforge.com/#devkit",
-        "name": "DevKit — SaaS Boilerplate",
-        "brand": { "@type": "Brand", "name": "PlatusForge" },
-        "category": "SaaS Boilerplate",
-        "image": "https://platusforge.com/platusforge-og.png",
-        "description": "Boilerplate SaaS production-ready: Express 4 + TypeScript + Prisma 6 + PostgreSQL 16 no backend, React 18 + Vite no frontend, com autenticação segura, organizações multi-tenant, cobrança Stripe por organização, RBAC, painel admin, audit logs, API keys, e-mail transacional, Docker, Traefik TLS, CI/CD e documentação em PT-BR e inglês.",
-        "url": "https://platusforge.com/",
-        "offers": [
-          { "@type": "Offer", "name": "DevKit Starter", "price": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://dashboard.platusforge.com/kits/devkit-starter" },
-          { "@type": "Offer", "name": "DevKit Professional", "price": "249", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://dashboard.platusforge.com/kits/devkit-professional" }
-        ]
+        "@type": "SoftwareSourceCode",
+        "@id": "https://platusforge.github.io/lp/#baseware",
+        "name": "Baseware",
+        "description": "Open-source, production-ready SaaS starter with Express 5, strict TypeScript, Prisma 7 and PostgreSQL 16 on the backend, React 19 + Vite 8 on the frontend. Includes secure auth with MFA, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and bilingual docs.",
+        "codeRepository": "https://github.com/platusforge/baseware",
+        "license": "https://github.com/platusforge/baseware/blob/main/LICENSE.md",
+        "programmingLanguage": ["TypeScript", "JavaScript"],
+        "runtimePlatform": "Node.js 24, Docker",
+        "author": { "@id": "https://platusforge.github.io/lp/#org" },
+        "version": "1.0",
+        "keywords": "open source SaaS starter, Express, React, PostgreSQL, Stripe, multi-tenant, MIT"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://platusforge.github.io/lp/#baseware-app",
+        "name": "Baseware",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Linux, macOS, Windows",
+        "url": "https://platusforge.github.io/lp/",
+        "sameAs": ["https://github.com/platusforge/baseware"],
+        "license": "https://github.com/platusforge/baseware/blob/main/LICENSE.md",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
       },
       {
         "@type": "FAQPage",
-        "@id": "https://platusforge.com/#faq",
+        "@id": "https://platusforge.github.io/lp/#faq",
         "mainEntity": [
-          { "@type": "Question", "name": "Como recebo acesso ao DevKit depois de comprar?", "acceptedAnswer": { "@type": "Answer", "text": "Após o pagamento via Stripe no dashboard, você recebe automaticamente um convite de colaborador com acesso de leitura (pull) para o repositório privado no GitHub, no seu usuário cadastrado no perfil. Aceite o convite, faça fork e comece a construir. O link do repo fica em My Kits no dashboard." } },
-          { "@type": "Question", "name": "O DevKit é assinatura ou pagamento único?", "acceptedAnswer": { "@type": "Answer", "text": "Pagamento único. Planos Starter ($199) e Professional ($249) dão acesso vitalício ao repositório privado, sem mensalidade pelo boilerplate." } },
-          { "@type": "Question", "name": "Posso usar o DevKit em projetos de clientes?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A licença permite usar o DevKit como base de aplicações SaaS para usuários finais, inclusive comercialmente. O que não é permitido é revender ou redistribuir o código-fonte do boilerplate em si." } },
-          { "@type": "Question", "name": "Qual é a stack do DevKit?", "acceptedAnswer": { "@type": "Answer", "text": "Backend: Express 4, TypeScript strict, Prisma 6, PostgreSQL 16, Zod, Stripe e Resend. Frontend: React 18, Vite 5, React Router 6, PT-BR + inglês. Infra: Docker Compose, Nginx, Traefik com TLS e GitHub Actions." } },
-          { "@type": "Question", "name": "Como a autenticação do DevKit é protegida?", "acceptedAnswer": { "@type": "Answer", "text": "Sessão com access token de 15 minutos e refresh rotativo de 7 dias em cookies HttpOnly, Secure e SameSite (nunca localStorage), bcrypt custo 12, rate limit no login e no reset de senha, tokens de reset com hash SHA-256 de uso único e expiração de 1 hora." } },
-          { "@type": "Question", "name": "Consigo construir com agentes de IA em cima do DevKit?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. O repositório inclui o AGENTS.md, manual de build obrigatório para agentes, arquitetura aberta em 5 camadas (Route → Controller → Service → Repository → Implementation) e convenções rígidas de código." } },
-          { "@type": "Question", "name": "Existe garantia de reembolso?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, 14 dias de garantia incondicional. Se o DevKit não for para você, devolvemos o valor e revogamos o acesso ao repositório." } }
+          { "@type": "Question", "name": "Is Baseware really free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Baseware is MIT licensed, with no paid tier, no seats and no license keys. You can use, modify, distribute and sell products built on it." } },
+          { "@type": "Question", "name": "Can I use Baseware commercially and in client projects?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The MIT license allows commercial use, modification, distribution and resale. Keep the copyright notice and license text in copies of the source." } },
+          { "@type": "Question", "name": "Do I have to open-source my app?", "acceptedAnswer": { "@type": "Answer", "text": "No. The MIT license does not require derivative works to be open source. You can keep your product proprietary." } },
+          { "@type": "Question", "name": "What is the exact stack?", "acceptedAnswer": { "@type": "Answer", "text": "Backend: Express 5, strict TypeScript, Prisma 7, PostgreSQL 16, Zod 4, Winston, Stripe and Resend. Frontend: React 19, Vite 8, React Router 7, CSS Modules and PT-BR/EN i18n. Infra: Node 24, Docker Compose, Nginx, Traefik TLS and GitHub Actions." } },
+          { "@type": "Question", "name": "How is auth secured?", "acceptedAnswer": { "@type": "Answer", "text": "15-minute access tokens plus rotating 7-day refresh tokens in HttpOnly, Secure, SameSite cookies, TOTP MFA with hashed backup codes, bcrypt cost 12, lockout, rate limits on login and reset, SHA-256 single-use reset tokens, email verification and session listing/revocation." } },
+          { "@type": "Question", "name": "Does Baseware work well with AI agents?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AGENTS.md is the mandatory build manual, the 5-layer architecture (Route to Controller to Service to Repository to Implementation) keeps logic in place, and conventions such as kebab-case, Conventional Commits and manual DI keep generated code consistent." } },
+          { "@type": "Question", "name": "How do I contribute?", "acceptedAnswer": { "@type": "Answer", "text": "Open an issue or send a pull request on GitHub. Read AGENTS.md before generating features and keep docs in English and PT-BR in sync." } },
+          { "@type": "Question", "name": "Where can I get support?", "acceptedAnswer": { "@type": "Answer", "text": "Use GitHub Issues for bugs and feature requests. Baseware is community-supported; you can also sponsor ongoing maintenance through GitHub Sponsors." } }
         ]
       }
     ]
@@ -195,6 +212,7 @@
     /* ===== Grids & cards ===== */
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .hero-grid>*,.grid-3>*,.grid-2>*{min-width:0}
     @media(max-width:860px){.grid-3,.grid-2{grid-template-columns:1fr}}
     .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:border-color .15s ease}
     .card:hover{border-color:var(--border-2)}
@@ -221,7 +239,7 @@
     .tree{background:#070a11;color:#c6cfe2;border-radius:var(--radius);padding:22px;font-family:var(--mono);font-size:.84rem;line-height:1.75;overflow-x:auto;border:1px solid var(--border);white-space:pre}
 
     /* ===== Compare table ===== */
-    .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface)}
+    .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);overscroll-behavior-x:contain}
     table{width:100%;border-collapse:collapse;min-width:640px;font-size:.93rem}
     th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--border)}
     th{background:var(--bg-soft);color:var(--text-soft);font-size:.85rem;font-weight:700}
@@ -308,7 +326,7 @@
       @keyframes dot-pulse{0%,100%{box-shadow:0 0 0 0 rgba(157,180,232,.5)}50%{box-shadow:0 0 0 6px rgba(157,180,232,0)}}
       .term-cursor{display:inline-block;width:9px;height:1.05em;background:var(--accent);vertical-align:text-bottom;margin-left:2px;animation:blink 1s steps(1) infinite;border-radius:1px}
       @keyframes blink{50%{opacity:0}}
-      .term-line{display:block;white-space:pre-wrap}
+      .term-line{display:block;white-space:pre-wrap;overflow-wrap:anywhere}
       .js-reveal{opacity:0;transform:translateY(26px) scale(.985);filter:blur(6px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1),filter .7s ease}
       .js-reveal.visible{opacity:1;transform:none;filter:blur(0)}
       .btn{position:relative;overflow:hidden;transition:transform .15s ease,background .15s ease,border-color .15s ease,box-shadow .2s ease}
@@ -402,17 +420,17 @@
   <a class="skip" href="#conteudo" data-pt="Pular para o conteúdo" data-en="Skip to content">Skip to content</a>
 
   <header class="site">
-    <nav class="nav" aria-label="Principal / Main">
-      <a class="brand" href="#top" aria-label="PlatusForge — início">
+    <nav class="nav" aria-label="Main / Principal">
+      <a class="brand" href="#top" aria-label="PlatusForge — home">
         <img src="platusforge-logo-mark.png" alt="PlatusForge" width="120" height="34" />
         <span>PlatusForge</span>
       </a>
       <div class="nav-links">
-        <a href="#inside" data-pt="O que vem dentro" data-en="What's inside">What's inside</a>
+        <a href="#inside" data-pt="Recursos" data-en="Features">Features</a>
         <a href="#compare" data-pt="Comparar" data-en="Compare">Compare</a>
-        <a href="#how" data-pt="Como funciona" data-en="How it works">How it works</a>
+        <a href="#how" data-pt="Quickstart" data-en="Quickstart">Quickstart</a>
         <a href="#faq" class="keep">FAQ</a>
-        <a href="#pricing" class="btn btn--primary btn--sm keep" data-pt="Quero o DevKit" data-en="Get DevKit">Get DevKit</a>
+        <a href="https://github.com/platusforge/baseware" class="btn btn--primary btn--sm keep" target="_blank" rel="noopener" data-pt="GitHub" data-en="GitHub">GitHub</a>
         <button class="lang-toggle" id="lang-toggle" aria-label="Switch language / Trocar idioma">PT</button>
       </div>
     </nav>
@@ -423,32 +441,32 @@
     <div class="wrap hero" id="top">
       <div class="hero-grid">
         <div>
-          <span class="badge" data-hero style="--hd:0ms"><span class="dot"></span><span data-pt="v1.0 · Express + React + PostgreSQL" data-en="v1.0 · Express + React + PostgreSQL">v1.0 · Express + React + PostgreSQL</span></span>
+          <span class="badge" data-hero style="--hd:0ms"><span class="dot"></span><span data-pt="PlatusForge · Open source · MIT" data-en="PlatusForge · Open source · MIT">PlatusForge · Open source · MIT</span></span>
           <h1 data-hero style="--hd:90ms">
             <span data-pt="Pare de reconstruir o mesmo SaaS." data-en="Stop rebuilding the same SaaS.">Stop rebuilding the same SaaS.</span>
-            <span class="hl" data-pt="Comece do DevKit." data-en="Start from DevKit.">Start from DevKit.</span>
+            <span class="hl" data-pt="Comece do Baseware." data-en="Start from Baseware.">Start from Baseware.</span>
           </h1>
-          <p class="sub" data-hero style="--hd:180ms" data-pt="Boilerplate completo e production-ready: autenticação segura, organizações multi-tenant, cobrança Stripe, painel admin, audit logs, Docker e CI/CD. Pronto para vender — não para configurar." data-en="Complete, production-ready boilerplate: secure auth, multi-tenant organizations, Stripe billing, admin panel, audit logs, Docker & CI/CD. Ready to sell — not to set up.">Complete, production-ready boilerplate: secure auth, multi-tenant organizations, Stripe billing, admin panel, audit logs, Docker & CI/CD. Ready to sell — not to set up.</p>
+          <p class="sub" data-hero style="--hd:180ms" data-pt="Baseware é o starter SaaS open-source e production-ready: autenticação segura, organizações multi-tenant, cobrança Stripe, painel admin, audit logs, Docker e CI/CD. MIT — grátis para forkar, lançar e vender." data-en="Baseware is the open-source, production-ready SaaS starter: secure auth, multi-tenant organizations, Stripe billing, admin panel, audit logs, Docker & CI/CD. MIT — free to fork, ship and sell.">Baseware is the open-source, production-ready SaaS starter: secure auth, multi-tenant organizations, Stripe billing, admin panel, audit logs, Docker & CI/CD. MIT — free to fork, ship and sell.</p>
           <div class="cta-row" data-hero style="--hd:270ms">
-            <a class="btn btn--forge" href="#pricing" data-pt="Quero acesso imediato — $199" data-en="Get instant access — $199">Get instant access — $199</a>
+            <a class="btn btn--forge" href="https://github.com/platusforge/baseware" target="_blank" rel="noopener" data-pt="Star no GitHub" data-en="Star on GitHub">Star on GitHub</a>
             <a class="btn btn--ghost" href="#inside" data-pt="Ver o que vem dentro" data-en="See what's inside">See what's inside</a>
           </div>
           <ul class="microtrust" data-hero style="--hd:360ms">
-            <li data-pt="Pagamento único, sem mensalidade" data-en="One-time payment, no subscription">One-time payment, no subscription</li>
-            <li data-pt="Repo privado no GitHub" data-en="Private GitHub repo">Private GitHub repo</li>
-            <li data-pt="Garantia de 14 dias" data-en="14-day guarantee">14-day guarantee</li>
+            <li data-pt="Licença MIT" data-en="MIT license">MIT license</li>
+            <li data-pt="Uso comercial liberado" data-en="Commercial use allowed">Commercial use allowed</li>
+            <li data-pt="Feito em público no GitHub" data-en="Built in public on GitHub">Built in public on GitHub</li>
           </ul>
         </div>
-        <div class="terminal" role="img" aria-label="Terminal: launching DevKit with Docker in 3 commands">
-          <div class="term-bar"><i></i><i></i><i></i><span>devkit — zsh</span><button id="copy-btn" data-pt="copiar" data-en="copy">copy</button></div>
-<pre id="term-code"><span class="c-dim"># after purchase: clone the private repo</span>
-<span class="c-white">$ cp .env.example .env</span>
+        <div class="terminal" role="img" aria-label="Terminal: clone Baseware and start it with Docker">
+          <div class="term-bar"><i></i><i></i><i></i><span>baseware — zsh</span><button id="copy-btn" data-pt="copiar" data-en="copy">copy</button></div>
+<pre id="term-code"><span class="c-dim"># clone the public repo</span>
+<span class="c-white">$ git clone https://github.com/platusforge/baseware.git</span>
+<span class="c-white">$ cd baseware && cp .env.example .env</span>
 <span class="c-white">$ docker compose up --build</span>
 <span class="c-green">✓ web  → http://localhost:5173</span>
 <span class="c-green">✓ api  → http://localhost:3000/health</span>
-<span class="c-white">$ docker compose exec server npm run db:seed</span>
 <span class="c-orange">→ auth + orgs + stripe + admin live.</span>
-<span class="c-dim"># time to first deploy: days, not months.</span></pre>
+<span class="c-dim"># MIT licensed. fork it, ship it, sell it.</span></pre>
         </div>
       </div>
     </div>
@@ -457,14 +475,14 @@
     <div class="strip">
       <div class="strip-grid">
         <div class="stat">
-          <b>12+</b>
-          <span class="stat-label" data-pt="módulos prontos" data-en="ready modules">ready modules</span>
-          <small data-pt="auth, billing, admin, API keys…" data-en="auth, billing, admin, API keys…">auth, billing, admin, API keys…</small>
+          <b>MIT</b>
+          <span class="stat-label" data-pt="licença" data-en="license">license</span>
+          <small data-pt="uso comercial, modificação e distribuição" data-en="commercial use, modification and distribution">commercial use, modification and distribution</small>
         </div>
         <div class="stat">
-          <b>2</b>
-          <span class="stat-label" data-pt="idiomas de docs" data-en="doc languages">doc languages</span>
-          <small data-pt="PT-BR + English" data-en="PT-BR + English">PT-BR + English</small>
+          <b>$0</b>
+          <span class="stat-label" data-pt="para sempre" data-en="forever">forever</span>
+          <small data-pt="sem assentos, sem chaves de licença" data-en="no seats, no license keys">no seats, no license keys</small>
         </div>
         <div class="stat">
           <b>1</b>
@@ -472,36 +490,51 @@
           <small data-pt="docker compose up" data-en="docker compose up">docker compose up</small>
         </div>
         <div class="stat">
-          <b>$0</b>
-          <span class="stat-label" data-pt="mensalidade" data-en="monthly fees">monthly fees</span>
-          <small data-pt="pagamento único, acesso vitalício" data-en="one-time payment, lifetime access">one-time payment, lifetime access</small>
+          <b>2</b>
+          <span class="stat-label" data-pt="idiomas de docs" data-en="doc languages">doc languages</span>
+          <small data-pt="PT-BR + English" data-en="PT-BR + English">PT-BR + English</small>
         </div>
       </div>
     </div>
+
+    <!-- ================= PLATAFORMA ================= -->
+    <section class="block" id="platform">
+      <div class="wrap">
+        <p class="kicker" data-pt="A plataforma" data-en="The platform">The platform</p>
+        <h2 data-pt="PlatusForge é uma plataforma de soluções open-source para desenvolvedores" data-en="PlatusForge is an open-source platform for developers">PlatusForge is an open-source platform for developers</h2>
+        <p class="lead" data-pt="Construímos as fundações para você construir o produto. Tudo público, licenciado sob MIT e feito para ser forkcado. Baseware é a primeira solução — outras estão a caminho." data-en="We build the foundations so you can build the product. Everything is public, MIT-licensed and designed to be forked. Baseware is the first solution — more are on the way.">We build the foundations so you can build the product. Everything is public, MIT-licensed and designed to be forked. Baseware is the first solution — more are on the way.</p>
+        <div class="grid-3">
+          <div class="card"><div class="ico">🧱</div><h3 data-pt="Open source por padrão" data-en="Open source by default">Open source by default</h3><p data-pt="Cada solução nasce com código público e licença permissiva. Sem caixas-pretas, sem chaves de licença." data-en="Every solution ships with public source and a permissive license. No black boxes, no license keys.">Every solution ships with public source and a permissive license. No black boxes, no license keys.</p></div>
+          <div class="card"><div class="ico">⚙️</div><h3 data-pt="Fundações production-grade" data-en="Production-grade foundations">Production-grade foundations</h3><p data-pt="Auth, billing, multi-tenancy e deploy que já sobreviveram aos casos de borda do mundo real." data-en="Auth, billing, multi-tenancy and deploy pipelines that already survived real-world edge cases.">Auth, billing, multi-tenancy and deploy pipelines that already survived real-world edge cases.</p></div>
+          <div class="card"><div class="ico">🌍</div><h3 data-pt="Feito em público" data-en="Built in public">Built in public</h3><p data-pt="Issues, PRs e documentação abertos. Docs bilíngues e um manual para agentes de IA em cada repositório." data-en="Issues, PRs and docs in the open. Bilingual documentation and an AI-agent manual in every repository.">Issues, PRs and docs in the open. Bilingual documentation and an AI-agent manual in every repository.</p></div>
+        </div>
+        <p class="caption" style="margin-top:18px"><span data-pt="Explore a organização no GitHub:" data-en="Explore the organization on GitHub:">Explore the organization on GitHub:</span> <a href="https://github.com/platusforge" target="_blank" rel="noopener">github.com/platusforge</a></p>
+      </div>
+    </section>
 
     <!-- ================= DOR / SOLUÇÃO ================= -->
     <section class="block pain">
       <div class="wrap">
         <p class="kicker" data-pt="O problema" data-en="The problem">The problem</p>
         <h2 data-pt="Todo SaaS novo começa com as mesmas 6 semanas chatas" data-en="Every new SaaS starts with the same boring 6 weeks">Every new SaaS starts with the same boring 6 weeks</h2>
-        <p class="lead" data-pt="Login, reset de senha, convites de time, assinatura Stripe, webhooks, e-mails, Docker, CI… nada disso é o seu produto — mas sem isso você não vende." data-en="Login, password reset, team invites, Stripe subscriptions, webhooks, emails, Docker, CI… none of that is your product — but without it you can't sell.">Login, password reset, team invites, Stripe subscriptions, webhooks, emails, Docker, CI… none of that is your product — but without it you can't sell.</p>
+        <p class="lead" data-pt="Login, reset de senha, convites de time, assinatura Stripe, webhooks, e-mails, Docker, CI… nada disso é o seu produto — mas sem isso você não vende. Baseware entrega essa base pronta e open source." data-en="Login, password reset, team invites, Stripe subscriptions, webhooks, emails, Docker, CI… none of that is your product — but without it you can't sell. Baseware ships that foundation open source.">Login, password reset, team invites, Stripe subscriptions, webhooks, emails, Docker, CI… none of that is your product — but without it you can't sell. Baseware ships that foundation open source.</p>
         <div class="pain-cols">
           <div class="card no">
-            <h3 data-pt="❌ Sem o DevKit" data-en="❌ Without DevKit">❌ Without DevKit</h3>
+            <h3 data-pt="❌ Sem o Baseware" data-en="❌ Without Baseware">❌ Without Baseware</h3>
             <ul>
               <li data-pt="Semanas soldando auth + Stripe + webhooks" data-en="Weeks wiring auth + Stripe + webhooks">Weeks wiring auth + Stripe + webhooks</li>
               <li data-pt="Multi-tenancy improvisado que quebra no 2º cliente" data-en="Improvised multi-tenancy that breaks at customer #2">Improvised multi-tenancy that breaks at customer #2</li>
               <li data-pt="Deploy manual, segredo vazado, rollback no escuro" data-en="Manual deploys, leaked secrets, blind rollbacks">Manual deploys, leaked secrets, blind rollbacks</li>
-              <li data-pt="Agente de IA gerando código fora do padrão" data-en="AI agents generating off-pattern code">AI agents generating off-pattern code</li>
+              <li data-pt="Boilerplate fechado que você não pode auditar nem forkar" data-en="Closed boilerplate you can't audit or fork">Closed boilerplate you can't audit or fork</li>
             </ul>
           </div>
           <div class="card yes">
-            <h3 data-pt="✅ Com o DevKit" data-en="✅ With DevKit">✅ With DevKit</h3>
+            <h3 data-pt="✅ Com o Baseware" data-en="✅ With Baseware">✅ With Baseware</h3>
             <ul>
               <li data-pt="Clone, suba o Docker e codifique sua feature no dia 1" data-en="Clone, run Docker, code your feature on day 1">Clone, run Docker, code your feature on day 1</li>
               <li data-pt="Organizações, convites e RBAC prontos para B2B" data-en="Organizations, invites & RBAC ready for B2B">Organizations, invites & RBAC ready for B2B</li>
               <li data-pt="Checkout, portal e dunning Stripe já soldados" data-en="Stripe checkout, portal & dunning already wired">Stripe checkout, portal & dunning already wired</li>
-              <li data-pt="AGENTS.md: sua IA codifica dentro da arquitetura" data-en="AGENTS.md: your AI codes inside the architecture">AGENTS.md: your AI codes inside the architecture</li>
+              <li data-pt="MIT: audite, modifique, distribua e venda sem pedir licença" data-en="MIT: audit, modify, distribute and sell without asking">MIT: audit, modify, distribute and sell without asking</li>
             </ul>
           </div>
         </div>
@@ -511,11 +544,11 @@
     <!-- ================= O QUE É (bloco definição p/ SEO+GEO) ================= -->
     <section class="block" id="o-que-e">
       <div class="wrap">
-        <p class="kicker">DevKit</p>
-        <h2 data-pt="O que é o DevKit?" data-en="What is DevKit?">What is DevKit?</h2>
-        <p class="lead" data-pt="DevKit é um boilerplate SaaS production-ready em Express 4, TypeScript strict, Prisma 6 e PostgreSQL 16 no backend e React 18 + Vite no frontend. Inclui autenticação por cookies HttpOnly, organizações multi-tenant com convites e RBAC, cobrança Stripe por organização, painel admin, audit logs, API keys, e-mail transacional com Resend, Docker Compose, TLS com Traefik, CI/CD com GitHub Actions, testes Jest e documentação em português e inglês." data-en="DevKit is a production-ready SaaS boilerplate with Express 4, strict TypeScript, Prisma 6 and PostgreSQL 16 on the backend and React 18 + Vite on the frontend. It includes HttpOnly-cookie auth, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and docs in Portuguese and English.">DevKit is a production-ready SaaS boilerplate with Express 4, strict TypeScript, Prisma 6 and PostgreSQL 16 on the backend and React 18 + Vite on the frontend. It includes HttpOnly-cookie auth, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and docs in Portuguese and English.</p>
+        <p class="kicker">Baseware</p>
+        <h2 data-pt="O que é o Baseware?" data-en="What is Baseware?">What is Baseware?</h2>
+        <p class="lead" data-pt="Baseware é um starter SaaS open-source e production-ready em Express 5, TypeScript strict, Prisma 7 e PostgreSQL 16 no backend e React 19 + Vite 8 no frontend. Inclui autenticação por cookies HttpOnly com MFA, organizações multi-tenant com convites e RBAC, cobrança Stripe por organização, painel admin, audit logs, API keys, e-mail transacional com Resend, Docker Compose, TLS com Traefik, CI/CD com GitHub Actions, testes Jest e documentação em português e inglês. Licença MIT: sem chaves, sem assentos, sem tiers." data-en="Baseware is an open-source, production-ready SaaS starter with Express 5, strict TypeScript, Prisma 7 and PostgreSQL 16 on the backend and React 19 + Vite 8 on the frontend. It includes HttpOnly-cookie auth with MFA, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and docs in Portuguese and English. MIT licensed: no keys, no seats, no tiers.">Baseware is an open-source, production-ready SaaS starter with Express 5, strict TypeScript, Prisma 7 and PostgreSQL 16 on the backend and React 19 + Vite 8 on the frontend. It includes HttpOnly-cookie auth with MFA, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and docs in Portuguese and English. MIT licensed: no keys, no seats, no tiers.</p>
         <div class="badges" aria-label="Stack">
-          <span>Express 4</span><span>TypeScript strict</span><span>Prisma 6</span><span>PostgreSQL 16</span><span>Zod</span><span>Stripe</span><span>Resend</span><span>React 18</span><span>Vite 5</span><span>Docker</span><span>Traefik TLS</span><span>GitHub Actions</span><span>Jest</span><span>i18n PT-BR/EN</span>
+          <span>Express 5</span><span>TypeScript strict</span><span>Prisma 7</span><span>PostgreSQL 16</span><span>Zod 4</span><span>Stripe</span><span>Resend</span><span>React 19</span><span>Vite 8</span><span>React Router 7</span><span>Docker</span><span>Traefik TLS</span><span>GitHub Actions</span><span>Jest</span><span>i18n PT-BR/EN</span><span>MIT</span>
         </div>
       </div>
     </section>
@@ -524,10 +557,10 @@
     <section class="block" id="inside" style="padding-top:0">
       <div class="wrap">
         <p class="kicker" data-pt="Dentro do repo" data-en="Inside the repo">Inside the repo</p>
-        <h2 data-pt="Tudo que boilerplate gringo de $300 entrega — e o que eles omitem" data-en="Everything $300 boilerplates ship — plus what they omit">Everything $300 boilerplates ship — plus what they omit</h2>
-        <p class="lead" data-pt="Cada item abaixo é código real no repositório, não promessa de roadmap." data-en="Every item below is real code in the repo, not a roadmap promise.">Every item below is real code in the repo, not a roadmap promise.</p>
+        <h2 data-pt="Tudo que boilerplate pago entrega — sem o preço nem o lock-in" data-en="Everything paid boilerplates ship — without the price or the lock-in">Everything paid boilerplates ship — without the price or the lock-in</h2>
+        <p class="lead" data-pt="Cada item abaixo é código real no repositório público, não promessa de roadmap." data-en="Every item below is real code in the public repository, not a roadmap promise.">Every item below is real code in the public repository, not a roadmap promise.</p>
         <div class="grid-3">
-          <div class="card"><div class="ico">🔐</div><h3 data-pt="Auth blindada" data-en="Hardened auth">Hardened auth</h3><p data-pt="E-mail/senha + OAuth Google/GitHub, access 15min + refresh rotativo 7d em cookies HttpOnly, bcrypt-12, lockout e rate limit." data-en="Email/password + Google/GitHub OAuth, 15-min access + rotating 7-day refresh in HttpOnly cookies, bcrypt-12, lockout & rate limits.">Email/password + Google/GitHub OAuth, 15-min access + rotating 7-day refresh in HttpOnly cookies, bcrypt-12, lockout & rate limits.</p></div>
+          <div class="card"><div class="ico">🔐</div><h3 data-pt="Auth blindada" data-en="Hardened auth">Hardened auth</h3><p data-pt="E-mail/senha + OAuth Google/GitHub, MFA TOTP, access 15min + refresh rotativo 7d em cookies HttpOnly, bcrypt-12, lockout e rate limit." data-en="Email/password + Google/GitHub OAuth, TOTP MFA, 15-min access + rotating 7-day refresh in HttpOnly cookies, bcrypt-12, lockout & rate limits.">Email/password + Google/GitHub OAuth, TOTP MFA, 15-min access + rotating 7-day refresh in HttpOnly cookies, bcrypt-12, lockout & rate limits.</p></div>
           <div class="card"><div class="ico">🏢</div><h3 data-pt="B2B de verdade" data-en="Real B2B">Real B2B</h3><p data-pt="Organizações, membros, convites e RBAC como cidadãos de primeira classe — não um campo tenant improvisado." data-en="Organizations, members, invites & RBAC as first-class citizens — not an improvised tenant column.">Organizations, members, invites & RBAC as first-class citizens — not an improvised tenant column.</p></div>
           <div class="card"><div class="ico">💳</div><h3 data-pt="Stripe sem gambiarra" data-en="Stripe without hacks">Stripe without hacks</h3><p data-pt="Checkout + Customer Portal + webhooks verificados, idempotentes e com dunning, por organização." data-en="Checkout + Customer Portal + verified, idempotent webhooks with dunning, per organization.">Checkout + Customer Portal + verified, idempotent webhooks with dunning, per organization.</p></div>
           <div class="card"><div class="ico">🛡️</div><h3 data-pt="Admin, audit & API keys" data-en="Admin, audit & API keys">Admin, audit & API keys</h3><p data-pt="Painel admin, trilha de auditoria e chaves de API prontas para o seu plano enterprise." data-en="Admin panel, audit trail & API keys ready for your enterprise plan.">Admin panel, audit trail & API keys ready for your enterprise plan.</p></div>
@@ -535,26 +568,28 @@
           <div class="card"><div class="ico">🤖</div><h3 data-pt="Feito para agentes de IA" data-en="Built for AI agents">Built for AI agents</h3><p data-pt="AGENTS.md + arquitetura aberta em 5 camadas: sua IA gera feature dentro do padrão, sem quebrar o resto." data-en="AGENTS.md + 5-layer open architecture: your AI ships features inside the pattern without breaking the rest.">AGENTS.md + 5-layer open architecture: your AI ships features inside the pattern without breaking the rest.</p></div>
         </div>
         <div class="grid-2" style="margin-top:18px">
-          <div class="tree">dev-kit/
+          <div class="tree">baseware/
 ├── server/src/
 │   ├── routes → controllers → services
 │   ├── repositories → implementations
 │   ├── adapters <span class="c-orange">(stripe, email, logger)</span>
-│   └── cron, rate-limit, helmet
+│   └── cron, rate-limit, helmet, mfa
 ├── web/src/
 │   ├── pages, dashboard, components
 │   └── i18n <span class="c-orange">(pt-BR + en)</span>
 ├── docs/en + docs/pt-BR
 ├── AGENTS.md  <span class="c-green">← manual da IA</span>
-└── docker-compose ×3 + CI</div>
+├── docker-compose ×3 + CI
+└── LICENSE.md  <span class="c-green">← MIT</span></div>
           <div>
             <div class="card" style="height:100%">
-              <h3 data-pt="Arquitetura que escala com o time" data-en="Architecture that scales with the team">Architecture that scales with the team</h3>
-              <p data-pt="Cadeia rígida de 5 camadas, DI manual, filenames kebab-case e Conventional Commits. Qualquer dev — humano ou IA — entra no repo e sabe onde cada coisa mora." data-en="Strict 5-layer chain, manual DI, kebab-case filenames and Conventional Commits. Any dev — human or AI — opens the repo and knows where everything lives.">Strict 5-layer chain, manual DI, kebab-case filenames and Conventional Commits. Any dev — human or AI — opens the repo and knows where everything lives.</p>
+              <h3 data-pt="Arquitetura aberta, zero lock-in" data-en="Open architecture, zero lock-in">Open architecture, zero lock-in</h3>
+              <p data-pt="Cadeia rígida de 5 camadas, DI manual, filenames kebab-case e Conventional Commits. Código público, licença MIT e docs bilíngues — qualquer dev, humano ou IA, entra no repo e sabe onde cada coisa mora." data-en="Strict 5-layer chain, manual DI, kebab-case filenames and Conventional Commits. Public code, MIT license and bilingual docs — any dev, human or AI, opens the repo and knows where everything lives.">Strict 5-layer chain, manual DI, kebab-case filenames and Conventional Commits. Public code, MIT license and bilingual docs — any dev, human or AI, opens the repo and knows where everything lives.</p>
               <ul class="feat">
                 <li><code>Route → Controller → Service → Repository</code></li>
                 <li data-pt="Testes Jest + gate de auditoria de segurança" data-en="Jest tests + security audit gate">Jest tests + security audit gate</li>
                 <li data-pt="Landing + pricing + FAQ + blog inclusos" data-en="Landing + pricing + FAQ + blog included">Landing + pricing + FAQ + blog included</li>
+                <li data-pt="Sem chaves de licença, assentos ou tiers" data-en="No license keys, seats or tiers">No license keys, seats or tiers</li>
               </ul>
             </div>
           </div>
@@ -566,77 +601,75 @@
     <section class="block" id="compare" style="padding-top:0">
       <div class="wrap">
         <p class="kicker" data-pt="Comparativo honesto" data-en="Honest comparison">Honest comparison</p>
-        <h2 data-pt="DevKit vs. os boilerplates gringos" data-en="DevKit vs. the US boilerplates">DevKit vs. the US boilerplates</h2>
-        <p class="lead" data-pt="ShipFast, Divjoy e Makerkit são bons. O DevKit só inclui de fábrica o que eles vendem separado — ou nem têm." data-en="ShipFast, Divjoy and Makerkit are good. DevKit just includes out of the box what they sell separately — or don't have.">ShipFast, Divjoy and Makerkit are good. DevKit just includes out of the box what they sell separately — or don't have.</p>
-        <div class="table-wrap">
+        <h2 data-pt="Baseware vs. boilerplates pagos" data-en="Baseware vs. paid boilerplates">Baseware vs. paid boilerplates</h2>
+        <p class="lead" data-pt="Kits pagos custam $199–$349 e mantêm o código fechado. Baseware entrega a mesma base B2B sob MIT — sem preço, sem assento, sem permissão para forkar." data-en="Paid kits cost $199–$349 and keep the source closed. Baseware ships the same B2B foundation under MIT — no price, no seats, no permission needed to fork.">Paid kits cost $199–$349 and keep the source closed. Baseware ships the same B2B foundation under MIT — no price, no seats, no permission needed to fork.</p>
+        <div class="table-wrap" role="region" aria-label="Comparison table" tabindex="0">
           <table>
-            <thead><tr><th data-pt="Critério" data-en="Criteria">Criteria</th><th>DevKit</th><th>ShipFast</th><th>Divjoy</th><th>Makerkit</th></tr></thead>
+            <thead><tr><th data-pt="Critério" data-en="Criteria">Criteria</th><th>Baseware</th><th data-pt="Boilerplates pagos" data-en="Paid boilerplates">Paid boilerplates</th><th data-pt="Do zero" data-en="From scratch">From scratch</th></tr></thead>
             <tbody>
-              <tr><td data-pt="Pagamento único" data-en="One-time payment">One-time payment</td><td class="y" data-pt="✓ desde $199" data-en="✓ from $199">✓ from $199</td><td class="p">$169</td><td class="p">✓</td><td class="n" data-pt="assinatura" data-en="subscription">subscription</td></tr>
-              <tr><td data-pt="Multi-tenancy B2B (orgs, convites, RBAC)" data-en="B2B multi-tenancy (orgs, invites, RBAC)">B2B multi-tenancy (orgs, invites, RBAC)</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="só no plano alto" data-en="top tier only">top tier only</td></tr>
-              <tr><td data-pt="Billing Stripe por organização + dunning" data-en="Per-org Stripe billing + dunning">Per-org Stripe billing + dunning</td><td class="y">✓</td><td class="p" data-pt="parcial" data-en="partial">partial</td><td class="n">—</td><td class="y">✓</td></tr>
-              <tr><td data-pt="Audit logs + API keys" data-en="Audit logs + API keys">Audit logs + API keys</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="parcial" data-en="partial">partial</td></tr>
-              <tr><td data-pt="Docker + TLS + CI prontos" data-en="Ready Docker + TLS + CI">Ready Docker + TLS + CI</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="p" data-pt="parcial" data-en="partial">partial</td></tr>
-              <tr><td data-pt="Manual para agentes de IA (AGENTS.md)" data-en="AI-agent manual (AGENTS.md)">AI-agent manual (AGENTS.md)</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
-              <tr><td data-pt="Docs em PT-BR" data-en="PT-BR docs">PT-BR docs</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+              <tr><td data-pt="Licença e preço" data-en="License and price">License and price</td><td class="y" data-pt="✓ MIT · $0" data-en="✓ MIT · $0">✓ MIT · $0</td><td class="p">$199–$349</td><td class="p" data-pt="seu tempo" data-en="your time">your time</td></tr>
+              <tr><td data-pt="Código-fonte público" data-en="Public source code">Public source code</td><td class="y">✓</td><td class="n">—</td><td class="y">✓</td></tr>
+              <tr><td data-pt="Multi-tenancy B2B (orgs, convites, RBAC)" data-en="B2B multi-tenancy (orgs, invites, RBAC)">B2B multi-tenancy (orgs, invites, RBAC)</td><td class="y">✓</td><td class="p" data-pt="parcial / plano alto" data-en="partial / top tier">partial / top tier</td><td class="p" data-pt="construir" data-en="build it">build it</td></tr>
+              <tr><td data-pt="Billing Stripe por organização + dunning" data-en="Per-org Stripe billing + dunning">Per-org Stripe billing + dunning</td><td class="y">✓</td><td class="p" data-pt="parcial" data-en="partial">partial</td><td class="p" data-pt="construir" data-en="build it">build it</td></tr>
+              <tr><td data-pt="Audit logs + API keys" data-en="Audit logs + API keys">Audit logs + API keys</td><td class="y">✓</td><td class="p" data-pt="parcial" data-en="partial">partial</td><td class="p" data-pt="construir" data-en="build it">build it</td></tr>
+              <tr><td data-pt="Docker + TLS + CI prontos" data-en="Ready Docker + TLS + CI">Ready Docker + TLS + CI</td><td class="y">✓</td><td class="p" data-pt="parcial" data-en="partial">partial</td><td class="p" data-pt="construir" data-en="build it">build it</td></tr>
+              <tr><td data-pt="Manual para agentes de IA (AGENTS.md)" data-en="AI-agent manual (AGENTS.md)">AI-agent manual (AGENTS.md)</td><td class="y">✓</td><td class="p" data-pt="raro" data-en="rare">rare</td><td class="n">—</td></tr>
+              <tr><td data-pt="Docs em PT-BR" data-en="PT-BR docs">PT-BR docs</td><td class="y">✓</td><td class="p" data-pt="raro" data-en="rare">rare</td><td class="n">—</td></tr>
+              <tr><td data-pt="Fork, modificar e redistribuir" data-en="Fork, modify and redistribute">Fork, modify and redistribute</td><td class="y" data-pt="✓ MIT" data-en="✓ MIT">✓ MIT</td><td class="n">—</td><td class="p" data-pt="n/a" data-en="n/a">n/a</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="caption" data-pt="Comparativo simplificado com base nas documentações públicas (jan/2026). Marcas citadas pertencem aos seus donos." data-en="Simplified comparison based on public docs (Jan 2026). Named brands belong to their owners.">Simplified comparison based on public docs (Jan 2026). Named brands belong to their owners.</p>
+        <p class="caption" data-pt="Comparativo simplificado (out/2026). Recursos e preços de kits pagos variam por produto; consulte a documentação de cada um." data-en="Simplified comparison (Oct 2026). Features and pricing of paid kits vary by product; check each vendor's docs.">Simplified comparison (Oct 2026). Features and pricing of paid kits vary by product; check each vendor's docs.</p>
       </div>
     </section>
 
     <!-- ================= COMO FUNCIONA ================= -->
     <section class="block" id="how" style="padding-top:0">
       <div class="wrap">
-        <p class="kicker" data-pt="Do pagamento ao git clone" data-en="From payment to git clone">From payment to git clone</p>
-        <h2 data-pt="Acesso ao código em 3 passos" data-en="Code access in 3 steps">Code access in 3 steps</h2>
-        <p class="lead" data-pt="Sem licença por chave, sem portal obscuro: entrega via GitHub, do jeito que dev gosta." data-en="No license keys, no obscure portals: delivered via GitHub, the way devs like it.">No license keys, no obscure portals: delivered via GitHub, the way devs like it.</p>
+        <p class="kicker" data-pt="Do git clone ao deploy" data-en="From git clone to deploy">From git clone to deploy</p>
+        <h2 data-pt="Comece em 3 passos" data-en="Start in 3 steps">Start in 3 steps</h2>
+        <p class="lead" data-pt="Sem cadastro, sem checkout, sem convite: o código é público." data-en="No signup, no checkout, no invite: the code is public.">No signup, no checkout, no invite: the code is public.</p>
         <div class="steps">
-          <div class="step"><b>1</b><h3 data-pt="Compre com 1 clique" data-en="Buy in 1 click">Buy in 1 click</h3><p data-pt="Checkout seguro via Stripe. Informe seu usuário do GitHub no cadastro — é para ele que vai o convite." data-en="Secure Stripe checkout. Provide your GitHub username at signup — that's where the invite goes.">Secure Stripe checkout. Provide your GitHub username at signup — that's where the invite goes.</p></div>
-          <div class="step"><b>2</b><h3 data-pt="Receba o convite" data-en="Get the invite">Get the invite</h3><p data-html data-pt="Pagamento confirmado → convite de colaborador com acesso de leitura (<code>pull</code>) no repo privado. Aceite e pronto." data-en="Payment confirmed → collaborator invite with read (<code>pull</code>) access to the private repo. Accept and done.">Payment confirmed → collaborator invite with read (<code>pull</code>) access to the private repo. Accept and done.</p></div>
-          <div class="step"><b>3</b><h3 data-pt="Clone e venda" data-en="Clone and sell">Clone and sell</h3><p data-html data-pt="Faça fork, suba com <code>docker compose up</code> e construa seu SaaS em cima. Atualizações do repo incluídas." data-en="Fork it, run <code>docker compose up</code> and build your SaaS on top. Repo updates included.">Fork it, run <code>docker compose up</code> and build your SaaS on top. Repo updates included.</p></div>
+          <div class="step"><b>1</b><h3 data-pt="Clone o repositório" data-en="Clone the repository">Clone the repository</h3><p data-html data-pt="Público e MIT. Rode <code>git clone https://github.com/platusforge/baseware.git</code> e pronto." data-en="Public and MIT. Run <code>git clone https://github.com/platusforge/baseware.git</code> and you're in.">Public and MIT. Run <code>git clone https://github.com/platusforge/baseware.git</code> and you're in.</p></div>
+          <div class="step"><b>2</b><h3 data-pt="Configure e suba" data-en="Configure and boot">Configure and boot</h3><p data-html data-pt="Copie <code>.env.example</code>, defina <code>JWT_SECRET</code> e <code>DB_PASSWORD</code>, e rode <code>docker compose up --build</code>." data-en="Copy <code>.env.example</code>, set <code>JWT_SECRET</code> and <code>DB_PASSWORD</code>, then run <code>docker compose up --build</code>.">Copy <code>.env.example</code>, set <code>JWT_SECRET</code> and <code>DB_PASSWORD</code>, then run <code>docker compose up --build</code>.</p></div>
+          <div class="step"><b>3</b><h3 data-pt="Lance e seja dono" data-en="Ship and own it">Ship and own it</h3><p data-html data-pt="Fork, customize e venda. A licença MIT permite uso comercial e redistribuição; mantenha o aviso de copyright." data-en="Fork, customize and sell. The MIT license allows commercial use and redistribution; keep the copyright notice.">Fork, customize and sell. The MIT license allows commercial use and redistribution; keep the copyright notice.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ================= PRICING ================= -->
-    <!-- Checkout via dashboard (PlatusKit): kits/devkit-starter e kits/devkit-professional -->
-    <section class="block" id="pricing" style="padding-top:0">
+    <!-- ================= OPEN SOURCE / GET STARTED ================= -->
+    <section class="block" id="get-started" style="padding-top:0">
       <div class="wrap">
         <div class="pricing">
-          <p class="kicker" data-pt="Pagamento único · acesso vitalício" data-en="One-time payment · lifetime access">One-time payment · lifetime access</p>
-          <h2 data-pt="Um preço honesto. Zero mensalidade." data-en="One honest price. Zero subscription.">One honest price. Zero subscription.</h2>
-          <p class="lead" data-pt="Construir essa base do zero custa 120+ horas de dev — ou mais de $6.000 em freela. Aqui é pagamento único: escolha a licença e comece hoje. Reembolso de 14 dias, sem perguntas." data-en="Building this foundation from scratch costs 120+ dev hours — or $6,000+ of freelance work. Here it's a one-time payment: pick a license and start today. 14-day refund, no questions asked.">Building this foundation from scratch costs 120+ dev hours — or $6,000+ of freelance work. Here it's a one-time payment: pick a license and start today. 14-day refund, no questions asked.</p>
+          <p class="kicker" data-pt="Open source · MIT" data-en="Open source · MIT">Open source · MIT</p>
+          <h2 data-pt="Grátis para sempre. Seu para forkar." data-en="Free forever. Yours to fork.">Free forever. Yours to fork.</h2>
+          <p class="lead" data-pt="Sem chaves de licença, assentos ou tiers por projeto. Baseware é MIT: use comercialmente, modifique, distribua e venda. Mantenha o aviso de copyright e a licença nas cópias do código." data-en="No license keys, seats or per-project tiers. Baseware is MIT: use it commercially, modify it, distribute it and sell it. Keep the copyright notice and license in copies of the source.">No license keys, seats or per-project tiers. Baseware is MIT: use it commercially, modify it, distribute it and sell it. Keep the copyright notice and license in copies of the source.</p>
           <div class="plans">
-            <div class="plan">
-              <h3>Starter</h3>
-              <p class="price">$199 <small data-pt="único" data-en="one-time">one-time</small></p>
-              <ul>
-                <li data-pt="1 produto SaaS (1 marca/domínio + staging)" data-en="1 SaaS product (1 brand/domain + staging)">1 SaaS product</li>
-                <li data-pt="Repo privado completo no GitHub" data-en="Full private GitHub repo">Private GitHub repo</li>
-                <li data-pt="Auth + Orgs + Stripe + Docker + CI" data-en="Auth + Orgs + Stripe + Docker + CI">Auth + Stripe + Docker + CI</li>
-                <li data-pt="Docs PT-BR + EN" data-en="PT-BR + EN docs">PT-BR + EN docs</li>
-                <li data-pt="Suporte da comunidade" data-en="Community support">Community support</li>
-              </ul>
-              <a class="btn btn--ghost" href="https://dashboard.platusforge.com/kits/devkit-starter" data-pt="Começar com Starter" data-en="Start with Starter">Start with Starter</a>
-            </div>
             <div class="plan featured">
-              <span class="tag" data-pt="★ MAIS POPULAR" data-en="★ MOST POPULAR">★ MOST POPULAR</span>
-              <h3>Professional</h3>
-              <p class="price">$249 <small data-pt="único" data-en="one-time">one-time</small></p>
+              <span class="tag" data-pt="★ COMECE AGORA" data-en="★ START HERE">★ START HERE</span>
+              <h3 data-pt="Construa com Baseware" data-en="Build with Baseware">Build with Baseware</h3>
+              <p class="lead" style="font-size:.95rem;margin:8px 0 0;color:var(--text-soft)" data-pt="A base completa, direto do GitHub." data-en="The full foundation, straight from GitHub.">The full foundation, straight from GitHub.</p>
               <ul>
-                <li data-pt="Produtos ilimitados, seus + clientes (1 dev)" data-en="Unlimited products, yours + clients (1 dev)">Unlimited projects (1 dev)</li>
-                <li data-pt="Mesmo repo completo do Starter" data-en="Same full repo as Starter">Everything in Starter, plus:</li>
-                <li data-pt="Orgs, RBAC, audit logs + API keys inclusos" data-en="Orgs, RBAC, audit logs + API keys included">Orgs, RBAC, audit logs + API keys</li>
-                <li data-pt="E-mail transacional + blog + FAQ inclusos" data-en="Transactional email + blog + FAQ included">Transactional email + blog + FAQ</li>
-                <li data-pt="Uso em projetos de clientes permitido" data-en="Client projects allowed">Use in client projects</li>
-                <li data-pt="Suporte prioritário" data-en="Priority support">Priority support</li>
+                <li data-pt="Clone público + quickstart Docker" data-en="Public clone + Docker quickstart">Public clone + Docker quickstart</li>
+                <li data-pt="Auth, orgs, Stripe, admin, audit e API keys" data-en="Auth, orgs, Stripe, admin, audit and API keys">Auth, orgs, Stripe, admin, audit and API keys</li>
+                <li data-pt="Docs EN + PT-BR e AGENTS.md" data-en="EN + PT-BR docs and AGENTS.md">EN + PT-BR docs and AGENTS.md</li>
+                <li data-pt="Licença MIT, uso comercial liberado" data-en="MIT license, commercial use allowed">MIT license, commercial use allowed</li>
               </ul>
-              <a class="btn btn--forge" href="https://dashboard.platusforge.com/kits/devkit-professional" data-pt="Quero o Professional" data-en="Get Professional">Get Professional</a>
+              <a class="btn btn--forge" href="https://github.com/platusforge/baseware" target="_blank" rel="noopener" data-pt="Clonar o repositório" data-en="Clone the repository">Clone the repository</a>
+            </div>
+            <div class="plan">
+              <h3 data-pt="Construa a plataforma" data-en="Shape the platform">Shape the platform</h3>
+              <p class="lead" style="font-size:.95rem;margin:8px 0 0;color:var(--text-soft)" data-pt="A PlatusForge cresce em público. Issues, PRs e novas soluções são bem-vindas." data-en="PlatusForge grows in public. Issues, PRs and new solutions are welcome.">PlatusForge grows in public. Issues, PRs and new solutions are welcome.</p>
+              <ul>
+                <li data-pt="Reporte bugs e sugira features" data-en="Report bugs and request features">Report bugs and request features</li>
+                <li data-pt="Envie PRs com docs e testes" data-en="Send PRs with docs and tests">Send PRs with docs and tests</li>
+                <li data-pt="Patrocine a manutenção open source" data-en="Sponsor open-source maintenance">Sponsor open-source maintenance</li>
+                <li data-pt="Novas soluções a caminho" data-en="More solutions on the way">More solutions on the way</li>
+              </ul>
+              <a class="btn btn--ghost" href="https://github.com/platusforge" target="_blank" rel="noopener" data-pt="Contribuir no GitHub" data-en="Contribute on GitHub">Contribute on GitHub</a>
             </div>
           </div>
-          <p class="guarantee" data-pt="🔒 Checkout via Stripe · 🔄 Reembolso em 14 dias revoga o acesso ao repo · 🧾 Nota e licença na compra" data-en="🔒 Stripe checkout · 🔄 14-day refunds revoke repo access · 🧾 Receipt and license included">🔒 Stripe checkout · 🔄 14-day refunds revoke repo access · 🧾 Receipt and license included</p>
+          <p class="guarantee" data-pt="MIT license · Uso comercial permitido · Sem garantia" data-en="MIT license · Commercial use allowed · No warranty">MIT license · Commercial use allowed · No warranty</p>
         </div>
       </div>
     </section>
@@ -645,35 +678,39 @@
     <section class="block" id="faq" style="padding-top:0">
       <div class="wrap">
         <p class="kicker">FAQ</p>
-        <h2 data-pt="Perguntas que todo dev faz antes de comprar" data-en="Questions every dev asks before buying">Questions every dev asks before buying</h2>
+        <h2 data-pt="Perguntas que todo dev faz antes de forkar" data-en="Questions every dev asks before forking">Questions every dev asks before forking</h2>
         <p class="lead" data-pt="Respostas diretas, sem juridiquês." data-en="Straight answers, no legalese.">Straight answers, no legalese.</p>
         <details open>
-          <summary data-pt="Como recebo acesso depois de comprar?" data-en="How do I get access after buying?">How do I get access after buying?</summary>
-          <div class="a" data-pt="Você cria a conta no dashboard e informa seu usuário do GitHub no perfil. Confirmado o pagamento via Stripe, enviamos automaticamente um convite de colaborador com acesso de leitura (pull) para o repositório privado. O link do repo fica em My Kits no dashboard e o convite pode ser reenviado quando precisar." data-en="You create an account on the dashboard and set your GitHub username in your profile. Once Stripe confirms payment, we automatically send a collaborator invite with read (pull) access to the private repo. The repo link lives in My Kits on the dashboard and the invite can be re-sent anytime.">You provide your GitHub username at signup. Once Stripe confirms payment, we send a collaborator invite with read (pull) access to the private repo. The repo link lives in your customer area and the invite can be re-sent anytime.</div>
+          <summary data-pt="O Baseware é realmente grátis?" data-en="Is Baseware really free?">Is Baseware really free?</summary>
+          <div class="a" data-pt="Sim. Baseware é licenciado sob MIT, sem tier pago, sem assentos e sem chaves de licença. Você pode usar, modificar, distribuir e vender produtos construídos em cima dele." data-en="Yes. Baseware is MIT licensed, with no paid tier, no seats and no license keys. You can use, modify, distribute and sell products built on it.">Yes. Baseware is MIT licensed, with no paid tier, no seats and no license keys. You can use, modify, distribute and sell products built on it.</div>
         </details>
         <details>
-          <summary data-pt="É assinatura ou pagamento único?" data-en="Subscription or one-time payment?">Subscription or one-time payment?</summary>
-          <div class="a" data-pt="Pagamento único: $199 (Starter) ou $249 (Professional). Acesso vitalício ao repo, sem mensalidade pelo boilerplate. Você só paga terceiros que usar (Stripe, hospedagem)." data-en="One-time payment: $199 (Starter) or $249 (Professional). Lifetime repo access, no monthly fee for the boilerplate. You only pay third parties you use (Stripe, hosting).">One-time payment: $199 (Starter) or $249 (Professional). Lifetime repo access, no monthly fee for the boilerplate. You only pay third parties you use (Stripe, hosting).</div>
+          <summary data-pt="Posso usar comercialmente e em projetos de clientes?" data-en="Can I use it commercially and in client projects?">Can I use it commercially and in client projects?</summary>
+          <div class="a" data-pt="Sim. A licença MIT permite uso comercial, modificação, distribuição e revenda. Mantenha o aviso de copyright e o texto da licença nas cópias do código-fonte." data-en="Yes. The MIT license allows commercial use, modification, distribution and resale. Keep the copyright notice and license text in copies of the source.">Yes. The MIT license allows commercial use, modification, distribution and resale. Keep the copyright notice and license text in copies of the source.</div>
         </details>
         <details>
-          <summary data-pt="Posso usar em projetos de clientes?" data-en="Can I use it in client projects?">Can I use it in client projects?</summary>
-          <div class="a" data-pt="Sim. A licença permite usar o DevKit como base de SaaS para usuários finais, inclusive comercialmente e em projetos de clientes. O proibido é revender ou redistribuir o código do boilerplate em si — templates, starters, cursos ou datasets." data-en="Yes. The license allows using DevKit as the foundation of SaaS apps for end users, including commercially and in client projects. What's forbidden is reselling or redistributing the boilerplate source itself — templates, starters, courses or datasets.">Yes. The license allows using DevKit as the foundation of SaaS apps for end users, including commercially and in client projects. What's forbidden is reselling or redistributing the boilerplate source itself — templates, starters, courses or datasets.</div>
+          <summary data-pt="Preciso abrir o código do meu SaaS?" data-en="Do I have to open-source my app?">Do I have to open-source my app?</summary>
+          <div class="a" data-pt="Não. A licença MIT não exige que trabalhos derivados sejam open source. Você pode manter seu produto proprietário normalmente." data-en="No. The MIT license does not require derivative works to be open source. You can keep your product proprietary.">No. The MIT license does not require derivative works to be open source. You can keep your product proprietary.</div>
         </details>
         <details>
           <summary data-pt="Qual é a stack exata?" data-en="What's the exact stack?">What's the exact stack?</summary>
-          <div class="a" data-pt="Backend: Express 4, TypeScript strict, Prisma 6, PostgreSQL 16, Zod, Winston, Stripe e Resend. Frontend: React 18, Vite 5, React Router 6, CSS Modules e i18n PT-BR/EN. Infra: Docker Compose, Nginx, Traefik com TLS e GitHub Actions." data-en="Backend: Express 4, strict TypeScript, Prisma 6, PostgreSQL 16, Zod, Winston, Stripe and Resend. Frontend: React 18, Vite 5, React Router 6, CSS Modules and PT-BR/EN i18n. Infra: Docker Compose, Nginx, Traefik TLS and GitHub Actions.">Backend: Express 4, strict TypeScript, Prisma 6, PostgreSQL 16, Zod, Winston, Stripe and Resend. Frontend: React 18, Vite 5, React Router 6, CSS Modules and PT-BR/EN i18n. Infra: Docker Compose, Nginx, Traefik TLS and GitHub Actions.</div>
+          <div class="a" data-pt="Backend: Express 5, TypeScript strict, Prisma 7, PostgreSQL 16, Zod 4, Winston, Stripe e Resend. Frontend: React 19, Vite 8, React Router 7, CSS Modules e i18n PT-BR/EN. Infra: Node 24, Docker Compose, Nginx, Traefik com TLS e GitHub Actions." data-en="Backend: Express 5, strict TypeScript, Prisma 7, PostgreSQL 16, Zod 4, Winston, Stripe and Resend. Frontend: React 19, Vite 8, React Router 7, CSS Modules and PT-BR/EN i18n. Infra: Node 24, Docker Compose, Nginx, Traefik TLS and GitHub Actions.">Backend: Express 5, strict TypeScript, Prisma 7, PostgreSQL 16, Zod 4, Winston, Stripe and Resend. Frontend: React 19, Vite 8, React Router 7, CSS Modules and PT-BR/EN i18n. Infra: Node 24, Docker Compose, Nginx, Traefik TLS and GitHub Actions.</div>
         </details>
         <details>
           <summary data-pt="Como a autenticação é protegida?" data-en="How is auth secured?">How is auth secured?</summary>
-          <div class="a" data-pt="Access token de 15 minutos + refresh rotativo de 7 dias em cookies HttpOnly, Secure e SameSite (nada em localStorage), bcrypt custo 12, mensagens genéricas anti-enumeração, lockout, rate limit em login e reset, e tokens de reset com hash SHA-256, uso único e 1h de expiração." data-en="15-minute access + rotating 7-day refresh in HttpOnly, Secure, SameSite cookies (nothing in localStorage), bcrypt cost 12, generic anti-enumeration messages, lockout, rate limits on login/reset, and reset tokens with SHA-256 hash, single use, 1h expiry.">15-minute access + rotating 7-day refresh in HttpOnly, Secure, SameSite cookies (nothing in localStorage), bcrypt cost 12, generic anti-enumeration messages, lockout, rate limits on login/reset, and reset tokens with SHA-256 hash, single use, 1h expiry.</div>
+          <div class="a" data-pt="Access token de 15 minutos + refresh rotativo de 7 dias em cookies HttpOnly, Secure e SameSite (nada em localStorage), MFA TOTP com backup codes em SHA-256, bcrypt custo 12, mensagens genéricas anti-enumeração, lockout, rate limit em login e reset, tokens de reset com hash SHA-256, uso único e 1h de expiração, verificação de e-mail e lista/revogação de sessões." data-en="15-minute access + rotating 7-day refresh in HttpOnly, Secure, SameSite cookies (nothing in localStorage), TOTP MFA with SHA-256 backup codes, bcrypt cost 12, generic anti-enumeration messages, lockout, rate limits on login/reset, reset tokens with SHA-256 hash, single use, 1h expiry, email verification and session listing/revocation.">15-minute access + rotating 7-day refresh in HttpOnly, Secure, SameSite cookies (nothing in localStorage), TOTP MFA with SHA-256 backup codes, bcrypt cost 12, generic anti-enumeration messages, lockout, rate limits on login/reset, reset tokens with SHA-256 hash, single use, 1h expiry, email verification and session listing/revocation.</div>
         </details>
         <details>
           <summary data-pt="Funciona bem com agentes de IA (Cursor, Copilot, Codex)?" data-en="Does it work well with AI agents (Cursor, Copilot, Codex)?">Does it work well with AI agents (Cursor, Copilot, Codex)?</summary>
           <div class="a" data-pt="Foi feito para isso. O AGENTS.md é o manual de build obrigatório, a arquitetura em 5 camadas (Route → Controller → Service → Repository → Implementation) impede a IA de espalhar lógica, e as convenções (kebab-case, Conventional Commits, DI manual) mantêm o código gerado consistente." data-en="It was made for that. AGENTS.md is the mandatory build manual, the 5-layer architecture (Route → Controller → Service → Repository → Implementation) stops the AI from scattering logic, and conventions (kebab-case, Conventional Commits, manual DI) keep generated code consistent.">It was made for that. AGENTS.md is the mandatory build manual, the 5-layer architecture (Route → Controller → Service → Repository → Implementation) stops the AI from scattering logic, and conventions (kebab-case, Conventional Commits, manual DI) keep generated code consistent.</div>
         </details>
         <details>
-          <summary data-pt="E se eu não gostar? Tem reembolso?" data-en="What if I don't like it? Any refund?">What if I don't like it? Any refund?</summary>
-          <div class="a" data-pt="14 dias de garantia incondicional. Pediu reembolso, devolvemos o valor e revogamos o acesso ao repositório. Simples assim." data-en="14-day unconditional guarantee. Request a refund, we return the money and revoke repo access. That simple.">14-day unconditional guarantee. Request a refund, we return the money and revoke repo access. That simple.</div>
+          <summary data-pt="Como contribuo com o Baseware?" data-en="How do I contribute to Baseware?">How do I contribute to Baseware?</summary>
+          <div class="a" data-pt="Abra uma issue ou envie um pull request no GitHub. Leia o AGENTS.md antes de gerar features e mantenha a documentação em inglês e PT-BR sincronizada." data-en="Open an issue or send a pull request on GitHub. Read AGENTS.md before generating features and keep the English and PT-BR docs in sync.">Open an issue or send a pull request on GitHub. Read AGENTS.md before generating features and keep the English and PT-BR docs in sync.</div>
+        </details>
+        <details>
+          <summary data-pt="Onde consigo suporte?" data-en="Where can I get support?">Where can I get support?</summary>
+          <div class="a" data-pt="Use as Issues do GitHub para bugs e pedidos de feature. O Baseware tem suporte da comunidade e você também pode patrocinar a manutenção contínua pelo GitHub Sponsors." data-en="Use GitHub Issues for bugs and feature requests. Baseware is community-supported, and you can sponsor ongoing maintenance through GitHub Sponsors.">Use GitHub Issues for bugs and feature requests. Baseware is community-supported, and you can sponsor ongoing maintenance through GitHub Sponsors.</div>
         </details>
       </div>
     </section>
@@ -682,9 +719,12 @@
     <section class="block" style="padding-top:0">
       <div class="wrap">
         <div class="final">
-          <h2 data-pt="Seu SaaS a dias de distância, não meses." data-en="Your SaaS days away, not months.">Your SaaS days away, not months.</h2>
-          <p data-pt="Junte-se aos devs que pararam de reescrever auth e billing e foram direto ao que gera receita." data-en="Join the devs who stopped rewriting auth and billing and went straight to what generates revenue.">Join the devs who stopped rewriting auth and billing and went straight to what generates revenue.</p>
-          <a class="btn btn--light" href="#pricing" data-pt="Quero o DevKit — a partir de $199" data-en="Get DevKit — from $199">Get DevKit — from $199</a>
+          <h2 data-pt="Seu SaaS a dias de distância. O código já é seu." data-en="Your SaaS days away. The source is already yours.">Your SaaS days away. The source is already yours.</h2>
+          <p data-pt="Star no Baseware, clone o repositório e construa seu próximo produto sobre uma base MIT." data-en="Star Baseware, clone the repo and build your next product on an MIT-licensed foundation.">Star Baseware, clone the repo and build your next product on an MIT-licensed foundation.</p>
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn btn--light" href="https://github.com/platusforge/baseware" target="_blank" rel="noopener" data-pt="Star no GitHub" data-en="Star on GitHub">Star on GitHub</a>
+            <a class="btn btn--ghost" href="#how" data-pt="Ver quickstart" data-en="See the quickstart">See the quickstart</a>
+          </div>
         </div>
       </div>
     </section>
@@ -693,23 +733,23 @@
   <footer class="site">
     <div class="wrap foot">
       <div>
-        <a class="brand" href="#top" aria-label="PlatusForge — início">
+        <a class="brand" href="#top" aria-label="PlatusForge — home">
           <img src="platusforge-logo-mark.png" alt="PlatusForge" width="105" height="28" loading="lazy" />
           <span>PlatusForge</span>
         </a>
-        <p style="max-width:26rem" data-pt="DevKit: o boilerplate SaaS que forja produtos — Express + React + PostgreSQL, pronto para vender." data-en="DevKit: the SaaS boilerplate that forges products — Express + React + PostgreSQL, ready to sell.">DevKit: the SaaS boilerplate that forges products — Express + React + PostgreSQL, ready to sell.</p>
+        <p style="max-width:26rem" data-pt="PlatusForge é uma plataforma de soluções open-source para desenvolvedores. Baseware é a nossa primeira fundação: MIT, production-ready e feita para forkar." data-en="PlatusForge is an open-source platform for developers. Baseware is our first foundation: MIT, production-ready and built to be forked.">PlatusForge is an open-source platform for developers. Baseware is our first foundation: MIT, production-ready and built to be forked.</p>
       </div>
-      <nav aria-label="Rodapé / Footer">
-        <a href="#inside" data-pt="O que vem dentro" data-en="What's inside">What's inside</a>
+      <nav aria-label="Footer / Rodapé">
+        <a href="#inside" data-pt="Recursos" data-en="Features">Features</a>
         <a href="#compare" data-pt="Comparar" data-en="Compare">Compare</a>
-        <a href="#pricing" data-pt="Preços" data-en="Pricing">Pricing</a>
+        <a href="#how" data-pt="Quickstart" data-en="Quickstart">Quickstart</a>
         <a href="#faq">FAQ</a>
-        <a href="terms-sale.html">Terms</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="refunds.html">Refunds</a>
+        <a href="https://github.com/platusforge/baseware" target="_blank" rel="noopener">GitHub</a>
+        <a href="license.html" data-pt="Licença" data-en="License">License</a>
+        <a href="privacy.html" data-pt="Privacidade" data-en="Privacy">Privacy</a>
         <a href="llms.txt">llms.txt</a>
       </nav>
-      <p>© <span id="year">2026</span> PlatusForge. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">All rights reserved.</span></p>
+      <p>© <span id="year">2026</span> PlatusForge. <span data-pt="Código aberto sob MIT." data-en="Open source under MIT.">Open source under MIT.</span></p>
     </div>
   </footer>
 
@@ -724,12 +764,12 @@
       if (lang !== "en" && lang !== "pt") lang = "en";
 
       var TITLES = {
-        pt: "DevKit — Boilerplate SaaS pronto para produção | PlatusForge",
-        en: "DevKit — Production-ready SaaS boilerplate | PlatusForge"
+        pt: "Baseware — Starter SaaS open-source | PlatusForge",
+        en: "Baseware — Open-source SaaS starter | PlatusForge"
       };
       var DESCS = {
-        pt: "DevKit é o boilerplate SaaS Express + React + PostgreSQL: auth segura, organizações, Stripe, RBAC, audit logs, Docker e CI/CD. Pagamento único a partir de $199. Venda em dias, não meses.",
-        en: "DevKit is the Express + React + PostgreSQL SaaS boilerplate: secure auth, organizations, Stripe billing, RBAC, audit logs, Docker & CI/CD. One-time payment from $199. Ship in days, not months."
+        pt: "Baseware é o starter SaaS open-source e production-ready em Express 5 + React 19 + PostgreSQL: auth segura, organizações, Stripe, RBAC, Docker e CI/CD. MIT, grátis para sempre.",
+        en: "Baseware is the open-source, MIT-licensed SaaS starter with Express 5 + React 19 + PostgreSQL: secure auth, organizations, Stripe billing, RBAC, Docker & CI/CD. Free forever."
       };
 
       function apply(l) {
@@ -757,24 +797,24 @@
       var copyBtn = document.getElementById("copy-btn");
       var termPre = document.getElementById("term-code");
       var TERM_PT = [
-        { t: "# depois da compra: clone do repo privado", c: "c-dim", speed: 14 },
-        { t: "$ cp .env.example .env", c: "c-white", speed: 32 },
+        { t: "# clone do repositório público", c: "c-dim", speed: 14 },
+        { t: "$ git clone https://github.com/platusforge/baseware.git", c: "c-white", speed: 18 },
+        { t: "$ cd baseware && cp .env.example .env", c: "c-white", speed: 28 },
         { t: "$ docker compose up --build", c: "c-white", speed: 32 },
         { t: "✓ web  → http://localhost:5173", c: "c-green", speed: 14 },
         { t: "✓ api  → http://localhost:3000/health", c: "c-green", speed: 14 },
-        { t: "$ docker compose exec server npm run db:seed", c: "c-white", speed: 28 },
         { t: "→ auth + orgs + stripe + admin no ar.", c: "c-orange", speed: 16 },
-        { t: "# tempo até o primeiro deploy: dias, não meses.", c: "c-dim", speed: 14 }
+        { t: "# MIT: forke, lance e venda.", c: "c-dim", speed: 14 }
       ];
       var TERM_EN = [
-        { t: "# after purchase: clone the private repo", c: "c-dim", speed: 14 },
-        { t: "$ cp .env.example .env", c: "c-white", speed: 32 },
+        { t: "# clone the public repo", c: "c-dim", speed: 14 },
+        { t: "$ git clone https://github.com/platusforge/baseware.git", c: "c-white", speed: 18 },
+        { t: "$ cd baseware && cp .env.example .env", c: "c-white", speed: 28 },
         { t: "$ docker compose up --build", c: "c-white", speed: 32 },
         { t: "✓ web  → http://localhost:5173", c: "c-green", speed: 14 },
         { t: "✓ api  → http://localhost:3000/health", c: "c-green", speed: 14 },
-        { t: "$ docker compose exec server npm run db:seed", c: "c-white", speed: 28 },
         { t: "→ auth + orgs + stripe + admin live.", c: "c-orange", speed: 16 },
-        { t: "# time to first deploy: days, not months.", c: "c-dim", speed: 14 }
+        { t: "# MIT licensed. fork it, ship it, sell it.", c: "c-dim", speed: 14 }
       ];
       function termLines() { return lang === "en" ? TERM_EN : TERM_PT; }
       function termFull() { return termLines().map(function (l) { return l.t; }).join("\n"); }
@@ -961,7 +1001,7 @@
               }
             });
           }, { rootMargin: "-40% 0px -55% 0px" });
-          ["inside", "compare", "how", "faq", "pricing"].forEach(function (id) {
+          ["inside", "compare", "how", "faq", "get-started"].forEach(function (id) {
             var s = document.getElementById(id);
             if (s) secObs.observe(s);
           });
