@@ -1,10 +1,11 @@
-# PlatusForge — Baseware
+# PlatusForge — open-source developer foundations
 
-> Baseware is an open-source, production-ready SaaS starter (Express 5 + strict TypeScript + Prisma 7 + PostgreSQL 16 backend; React 19 + Vite 8 frontend) maintained by PlatusForge, an open-source platform for developers. MIT licensed: free for commercial use, modification, distribution and resale. Docs in PT-BR and English.
+> PlatusForge is an open-source forge of production-grade developer foundations. Every solution is public, MIT-licensed and designed to be forked. Baseware — solution 01 — is a production-ready SaaS starter (Express 5 + strict TypeScript + Prisma 7 + PostgreSQL 16 backend; React 19 + Vite 8 frontend). More solutions are being forged in public.
 
 - Site: https://platusforge.github.io/lp/
-- Product: Baseware — open-source SaaS starter
-- Organization: PlatusForge — open-source solutions for developers
+- Platform: PlatusForge — open-source foundations for developers
+- Solution 01: Baseware — open-source SaaS starter
+- More solutions: https://github.com/platusforge
 - License: MIT — https://github.com/platusforge/baseware/blob/main/LICENSE.md
 - Repository: https://github.com/platusforge/baseware
 - Quickstart: `git clone https://github.com/platusforge/baseware.git` → `cd baseware && cp .env.example .env` → `docker compose up --build`
@@ -15,7 +16,12 @@
 - Issues: https://github.com/platusforge/baseware/issues
 - Sponsor: https://github.com/sponsors/ClaudioBzrr
 
-## What's included
+## Solutions
+
+- 01 — Baseware: open-source, production-ready SaaS starter. Live.
+- Next foundations: shaped in public. Follow https://github.com/platusforge to see them land.
+
+## What's included in Baseware
 
 - Auth: email/password + Google/GitHub OAuth, TOTP MFA with hashed backup codes, 15-min access + rotating 7-day refresh in HttpOnly Secure SameSite cookies, bcrypt cost 12, lockout, rate limits, SHA-256 single-use 1h password-reset tokens, email verification, session listing/revocation
 - B2B: organizations, members, invites, RBAC, per-organization Stripe subscriptions
@@ -38,7 +44,9 @@ MIT. Commercial use, modification, distribution and resale are allowed. Keep the
 ## Links
 
 - Landing: https://platusforge.github.io/lp/
-- Features: https://platusforge.github.io/lp/#inside
+- Platform: https://platusforge.github.io/lp/#platform
+- Solutions: https://platusforge.github.io/lp/#solutions
+- Baseware features: https://platusforge.github.io/lp/#baseware
 - Comparison: https://platusforge.github.io/lp/#compare
 - Quickstart: https://platusforge.github.io/lp/#how
 - FAQ: https://platusforge.github.io/lp/#faq
