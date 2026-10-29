@@ -433,7 +433,7 @@
         <a href="#how" data-pt="Quickstart" data-en="Quickstart">Quickstart</a>
         <a href="#faq" class="keep">FAQ</a>
         <a href="https://github.com/platusforge/baseware" class="btn btn--primary btn--sm keep" target="_blank" rel="noopener" data-pt="GitHub" data-en="GitHub">GitHub</a>
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language / Trocar idioma">PT</button>
+        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language / Trocar idioma">PT</button>
       </div>
     </nav>
   </header>
@@ -460,7 +460,7 @@
           </ul>
         </div>
         <div class="terminal" role="img" aria-label="Terminal: clone Baseware and start it with Docker">
-          <div class="term-bar"><i></i><i></i><i></i><span>baseware — zsh</span><button id="copy-btn" data-pt="copiar" data-en="copy">copy</button></div>
+          <div class="term-bar"><i></i><i></i><i></i><span>baseware — zsh</span><button id="copy-btn" type="button" data-pt="copiar" data-en="copy">copy</button></div>
 <pre id="term-code"><span class="c-dim"># clone the public repo</span>
 <span class="c-white">$ git clone https://github.com/platusforge/baseware.git</span>
 <span class="c-white">$ cd baseware && cp .env.example .env</span>
@@ -549,7 +549,7 @@
         <p class="kicker">Baseware</p>
         <h2 data-pt="O que é o Baseware?" data-en="What is Baseware?">What is Baseware?</h2>
         <p class="lead" data-pt="Baseware é um starter SaaS open-source e production-ready em Express 5, TypeScript strict, Prisma 7 e PostgreSQL 16 no backend e React 19 + Vite 8 no frontend. Inclui autenticação por cookies HttpOnly com MFA, organizações multi-tenant com convites e RBAC, cobrança Stripe por organização, painel admin, audit logs, API keys, e-mail transacional com Resend, Docker Compose, TLS com Traefik, CI/CD com GitHub Actions, testes Jest e documentação em português e inglês. Licença MIT: sem chaves, sem assentos, sem tiers." data-en="Baseware is an open-source, production-ready SaaS starter with Express 5, strict TypeScript, Prisma 7 and PostgreSQL 16 on the backend and React 19 + Vite 8 on the frontend. It includes HttpOnly-cookie auth with MFA, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and docs in Portuguese and English. MIT licensed: no keys, no seats, no tiers.">Baseware is an open-source, production-ready SaaS starter with Express 5, strict TypeScript, Prisma 7 and PostgreSQL 16 on the backend and React 19 + Vite 8 on the frontend. It includes HttpOnly-cookie auth with MFA, multi-tenant organizations with invites and RBAC, per-organization Stripe billing, admin panel, audit logs, API keys, Resend transactional email, Docker Compose, Traefik TLS, GitHub Actions CI/CD, Jest tests and docs in Portuguese and English. MIT licensed: no keys, no seats, no tiers.</p>
-        <div class="badges" aria-label="Stack">
+        <div class="badges" role="group" aria-label="Stack">
           <span>Express 5</span><span>TypeScript strict</span><span>Prisma 7</span><span>PostgreSQL 16</span><span>Zod 4</span><span>Stripe</span><span>Resend</span><span>React 19</span><span>Vite 8</span><span>React Router 7</span><span>Docker</span><span>Traefik TLS</span><span>GitHub Actions</span><span>Jest</span><span>i18n PT-BR/EN</span><span>MIT</span>
         </div>
       </div>
@@ -756,7 +756,7 @@
     </div>
   </footer>
 
-  <button id="to-top" aria-label="Back to top / Voltar ao topo" title="Back to top">↑</button>
+  <button id="to-top" type="button" aria-label="Back to top / Voltar ao topo" title="Back to top">↑</button>
 
   <script>
     (function () {
