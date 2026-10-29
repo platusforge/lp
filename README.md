@@ -27,4 +27,4 @@ The site is served from the project path `/lp/`; canonical, Open Graph, sitemap 
 - `privacy.html` — privacy policy
 - `llms.txt` — product summary for LLMs
 - `sitemap.xml`, `robots.txt` — SEO
-- `platusforge-og-2026.jpg`, `platusforge-icon.png`, `platusforge-logo-mark.png` — brand assets
+- `platusforge-og-2026-v2.jpg`, `platusforge-icon.png`, `platusforge-logo-mark.png` — brand assets
